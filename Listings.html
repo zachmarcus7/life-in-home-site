@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life In Home</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+</head>
+<body data-spy="scroll" data-target=".main-nav">
+
+
+<header class="h-50" id="home">
+    <nav class="navbar navbar-expand-lg fixed-top main-nav" id="main-nav">
+        <div class="nav-logo-container">
+            <a class="navbar-brand" href="#">
+                <img src="images/lih-logo-nav.svg" />
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="changeNavOpacity()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link sub-header" href="/Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sub-header" href="/Selling">Selling</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sub-header" href="/Buying">Buying</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sub-header" href="/Listings">Listings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sub-header nav-active" href="/About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sub-header" href="/Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="selling-header-img h-50">
+        <div class="banner-container text-center">
+            <h2 class="shadow-behind-text">Current Listings</h2>
+        </div>
+    </div>
+
+</header>
+
+
+<!-- listing container -->
+<div class="container-fluid listing-container pb-2">
+    <div class="light-teal-background mt-5 pt-5 pb-5 fade-up listing-container-inner">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-12 pt-3 listings-image-container">
+                <img src="images/listings/listing-1.jpg" />
+            </div>
+
+            <!-- main description -->
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 pt-3 pl-4">
+                <h3 class="white-text">Charming Updated Custom-Designed Home</h3> <!-- header -->
+                <h4 class="white-text">1770 SE Oak Shore Court</h4>  <!-- address -->
+                <h4 class="white-text">$593,500</h4>           <!-- price -->
+                <br />
+                <!-- description -->
+                <p class="white-text">
+                    Gorgeous updated custom home settled in a cul-de-sac. You'll love the craftsman features, spacious rooms, gleaming laminate, marble, and tile floors. Also, custom windows, skylights & vaulted ceiling, 4 bedrooms include master suite to deck & fenced yard, custom-designed kit w/soapstone countertops, custom cabinets & butcher block Island, spacious great & family room w/Avalon Olympic wood stove & office, landscaped lot w/deck, hot tub, garden shed. Close to shops, buses, schools, and parks. Great home & neighborhood!
+                </p>
+                <a class="general-button" href="https://tours.speedsphoto.com/public/vtour/display/1989238?idx=1#!/">
+                    <p>VIRTUAL TOUR</p>
+                </a>
+            </div>
+            <!-- main description end -->
+        </div>
+        <hr />
+        <div class="row">
+            <!-- property details -->
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 pt-3">
+                <h3 class="white-text pb-2">Property Details</h3>
+                <div class="row">
+                    <div class="col-6 white-text">
+                        <h6>1,968 sqft.</h6>             <!-- sqft. -->
+                        <h6>4 Bed(s) w/ Master Suite</h6>                <!-- beds -->
+                        <h6>2 Bath(s)</h6>             <!-- baths -->
+                        <h6>Built in 1970</h6>           <!-- year built -->
+                    </div>
+                    <div class="col-6 white-text">
+                        <h6>Milwaukie</h6>             <!-- city -->
+                        <h6>Clackamas</h6>        <!-- county -->
+                        <h6>Active</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- property details end -->
+            <!-- additional details -->
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 pt-3">
+                <h3 class="white-text pb-2">Additional Details</h3>
+                <div class="row">
+                    <div class="col-6 white-text">
+                        <h6>10,001 sqft. lot w/ cover front porch, deck, patio, and garden shed</h6>
+                        <h6>Laminate, marble, tile, and carpet</h6>
+                        <h6>Vaulted Ceiling</h6>
+                    </div>
+                    <div class="col-6 white-text">
+                        <h6>Trane Forced air gas and central A/C, and Avalon Olympic wood stove</h6>
+                        <h6>Newer roof installation w/ warranty</h6>
+                        <h6>Professional landscaped lot w/ RV parking</h6>
+                    </div>
+                </div>
+
+            </div>
+            <!-- additional details end -->
+        </div>
+    </div>
+</div>
+
+<!-- listing container end -->
+
+
+    <!-- footer -->
+
+    <div id="footer" class="footer-container mobile-container">
+        <div class="footer-header-container container-fluid row">
+            <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 footer-bottom-left-header align-content-center">
+                <h3>Contact</h3>
+                <p>Nancy@LifeInHomeTeam.com</p>
+                <p>503.516.9400</p>
+                <br />
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 footer-connect">
+                <h3>Connect</h3>
+                <p>
+                    <a href="https://www.linkedin.com/in/nancy-shannon-38773a17b">
+                        <i class="fa-brands fa-linkedin footer-fa-brands fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com/NancyShannonrealtor/">
+                        <i class="fa-brands fa-facebook-square footer-fa-brands fa-2x"></i>
+                    </a>
+                </p>
+                <br />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                <h3>Location</h3>
+                <p>10135 Se Sunnyside Rd, St. 150</p>
+                <p>Clackamas, OR 97015</p>
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 footer-bottom-left-header">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 footer-connect text-center mt-auto ">
+                <!-- <a href=""> -->
+                    <p class="text-white">Developed By Z. Marcus</p>
+                <!-- </a> -->
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 d-flex justify-content-center">
+                <div class="footer-logo-container">
+                    <img src="images/ppg-logo-white.webp" />
+                </div>
+                <br />
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
+        </div>
+        <br />
+    </div>
+
+    <!-- footer end -->
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+
+    
+    <!-- script for navbar and scroll fade-in -->
+    <script>
+        
+        /* navbar observer section */
+
+        
+        // variables for keeping track of navbar
+        const home = document.getElementById("home");
+        const navbar = document.getElementById("main-nav");
+
+        // function for changing opacity of nav when toggle is clicked
+        var changeNavOpacity = function () {
+            // if they press the toggler once, the background for the nav gets set while
+            // they stay on that page
+            navbar.style.backgroundColor = "rgb(12, 42, 60)";
+        };
+
+        const navbarOptions = {
+            threshold: 0.8,
+        };
+
+        var navbarObserver = new IntersectionObserver(entries => {
+            navbar.classList.toggle('active', !entries[0].isIntersecting);
+        }, navbarOptions);
+
+        // this is for the intersection observer keeping track of elements
+        navbarObserver.observe(home)
+        navbarObserver.observe(navbar);
+
+        /* navbar observer section end */
+
+        
+
+
+        /* general observer section */
+
+        const generalOptions = {
+
+        };
+
+        const generalObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('faded');
+                    generalObserver.unobserve(entry.target);
+                }
+            });
+        }, generalOptions);
+
+        // observe all required elements at once
+        document.querySelectorAll('.fade-up').forEach(element => {
+            generalObserver.observe(element);
+        });
+
+        /* general observer section end */
+
+    </script>
+
+
+    <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

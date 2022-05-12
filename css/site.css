@@ -160,6 +160,8 @@ a {
     margin-bottom: 0 !important;
 }
 
+
+
 .description-text-three {
     color: var(--dark-gray-color);
     margin-bottom: 0 !important;
@@ -1550,4 +1552,16 @@ main, body {
 .row {
     margin-left: 0;
     margin-right: 0;
+}
+
+.number-link {
+    transition: all 04.s;
+}
+
+.number-link:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+.number-link:active {
+    background-color: rgb(150, 150, 150);
 }

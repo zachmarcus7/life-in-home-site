@@ -454,7 +454,7 @@ p, .button-link {
 }
 
 .top-wave {
-    transform: translateY(10%);
+    transform: translateY(5%);
 }
 
 .bottom-wave {
@@ -1555,13 +1555,14 @@ main, body {
 }
 
 .number-link {
-    transition: all 04.s;
+    color: white;
+    transition: all ease-in 0.4s;
 }
 
 .number-link:hover {
-    background-color: rgb(170, 170, 170);
+    color: rgb(170, 170, 170);
 }
 
 .number-link:active {
-    background-color: rgb(150, 150, 150);
+    color: rgb(150, 150, 150);
 }

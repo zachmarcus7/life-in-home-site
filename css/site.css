@@ -1572,7 +1572,23 @@ main, body {
 }
 
 .top-wave {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    position: relative;
+    width: 100%;
+
+    background-image: url('../images/wave-top.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.spacer {
+    aspect-ratio: 900/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('../images/test.svg');
 }

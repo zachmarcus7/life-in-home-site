@@ -961,12 +961,16 @@ ul li {
     color: white;
 }
 
-.nav-link:hover {
+.nav-link-custom:hover {
     color: var(--mid-gray-color) !important;
 }
 
-.nav-link {
+.nav-link-custom {
     transition: all 0.4s;
+}
+
+.nav-link-custom {
+    border: 7px solid transparent;
 }
 
 .navbar-toggler i {

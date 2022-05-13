@@ -363,7 +363,6 @@ li::marker {
     display: inline-block;
 }
 
-
 .wave {
     display: flex; 
     width: 100%; 
@@ -374,15 +373,6 @@ li::marker {
     z-index: -1;
     align-self: flex-end;
 }
-
-.wave-test {
-    width: 100% !important;
-}
-
-.wave-test svg {
-    width: 100% !important;
-}
-
 
 /* Responsive Sizing
 -------------------------------------------------- */

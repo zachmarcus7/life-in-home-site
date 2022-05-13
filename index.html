@@ -62,7 +62,7 @@
         <!-- down arrow -->
         <div class="home-page-lower-container">
             <br />
-            <a class="logo-container down-arrow" href="#offset-one">
+            <a class="logo-container down-arrow scroll" href="#offset-one">
                 <i class="fa-solid fa-angle-down down-arrow-actual"></i>
             </a>
         </div>
@@ -443,27 +443,38 @@
     <script src="js/site.js" asp-append-version="true"></script>
 
     <!-- test -->
-
     <script>
 
-        function SmoothVerticalScrolling(e, time, where) {
-            var eTop = e.getBoundingClientRect().top;
-            var eAmt = eTop / 100;
-            var curTime = 0;
-            while (curTime <= time) {
-                window.setTimeout(SVS_B, curTime, eAmt, where);
-                curTime += time / 100;
+    (function() {
+        scrollTo();
+    })();
+    
+    function scrollTo() {
+        const links = document.querySelectorAll('.scroll');
+        links.forEach(each => (each.onclick = scrollAnchors));
+    }
+    
+    function scrollAnchors(e, respond = null) {
+        const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+        e.preventDefault();
+        var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+        const targetAnchor = document.querySelector(targetID);
+        if (!targetAnchor) return;
+        const originalTop = distanceToTop(targetAnchor);
+        window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+        const checkIfDone = setInterval(function() {
+            const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+            if (distanceToTop(targetAnchor) === 0 || atBottom) {
+                targetAnchor.tabIndex = '-1';
+                targetAnchor.focus();
+                window.history.pushState('', '', targetID);
+                clearInterval(checkIfDone);
             }
-        }
-
-        function SVS_B(eAmt, where) {
-            if(where == "center" || where == "")
-                window.scrollBy(0, eAmt / 2);
-            if (where == "top")
-                window.scrollBy(0, eAmt);
-        }
-
+        }, 100);
+    }
     </script>
+
+    <!-- test end -->
 
     <!-- script for navbar and scroll fade-in -->
     <script>

@@ -969,11 +969,8 @@ ul li {
 }
 
 .nav-link:hover {
-    color: var(--mid-gray-color) !important;
-}
-
-.nav-item a {
     transition: 0.4s;
+    color: var(--mid-gray-color) !important;
 }
 
 .navbar-toggler i {

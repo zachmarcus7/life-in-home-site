@@ -375,6 +375,14 @@ li::marker {
     align-self: flex-end;
 }
 
+.wave-test {
+    width: 100% !important;
+}
+
+.wave-test svg {
+    width: 100% !important;
+}
+
 
 /* Responsive Sizing
 -------------------------------------------------- */

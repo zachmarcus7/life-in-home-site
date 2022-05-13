@@ -835,9 +835,12 @@ p, .button-link {
 /* Animations
 -------------------------------------------------- */
 
-@media only screen and (min-width: 1200px) {
-    h1 {
-        font-size: 86px;
+@keyframes general-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -955,6 +958,10 @@ p, .button-link {
 
 ul li {
     text-align: center;
+}
+
+.nav-fade-in {
+    animation: general-fade-in 1.1s;
 }
 
 .nav-item a {

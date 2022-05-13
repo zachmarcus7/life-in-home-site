@@ -369,6 +369,10 @@ li::marker {
     overflow-wrap: break-word;
 }
 
+.block-display {
+    display: inline-block;
+}
+
 /* Responsive Sizing
 -------------------------------------------------- */
 
@@ -1565,4 +1569,14 @@ main, body {
 
 .number-link:active {
     color: rgb(150, 150, 150);
+}
+
+.top-wave-container {
+    position: relative;
+
+    width: 100%;
+    background-image: url('../images/wave-top.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
 }

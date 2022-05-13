@@ -876,39 +876,6 @@ p, .button-link {
     }
 }
 
-@keyframes nav-bar-fade-in {
-    0% {
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    70% {
-        opacity: 0;
-    }
-
-    100% {
-        visibility: visible;
-        opacity: 90%;
-    }
-}
-
-@keyframes home-page-general-fade-in {
-    0% {
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    70% {
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    100% {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
 @keyframes down-arrow-fade-in {
     0% {
         opacity: 0;
@@ -987,7 +954,6 @@ ul li {
     height: 800px;
     width: 100%;
     background-size: cover !important;
-
     text-align: center;
     overflow: hidden;
     padding: 0;
@@ -1500,8 +1466,6 @@ listings-image-container {
     height: 79px;
     width: 293px;
 }
-
-
 
 /* Footer
 -------------------------------------------------- */

@@ -459,6 +459,7 @@ p, .button-link {
 
 .top-wave {
     transform: translateY(7%);
+
 }
 
 .bottom-wave {
@@ -1590,4 +1591,18 @@ main, body {
 
 .layer1 {
     background-image: url('../images/test.svg');
+}
+
+.curved {
+    background: red;
+    color: white;
+    text-align: center;
+}
+
+.curved h1 {
+    font-size: 6rem;
+}
+
+.curved svg {
+    display: block;
 }

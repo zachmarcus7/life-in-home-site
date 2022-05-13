@@ -458,7 +458,7 @@ p, .button-link {
 }
 
 .top-wave {
-    transform: translateY(5%);
+    transform: translateY(7%);
 }
 
 .bottom-wave {
@@ -1571,12 +1571,8 @@ main, body {
     color: rgb(150, 150, 150);
 }
 
-.top-wave-container {
-    position: relative;
-
-    width: 100%;
-    background-image: url('../images/wave-top.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
+.top-wave {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }

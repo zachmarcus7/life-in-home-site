@@ -374,6 +374,9 @@ li::marker {
     align-self: flex-end;
 }
 
+.move-down {
+    transform: translateY(9%);
+}
 
 /* Responsive Sizing
 -------------------------------------------------- */

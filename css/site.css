@@ -160,8 +160,6 @@ a {
     margin-bottom: 0 !important;
 }
 
-
-
 .description-text-three {
     color: var(--dark-gray-color);
     margin-bottom: 0 !important;
@@ -228,13 +226,11 @@ li::marker {
 
 .general-container-inner {
     padding: 10px;
-
     background:
     linear-gradient(to right, var(--secondary-color) 2px, transparent 2px) 0 100%,
     linear-gradient(to left, var(--secondary-color) 2px, transparent 2px) 100% 0,
     linear-gradient(to bottom, var(--secondary-color) 2px, transparent 2px) 100% 0,
     linear-gradient(to top, var(--secondary-color) 2px, transparent 2px) 0 100%;
-
     background-repeat: no-repeat;
     background-size: 20px 20px;
     z-index: 10;
@@ -247,13 +243,11 @@ li::marker {
 
 .general-container-inner-inverted {
     padding: 10px;
-
     background:
     linear-gradient(to right, var(--main-color) 2px, transparent 2px) 0 100%,
     linear-gradient(to left, var(--main-color) 2px, transparent 2px) 100% 0,
     linear-gradient(to bottom, var(--main-color) 2px, transparent 2px) 100% 0,
     linear-gradient(to top, var(--main-color) 2px, transparent 2px) 0 100%;
-
     background-repeat: no-repeat;
     background-size: 20px 20px;
     z-index: 10;
@@ -273,13 +267,11 @@ li::marker {
 
 .general-container-inner-gray-squares {
     padding: 10px;
-
     background:
     linear-gradient(to right, var(--main-color) 2px, transparent 2px) 0 100%,
     linear-gradient(to left, var(--main-color) 2px, transparent 2px) 100% 0,
     linear-gradient(to bottom, var(--main-color) 2px, transparent 2px) 100% 0,
     linear-gradient(to top, var(--main-color) 2px, transparent 2px) 0 100%;
-
     background-repeat: no-repeat;
     background-size: 20px 20px;
     z-index: 10;
@@ -287,7 +279,6 @@ li::marker {
 
 .general-container-placeholder {
     padding: 10px;
-
     background:
     linear-gradient(to right, var(--secondary-color) 4px, transparent 4px) 0 0,
     linear-gradient(to right, var(--secondary-color) 4px, transparent 4px) 0 100%,
@@ -297,7 +288,6 @@ li::marker {
     linear-gradient(to bottom, var(--secondary-color) 4px, transparent 4px) 100% 0,
     linear-gradient(to top, var(--secondary-color) 4px, transparent 4px) 0 100%,
     linear-gradient(to top, var(--secondary-color) 4px, transparent 4px) 100% 100%;
-
     background-repeat: no-repeat;
     background-size: 20px 20px;
     z-index: 10;
@@ -371,6 +361,17 @@ li::marker {
 
 .block-display {
     display: inline-block;
+}
+
+
+.wave {
+    display: flex; 
+    width: 100%; 
+}
+
+.wave svg {
+    width: 100%;
+    z-index: -1;
 }
 
 /* Responsive Sizing
@@ -1570,49 +1571,4 @@ main, body {
 
 .number-link:active {
     color: rgb(150, 150, 150);
-}
-
-.top-wave {
-    position: relative;
-    width: 100%;
-
-    background-image: url('../images/wave-top.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-}
-
-.spacer {
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.layer1 {
-    background-image: url('../images/test.svg');
-}
-
-.curved {
-    background: white;
-    color: white;
-    text-align: center;
-}
-
-.curved h1 {
-    font-size: 6rem;
-}
-
-.curved svg {
-    display: block;
-}
-
-.hero-svg{
-    display: flex; 
-    width: 100%; 
-}
-
-.hero-svg svg {
-    width: 100%;
-    z-index: -1;
 }

@@ -1606,3 +1606,13 @@ main, body {
 .curved svg {
     display: block;
 }
+
+.hero-svg{
+    display: flex; 
+    width: 100%; 
+}
+
+.hero-svg svg {
+    width: 100%;
+    z-index: -1;
+}

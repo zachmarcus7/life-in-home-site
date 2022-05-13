@@ -937,18 +937,10 @@ p, .button-link {
     background-color: rgb(255, 255, 255, 0);
     padding-top: 1.5%;
     color: white;
-    transition: all 0.5s;
+
 }
 
 .main-nav.active {
-    padding-top: 1%;
-    color: white;
-    z-index: 99;
-    transition: all 0.8s;
-    background-color: var(--main-color);
-}
-
-.main-nav-below-top {
     padding-top: 1%;
     color: white;
     z-index: 99;

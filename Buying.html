@@ -13,7 +13,7 @@
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     
     </head>
-<body data-spy="scroll" data-target=".main-nav">
+<body data-spy="scroll" data-target=".main-nav" class="preload">
 
 
 <header class="h-50" id="home">
@@ -332,8 +332,17 @@
         });
         });
     </script>
-    
-        <!-- smooth scroll compatible with safari end -->
+    <!-- smooth scroll compatible with safari end -->
+
+
+    <!-- script for google chrome opening transition bug-->
+    <script>
+        $("window").load(function() {
+            $("body").removeClass("preload");
+        });
+    </script>
+    <!-- google chrome bug script end -->
+
 
     
     <!-- script for navbar and scroll fade-in -->

@@ -1527,3 +1527,14 @@ main, body {
 .number-link:active {
     color: rgb(150, 150, 150);
 }
+
+/* Fix for chrome opening transition bug
+-------------------------------------------------- */
+
+.preload * {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}

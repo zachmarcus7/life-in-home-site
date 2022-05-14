@@ -689,6 +689,7 @@ p, .button-link {
 
     .listings-image-container img {
         height: 35vw;
+        max-width: 95%;
     }
 
     .bio-image-container img {

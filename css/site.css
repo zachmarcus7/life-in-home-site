@@ -1528,3 +1528,16 @@ main, body {
 .number-link:active {
     color: rgb(150, 150, 150);
 }
+
+.number-link-two {
+    color: var(--mid-gray-color);
+    transition: all ease-in 0.4s;
+}
+
+.number-link:hover {
+    color: rgb(170, 170, 170);
+}
+
+.number-link:active {
+    color: rgb(150, 150, 150);
+}

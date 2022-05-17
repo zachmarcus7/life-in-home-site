@@ -369,6 +369,10 @@ li::marker {
     transform: translateY(9%);
 }
 
+.move-up {
+    transform: translateY(-9%);
+}
+
 /* Responsive Sizing
 -------------------------------------------------- */
 

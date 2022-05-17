@@ -126,7 +126,7 @@
                         <div class="about-final pt-5">
                             <div class="row fade-up">
                                 <div class="col-lg-1 col-md-0 col-sm-0 col-0"></div>
-                                <div class="col-lg-5 col-md-6 col-sm-12 col-12 pb-3 about-final-button">
+                                <div class="col-lg-5 col-md-6 col-sm-6 col-12 pb-3 about-final-button">
                                     <a href="/Selling">
                                         <div>
                                             <br />
@@ -136,7 +136,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-lg-5 col-md-6 col-sm-12 col-12 pb-3 about-final-button">
+                                <div class="col-lg-5 col-md-6 col-sm-6 col-12 pb-3 about-final-button">
                                     <a href="/Buying">
                                         <div>
                                             <br />
@@ -337,7 +337,7 @@
 
 
     <!-- bottom wave-->
-    <div class="wave">
+    <div class="wave move-up">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 117.3" preserveAspectRatio="none">
             <path fill=" #689b9e" fill-opacity="1" d="M0,64L80,58.7C160,53,320,43,480,58.7C640,75,800,117,960,117.3C1120,117,1280,75,1360,53.3L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"/>
         </svg>
@@ -349,8 +349,8 @@
     <!-- bottom buttons -->
     <div class="about-final pt-5">
         <div class="row fade-up">
-            <div class="col-lg-4 col-md-0 col-sm-0 col-0"></div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-6 pb-3 about-final-button">
+            <div class="col-lg-4 col-md-0 col-sm-2 col-0"></div>
+            <div class="col-lg-2 col-md-6 col-sm-4 col-6 pb-3 about-final-button">
                 <a href="/Listings">
                     <div>
                         <br />
@@ -360,7 +360,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-6 pb-3 about-final-button">
+            <div class="col-lg-2 col-md-6 col-sm-4 col-6 pb-3 about-final-button">
                 <a href="/About">
                     <div>
                         <br />
@@ -370,7 +370,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-0 col-sm-0 col-0">
+            <div class="col-lg-4 col-md-0 col-sm-2 col-0">
 
             </div>
         </div>
@@ -481,7 +481,6 @@
         
         /* navbar observer section */
 
-        
         // variables for keeping track of navbar
         const home = document.getElementById("home");
         const navbar = document.getElementById("main-nav");
@@ -508,13 +507,9 @@
         /* navbar observer section end */
 
         
-
-
         /* general observer section */
 
-        const generalOptions = {
-
-        };
+        const generalOptions = {};
 
         const generalObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {

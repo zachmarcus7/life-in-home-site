@@ -26,6 +26,84 @@ a.navbar-brand {
   border-color: #1861ac;
 }
 
+/* Home Slider
+-------------------------------------------------- */
+#carouselExampleIndicators {
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out 1s;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+
+.carousel-inner {
+    overflow: visible !important;
+    margin: 0 !important;
+}
+
+#carouselExampleIndicators .carousel-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+
+.carousel-one {
+    position: absolute;
+    background-image: url('../images/sunny-office-dim.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-two {
+    position: absolute;
+    background-image: url('../images/house-two.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-three {
+    position: absolute;
+    background-image: url('../images/living-room-19.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-four {
+    position: absolute;
+    background-image: url('../images/house-one.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Home Slider End
+-------------------------------------------------- */
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -955,84 +1033,6 @@ ul li {
     margin: 0 !important;
     padding: 0 !important;
 }
-
-/* Home Slider
--------------------------------------------------- */
-#carouselExampleIndicators {
-    position: absolute;
-    height: 800px;
-    width: 100%;
-    background-size: cover !important;
-    text-align: center;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-.carousel.carousel-fade .carousel-item {
-    display: block;
-    opacity: 0;
-    transition: opacity ease-out 1s;
-}
-
-.carousel.carousel-fade .carousel-item.active {
-    opacity: 1 !important;
-}
-
-.carousel-inner {
-    overflow: visible !important;
-    margin: 0 !important;
-}
-
-#carouselExampleIndicators .carousel-inner {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background: #000;
-}
-
-.carousel-one {
-    position: absolute;
-    background-image: url('../images/sunny-office-dim.jpg');
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.carousel-two {
-    position: absolute;
-    background-image: url('../images/house-two.jpg');
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.carousel-three {
-    position: absolute;
-    background-image: url('../images/living-room-19.jpg');
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.carousel-four {
-    position: absolute;
-    background-image: url('../images/house-one.jpg');
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-/* Home Slider End
--------------------------------------------------- */
 
 .body-container {
     height: 100%;

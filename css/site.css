@@ -369,8 +369,8 @@ li::marker {
     transform: translateY(15%);
 }
 
-.move-down-two {
-    transform: translateY(6%);
+.move-down-two svg{
+    transform: translateY(5%);
 }
 
 .move-up {

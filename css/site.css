@@ -366,7 +366,7 @@ li::marker {
 }
 
 .move-down {
-    transform: translateY(9%);
+    transform: translateY(11%);
 }
 
 .move-up {

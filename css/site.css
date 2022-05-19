@@ -769,8 +769,8 @@ p, .button-link {
     }
 
     .about-header-container {
-        padding-left: 18%;
-        padding-right: 18%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .listings-image-container img {
@@ -835,6 +835,11 @@ p, .button-link {
 @media only screen and (min-width: 1180px) {
     .about-lower {
         height: 480px;
+    }
+    
+    .about-header-container {
+        padding-left: 16%;
+        padding-right: 16%;
     }
 }
 

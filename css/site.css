@@ -104,6 +104,48 @@ a.navbar-brand {
 /* Home Slider End
 -------------------------------------------------- */
 
+/* Header Images 
+-------------------------------------------------- */
+.page-about-header-img {
+    position: absolute;
+    background-image: url('../images/kettle-faded.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.selling-header-img {
+    position: absolute;
+    background-image: url('../images/modern-kitchen.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.buying-header-img {
+    position: absolute;
+    background-image: url('../images/lamp.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.page-contact-header-img {
+    position: absolute;
+    background-image: url('../images/buildings-faded.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -1290,16 +1332,6 @@ ul li {
 /* About Page
 -------------------------------------------------- */
 
-.page-about-header-img {
-    position: absolute;
-    background-image: url('../images/kettle-faded.jpg');
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .page-about-header h3,
 .page-about-header h5,
 .page-about-header h6 {
@@ -1329,26 +1361,6 @@ ul li {
 
 /* Services Page
 -------------------------------------------------- */
-
-.selling-header-img {
-    position: absolute;
-    background-image: url('../images/modern-kitchen.jpg');
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.buying-header-img {
-    position: absolute;
-    background-image: url('../images/lamp.jpg');
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 .services-item-container {
     border-left: solid 2px var(--main-color);
@@ -1431,15 +1443,6 @@ listings-image-container {
 
 /* Contact Page
 -------------------------------------------------- */
-.page-contact-header-img {
-    position: absolute;
-    background-image: url('../images/buildings-faded.jpg');
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 .page-contact-header h3,
 .page-contact-header h5,

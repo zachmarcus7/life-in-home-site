@@ -1559,3 +1559,18 @@ main, body {
 .number-link:active {
     color: rgb(150, 150, 150);
 }
+
+.point-list {
+    text-align: left !important;
+    padding-left: 0 !important;
+}
+
+.point-list li {
+    text-align: left !important;
+    color: white;
+}
+
+.point-list li::before {
+    content: "• ";
+    color: white;
+}

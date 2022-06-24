@@ -573,8 +573,35 @@ p, .button-link {
     height: 3px;
 }
 
+.black-background {
+    background-color: black;
+}
+
 .listings-image-container img {
-    height: 50vw;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.listings-two-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listings-image-container-two img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.clickable-container img {
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.clickable-container img:hover {
+    opacity: 50%;
 }
 
 .about-lower {
@@ -1573,4 +1600,23 @@ main, body {
 .point-list li::before {
     content: "• ";
     color: white;
+}
+
+.open-house-container {
+    left: 0;
+    padding: 0.35em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: white !important;
+    text-align: center;
+    background-color: rgb(59, 88, 89) !important;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.dark-teal-text {
+    color: rgb(59, 88, 89) !important;
 }

@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@300&display=swap" rel="stylesheet">
         <!-- favicon -->
         <link rel="icon" type="image/webp" href="images/mini-logo.webp">
+    
     </head>
 <body data-spy="scroll" data-target=".main-nav"> 
 
@@ -25,6 +26,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="changeNavOpacity()">
             <i class="fa-solid fa-bars"></i>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -106,7 +108,7 @@
         <div class="light-teal-background mt-5 pt-5 pb-5 fade-up listing-container-inner">
             <div class="pl-4 pr-4">
                 <h3 class="white-text">Charming Updated Custom-Designed Home</h3> <!-- header -->
-                <h5 class="white-text">1770 SE Oak Shore Court • $593,500 • <span class="dark-teal-text font-weight-bold">Sale Pending</span></h4>  <!-- address and price -->
+                <h5 class="white-text">1770 SE Oak Shore Court • $593,500</h4>  <!-- address and price -->
             </div>
             <div class="row">
                 <div class="col-lg-8 col-md-12 col-12 pt-3 listings-image-container d-flex justify-content-center">
@@ -125,6 +127,7 @@
             <div class="row">
                 <div class="p-4 pl-4 pr-4">
                 <!-- description -->
+                <h4><span class="dark-teal-text font-weight-bold">Sale Pending</span></h4>
                 <p class="white-text">
                     Gorgeous updated custom home settled in a cul-de-sac. You'll love the craftsman features, spacious rooms, gleaming laminate, marble, and tile floors. Also, custom windows, skylights & vaulted ceiling, 4 bedrooms include master suite to deck & fenced yard, custom-designed kit w/soapstone countertops, custom cabinets & butcher block Island, spacious great & family room w/Avalon Olympic wood stove & office, landscaped lot w/deck, hot tub, garden shed. Close to shops, buses, schools, and parks. Great home & neighborhood!
                 </p>
@@ -146,7 +149,7 @@
         <div class="light-teal-background mt-5 pt-5 pb-5 fade-up listing-container-inner">
             <div class="pl-4 pr-4">
                 <h3 class="white-text">Lovely, Updated Gresham Duplex</h3> <!-- header -->
-                <h5 class="white-text">3429 SE 12th Street • $489,521 • <span class="dark-teal-text font-weight-bold">Sale Pending</span></h4>  <!-- address and price -->
+                <h5 class="white-text">3429 SE 12th Street • $489,521</span></h4>  <!-- address and price -->
             </div>
             <div class="row">
                 <div class="col-lg-8 col-md-12 col-12 pt-3 listings-image-container d-flex justify-content-center">
@@ -165,6 +168,7 @@
             <div class="row">
                 <div class="p-4 pl-4 pr-4">
                 <!-- description -->
+                <h4><span class="dark-teal-text font-weight-bold">Sale Pending</span></h4>
                 <p class="white-text">
                     Step in ...Enjoy this easy living, updated, duplex, placed beautifully in the heart of a highly desirable Gresham neighborhood! You'll appreciate the spacious rooms and lovely interior paint scheme, gorgeous tile floors, plush wall-to-wall carpet, gorgeous fixtures, and features throughout each unit. The living rooms offer a place to relax and get cozy (1st unit) with a w/newer True North wood stove with a brick surround and wood storage area, gaze out through the beautiful picture framed window (each unit) onto the enchanting, shared courtyard as you sip your morning coffee.
                 </p>
@@ -186,7 +190,7 @@
         <div class="light-teal-background mt-5 pt-5 pb-5 fade-up listing-container-inner">
             <div class="pl-4 pr-4">
                 <h3 class="white-text">Classic Creston Home</h3> <!-- header -->
-                <h5 class="white-text">4353 SE Brooklyn Street • $484,950 • <span class="dark-teal-text font-weight-bold">Sale Pending</span></h4>  <!-- address and price -->
+                <h5 class="white-text">4353 SE Brooklyn Street • $484,950</h4>  <!-- address and price -->
             </div>
             <div class="row">
                 <div class="col-lg-8 col-md-12 col-12 pt-3 listings-image-container d-flex justify-content-center">
@@ -205,6 +209,7 @@
             <div class="row">
                 <div class="p-4 pl-4 pr-4">
                 <!-- description -->
+                <h4><span class="dark-teal-text font-weight-bold">Sale Pending</span></h4>
                 <p class="white-text">
                     Enjoy this charming home that offers so much potential and is placed beautifully in the heart of the highly desirable Creston neighborhood, sold in “as-is condition (cash buyers only), with some love and sweat equity you can make this house your HOME! You'll love the spacious rooms, hardwood floors, classic features, and updated plumbing (2017). The living and dining rooms offer hardwood floors, coved and picture framed ceilings and picture framed windows, also offered in the living room is a gas fireplace with a wood mantel. The kitchen offers a gas range, free-standing refrigerator, built-in dishwasher, built-ins, tons of cabinets, and a nook area.                    </p>
                 </p>
@@ -326,6 +331,7 @@
         
         /* navbar observer section */
 
+        
         // variables for keeping track of navbar
         const home = document.getElementById("home");
         const navbar = document.getElementById("main-nav");
@@ -351,9 +357,13 @@
 
         /* navbar observer section end */
 
+        
+
+
         /* general observer section */
 
         const generalOptions = {
+
         };
 
         const generalObserver = new IntersectionObserver((entries) => {
@@ -373,6 +383,9 @@
         /* general observer section end */
 
     </script>
+
+
     <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

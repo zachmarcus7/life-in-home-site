@@ -577,24 +577,6 @@ p, .button-link {
     background-color: black;
 }
 
-.listings-image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.listings-two-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.listings-image-container-two img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
 .clickable-container img {
     transition: all 0.4s;
     cursor: pointer;
@@ -842,10 +824,7 @@ p, .button-link {
         padding-right: 10%;
     }
 
-    .listings-image-container img {
-        height: 35vw;
-        max-width: 95%;
-    }
+
 
     .bio-image-container img {
         height: 20vw;
@@ -1463,10 +1442,30 @@ ul li {
 
 listings-image-container {
     width: 100%;
+    height: 100%;
     object-fit: contain;
     overflow: hidden;
 }
 
+
+.listings-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.listings-two-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.listings-image-container-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 /* Contact Page
 -------------------------------------------------- */
@@ -1613,8 +1612,7 @@ main, body {
     color: white !important;
     text-align: center;
     background-color: rgb(59, 88, 89) !important;
-    padding-left: 20%;
-    padding-right: 20%;
+    width: 100%;
 }
 
 .dark-teal-text {

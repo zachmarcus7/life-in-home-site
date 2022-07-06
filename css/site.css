@@ -1434,10 +1434,9 @@ ul li {
 
 .listing-container-inner {
     border-radius: 8px;
-}
-
-.listing-container-inner {
     height: 100%;
+    border:1px solid #dcdcdc;
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
 }
 
 listings-image-container {
@@ -1446,7 +1445,6 @@ listings-image-container {
     object-fit: contain;
     overflow: hidden;
 }
-
 
 .listings-image-container img {
     width: 100%;

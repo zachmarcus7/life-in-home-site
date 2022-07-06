@@ -9,21 +9,12 @@
     --mid-gray-color: rgb(185, 185, 185);
     --dark-teal-color: rgb(82, 123, 125);
     --light-teal-color: rgb(104, 155, 158);
-    
 }
 
 a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
-}
-
-/* Provide sufficient contrast against white background */
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
 }
 
 /* Home Slider
@@ -225,7 +216,6 @@ a {
 .header {
     font-family: 'Prata', serif;
     color: var(--main-color);
-
 }
 
 .header-one {
@@ -592,7 +582,6 @@ p, .button-link {
 
 .top-wave {
     transform: translateY(7%);
-
 }
 
 .bottom-wave {
@@ -823,8 +812,6 @@ p, .button-link {
         padding-left: 10%;
         padding-right: 10%;
     }
-
-
 
     .bio-image-container img {
         height: 20vw;
@@ -1186,7 +1173,6 @@ ul li {
 /* Home Middle Section
 -------------------------------------------------- */
 
-
 .carousel-item {
     margin: 10%;
 }
@@ -1363,7 +1349,6 @@ ul li {
     object-fit: contain;
     overflow: hidden;
 }
-
 
 /* Services Page
 -------------------------------------------------- */
@@ -1543,7 +1528,6 @@ listings-image-container {
 .footer-connect p a i:hover {
     color: var(--mid-gray-color);
 }
-
 
 main, body {
     padding-bottom: 0 !important;

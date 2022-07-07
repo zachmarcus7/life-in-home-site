@@ -193,7 +193,6 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-
 }
 
 h1, h2, h3 {
@@ -323,7 +322,7 @@ li::marker {
 .general-container-outer {
     background-color: var(--main-color);
     padding: 10px;
-    border: 1px solid #dcdcdc;
+    border: 1px solid rgb(4, 34, 50);
     box-shadow: 1px 1px 8px 1px #a9a9a9;
 }
 

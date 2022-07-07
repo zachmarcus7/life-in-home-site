@@ -327,6 +327,11 @@ li::marker {
     box-shadow: 1px 1px 8px 1px #a9a9a9;
 }
 
+.general-container-outer-no-shade {
+    background-color: var(--main-color);
+    padding: 10px;
+}
+
 .general-container-inner {
     padding: 10px;
     background:

@@ -323,6 +323,8 @@ li::marker {
 .general-container-outer {
     background-color: var(--main-color);
     padding: 10px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 1px 1px 8px 1px #a9a9a9;
 }
 
 .general-container-inner {
@@ -1420,8 +1422,8 @@ ul li {
 .listing-container-inner {
     border-radius: 8px;
     height: 100%;
-    border:1px solid #dcdcdc;
-    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    border: 1px solid #dcdcdc;
+    box-shadow: 1px 1px 8px 1px #a9a9a9;
 }
 
 listings-image-container {

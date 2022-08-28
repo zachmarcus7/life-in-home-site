@@ -64,7 +64,7 @@ a.navbar-brand {
 
 .carousel-two {
     position: absolute;
-    background-image: url('../images/house-two.jpg');
+    background-image: url('../images/customer-0.jpg');
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@ a.navbar-brand {
 
 .carousel-three {
     position: absolute;
-    background-image: url('../images/living-room-19.jpg');
+    background-image: url('../images/house-two.jpg');
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -83,6 +83,26 @@ a.navbar-brand {
 }
 
 .carousel-four {
+    position: absolute;
+    background-image: url('../images/customer-1.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-five {
+    position: absolute;
+    background-image: url('../images/living-room-19.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-six {
     position: absolute;
     background-image: url('../images/house-one.jpg');
     height: 100%;

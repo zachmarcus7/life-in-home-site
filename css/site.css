@@ -1503,7 +1503,11 @@ listings-image-container {
     width: 100% !important;
 }
 
-
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Footer
 -------------------------------------------------- */

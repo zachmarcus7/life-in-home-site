@@ -1473,11 +1473,6 @@ listings-image-container {
     color: var(--mid-gray-color);
 }
 
-.contact-map-container {
-    height: 100%;
-    width: 100%;
-}
-
 .page-contact-title-img {
     position: relative;
     background-image: url('../images/lih-logo.webp');
@@ -1512,16 +1507,11 @@ listings-image-container {
     box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
 }
 
-#map {
-    height: 400px;
+.contact-map-container {
+    height: 100%;
     width: 100%;
-    max-width: 400px;
-}
-
-.map-iframe {
-    height: 400px;
-    width: 100%;
-    max-width: 400px;
+    min-height: 400px;
+    min-width: 400px;
 }
 
 /* Footer

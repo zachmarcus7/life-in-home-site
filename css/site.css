@@ -1480,9 +1480,8 @@ listings-image-container {
 
 .contact-map-container iframe {
     object-fit: contain;
-    height: 100% !important;
     width: 100% !important;
-    min-height: 270px;
+    min-height: 400px;
 }
 
 .page-contact-title-img {

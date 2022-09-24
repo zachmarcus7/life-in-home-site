@@ -1478,11 +1478,6 @@ listings-image-container {
     width: 100%;
 }
 
-.contact-map-container iframe {
-    object-fit: contain;
-    width: 100% !important;
-}
-
 .page-contact-title-img {
     position: relative;
     background-image: url('../images/lih-logo.webp');
@@ -1521,7 +1516,13 @@ listings-image-container {
     height: 400px;
     width: 100%;
     max-width: 400px;
-  }
+}
+
+.map-iframe {
+    height: 400px;
+    width: 100%;
+    max-width: 400px;
+}
 
 /* Footer
 -------------------------------------------------- */

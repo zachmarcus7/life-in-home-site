@@ -452,6 +452,12 @@ li::marker {
     transition: all ease-in 0.7s;
 }
 
+.slight-fade-up {
+    opacity: 0;
+    transform: translateY(5%);
+    transition: all ease-in 0.5s;
+}
+
 .faded {
     opacity: 100;
     transform: translateY(0%);
@@ -1517,8 +1523,7 @@ listings-image-container {
     .contact-map-container {
         max-width: 400px;
     }
-  }
-
+}
 
 /* Footer
 -------------------------------------------------- */

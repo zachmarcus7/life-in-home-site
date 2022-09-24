@@ -1499,6 +1499,12 @@ listings-image-container {
     width: 293px;
 }
 
+.contact-row {
+    width: 100% !important;
+}
+
+
+
 /* Footer
 -------------------------------------------------- */
 

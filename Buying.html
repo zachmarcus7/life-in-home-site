@@ -162,7 +162,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-1 col-1">
 
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-11 col-11 fade-up">
+                <div class="col-lg-6 col-md-6 col-sm-11 col-11 side-fade">
                     <h3>Above And Beyond</h3>
                     <hr />
                     <p>
@@ -308,97 +308,10 @@
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/site.js" asp-append-version="true"></script>
-
-
-    <!-- smooth-scroll compatible with safari -->
-    <script>
-        $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $('#down-arrow').on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 400, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-            } // End if
-        });
-        });
-    </script>
-    <!-- smooth scroll compatible with safari end -->
-
-
-    <!-- script for navbar and scroll fade-in -->
-    <script>
-        
-        /* navbar observer section */
-
-        
-        // variables for keeping track of navbar
-        const home = document.getElementById("home");
-        const navbar = document.getElementById("main-nav");
-
-        // function for changing opacity of nav when toggle is clicked
-        var changeNavOpacity = function () {
-            // if they press the toggler once, the background for the nav gets set while
-            // they stay on that page
-            navbar.style.backgroundColor = "rgb(12, 42, 60)";
-        };
-
-        const navbarOptions = {
-            threshold: 0.8,
-        };
-
-        var navbarObserver = new IntersectionObserver(entries => {
-            navbar.classList.toggle('active', !entries[0].isIntersecting);
-        }, navbarOptions);
-
-        // this is for the intersection observer keeping track of elements
-        navbarObserver.observe(home)
-        navbarObserver.observe(navbar);
-
-        /* navbar observer section end */
-
-        
-
-
-        /* general observer section */
-
-        const generalOptions = {
-
-        };
-
-        const generalObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('faded');
-                    generalObserver.unobserve(entry.target);
-                }
-            });
-        }, generalOptions);
-
-        // observe all required elements at once
-        document.querySelectorAll('.fade-up').forEach(element => {
-            generalObserver.observe(element);
-        });
-
-        /* general observer section end */
-
-    </script>
-
-
+    <script src="js/safar-smoothscroll.js"></script>
+    <script src="js/navbar-observer.js"></script>
+    <script src="js/up-observer.js"></script>
+    <script src="js/left-observer.js"></script>
     <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
 
 </body>

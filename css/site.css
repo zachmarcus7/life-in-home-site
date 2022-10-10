@@ -17,6 +17,38 @@ a.navbar-brand {
     word-break: break-all;
 }
 
+/* Fade Ins
+-------------------------------------------------- */
+
+.fade-up { /*start*/
+    opacity: 0;
+    transform: translateY(25%);
+    transition: all ease-in 0.7s;
+}
+
+
+.slight-fade-up { /*start*/
+    opacity: 0;
+    transform: translateY(5%);
+    transition: all ease-in 0.5s;
+}
+
+.faded { /*end*/
+    opacity: 100;
+    transform: translateY(0%);
+}
+
+.side-fade { /*start*/
+    opacity: 0;
+    transform: translateX(-25%);
+    transition: all ease-in 0.7s;
+}
+
+.side-faded { /*end*/
+    opacity: 100;
+    transform: translateX(0%);
+}
+
 /* Home Slider
 -------------------------------------------------- */
 #carouselExampleIndicators {
@@ -444,23 +476,6 @@ li::marker {
 
 .general-button p {
     margin-bottom: 0 !important;
-}
-
-.fade-up {
-    opacity: 0;
-    transform: translateY(25%);
-    transition: all ease-in 0.7s;
-}
-
-.slight-fade-up {
-    opacity: 0;
-    transform: translateY(5%);
-    transition: all ease-in 0.5s;
-}
-
-.faded {
-    opacity: 100;
-    transform: translateY(0%);
 }
 
 .no-padding {

@@ -22,8 +22,8 @@ a.navbar-brand {
 
 .fade-up { /*start*/
     opacity: 0;
-    transform: translateY(10%);
-    transition: all ease-in 0.7s;
+    transform: translateY(15%);
+    transition: all ease-in 0.5s;
 }
 
 .slight-fade-up { /*start*/
@@ -40,7 +40,7 @@ a.navbar-brand {
 .side-fade { /*start*/
     opacity: 0;
     transform: translateX(-15%);
-    transition: all ease-in 0.7s;
+    transition: all ease-in 0.5s;
 }
 
 .side-faded { /*end*/

@@ -346,6 +346,18 @@ li::marker {
     font-weight: 400;
 }
 
+.fa-quote-left {
+    padding-right: 10px !important;
+}
+
+.fa-star {
+    color: rgb(82, 123, 125) !important;
+}
+
+.fa-quote-right {
+    padding-left: 10px !important;
+}
+
 .general-header {
     color: white;
     font-weight: 400;
@@ -1380,7 +1392,7 @@ ul li {
 -------------------------------------------------- */
 
 .services-item-container {
-    border-left: solid 2px var(--main-color);
+    border-left: solid 2px rgb(82, 123, 125) !important;
     padding-bottom: 5%;
 }
 

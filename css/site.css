@@ -867,21 +867,6 @@ p, .button-link {
 }
 
 @media only screen and (min-width: 1024px) {
-    h1 {
-        font-size: 78px;
-    }
-
-    h2 {
-        font-size: 56px;
-    }
-
-    h6 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 16px;
-    }
 
     .down-arrow {
         font-size: 45px;
@@ -916,86 +901,6 @@ p, .button-link {
     }
 }
 
-@media only screen and (min-width: 1700px) {
-    h1 {
-        font-size: 92px;
-    }
-
-    h2 {
-        font-size: 68px;
-    }
-
-    h6 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 17px;
-    }
-
-    .sub-header-text {
-        font-size: 36px;
-    }
-}
-
-@media only screen and (min-width: 2560px) {
-    h1 {
-        font-size: 140px;
-    }
-
-    h2 {
-        font-size: 130px;
-    }
-
-    h3 {
-        font-size: 56px;
-    }
-
-    h6 {
-        font-size: 50px;
-    }
-
-    p {
-        font-size: 40px;
-    }
-
-    .banner-container, .top-container {
-        width: 90%;
-    }
-
-    .down-arrow {
-        font-size: 60px;
-    }
-
-    .button-link {
-        padding: 5px 15px 5px 15px;
-    }
-
-    .mobile-container {
-        padding-top: 20%;
-    }
-
-    .about-container {
-        padding-bottom: 15%;
-    }
-
-    .project-single-container {
-        padding-bottom: 9% !important;
-    }
-
-    .carousel-indicators li {
-        width: 5px;
-        height: 5px;
-    }
-
-    .listing-image-container img {
-        max-height: 650px;
-    }
-
-    .about-lower {
-        height: 100%;
-    }
-}
 
 /* Animations
 -------------------------------------------------- */

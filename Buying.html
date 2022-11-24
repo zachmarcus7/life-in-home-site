@@ -16,199 +16,201 @@
     </head>
 <body data-spy="scroll" data-target=".main-nav">
 
+    <header class="h-50" id="home">
+        <nav class="navbar navbar-expand-lg fixed-top main-nav nav-fade-in" id="main-nav">
+            <div class="nav-logo-container">
+                <a class="navbar-brand" href="/">
+                    <img src="images/lih-logo-nav.svg" />
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="changeNavOpacity()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-<header class="h-50" id="home">
-    <nav class="navbar navbar-expand-lg fixed-top main-nav nav-fade-in" id="main-nav">
-        <div class="nav-logo-container">
-            <a class="navbar-brand" href="/">
-                <img src="images/lih-logo-nav.svg" />
-            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link sub-header" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sub-header" href="/Selling">Selling</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sub-header nav-active" href="/Buying">Buying</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sub-header" href="/Listings">Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sub-header" href="/About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sub-header" href="/Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="buying-header-img h-50">
+            <div class="banner-container text-center">
+                <h2 class="shadow-behind-text">Finding Your New Home</h2>
+            </div>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="changeNavOpacity()">
-            <i class="fa-solid fa-bars"></i>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link sub-header" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link sub-header" href="/Selling">Selling</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link sub-header nav-active" href="/Buying">Buying</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link sub-header" href="/Listings">Listings</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link sub-header" href="/About">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link sub-header" href="/Contact">Contact</a>
-                </li>
-            </ul>
+    </header>
+
+    <!-- intro -->
+    <div id="about" class="about-container">
+        <div class="buffer">
+
         </div>
-    </nav>
+        <div class="about-header-container text-left pt-5">
 
-    <div class="buying-header-img h-50">
-        <div class="banner-container text-center">
-            <h2 class="shadow-behind-text">Finding Your New Home</h2>
-        </div>
-    </div>
+            <div class="container">
 
-</header>
-
-
-<!-- intro -->
-<div id="about" class="about-container">
-    <div class="buffer">
-
-    </div>
-    <div class="about-header-container text-left pt-5">
-
-        <div class="row about-text">
-            <div class="col-lg-4 col-md-5 col-sm-12 col-12 pb-1">
-                <div class="fade-up">
-                    <div class="general-container-outer">
-                        <div class="general-container-inner">
-                            <h3 class="about-header" id="second-header">What to Know When Starting the Search for your New Home</h3>
-                            <br />
-                            <br />
+                <div class="row about-text">
+                    <div class="col-lg-4 col-md-5 col-sm-12 col-12 pb-1">
+                        <div class="fade-up">
+                            <div class="general-container-outer">
+                                <div class="general-container-inner">
+                                    <h3 class="about-header" id="second-header">What to Know When Starting the Search for your New Home</h3>
+                                    <br />
+                                    <br />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-7 col-sm-12 col-12">
-                <h6 class="header pt-4">
-                    When you start your search for a new home, an important first step is to realize what your main objectives are.
-                </h6>
-                <p class="description-text">
-                    What kind of home are you looking for? What's motivating you to make a move?
-                </p>
-                <p class="description-text">
-                    With the Life in Home Team, we'll start off by figuring out the answers to these questions together. We'll help figure out what kind of home we should start searching for, and how we can best fulfill your end goals.
-                </p>
-                <a class="general-button" href="#offset-four" id="down-arrow">
-                    <p>GET STARTED</p>
-                </a>
-
-                <!-- button target -->
-                <div class="general-offset" id="offset-four">
-
-                </div>
-
-                <br />
-            </div>
-        </div>
-
-    </div>
-</div>
-<!-- intro end-->
-
-
-<!-- top wave-->
-<div class="wave move-down-two">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-203.72 -57.88 1440.01 128.42" preserveAspectRatio="none">
-        <path fill="#7BB7BA" fill-opacity="1" d="M -203.716 -57.885 L -143.716 -57.885 C -83.716 -57.885 36.284 -57.885 156.284 -41.885 C 276.284 -25.885 396.284 6.115 516.284 22.115 C 636.284 38.115 756.284 38.115 876.284 27.415 C 996.284 17.115 1116.284 -4.885 1176.284 -15.185 L 1236.284 -25.885 L 1236.284 70.115 L 1176.284 70.115 C 1116.284 70.115 996.284 70.115 876.284 70.115 C 756.284 70.115 636.284 70.115 516.284 70.115 C 396.284 70.115 276.284 70.115 156.284 70.115 C 36.284 70.115 -83.716 70.115 -143.716 70.115 L -203.716 70.115 L -203.716 -57.885 Z"/>
-        <path fill=" #689b9e" fill-opacity="1" d="M -203.723 6.535 L -143.723 1.235 C -83.723 -4.465 36.277 -14.465 156.277 -4.165 C 276.277 6.535 396.277 38.535 516.277 54.535 C 636.277 70.535 756.277 70.535 876.277 54.535 C 996.277 38.535 1116.277 6.535 1176.277 -9.465 L 1236.277 -25.465 L 1236.277 70.535 L 1176.277 70.535 C 1116.277 70.535 996.277 70.535 876.277 70.535 C 756.277 70.535 636.277 70.535 516.277 70.535 C 396.277 70.535 276.277 70.535 156.277 70.535 C 36.277 70.535 -83.723 70.535 -143.723 70.535 L -203.723 70.535 L -203.723 6.535 Z"/>
-        </svg>
-</div>
-<!-- top wave end -->
-
-<!-- buying cards -->
-<div id="about" class="about-header-container container-fluid light-teal-background pt-5">
-    <div class="about-header-container text-left">
-
-        <div class="row about-text">
-            <div class="col-lg-4 col-md-5 col-sm-12 col-12">
-                <h3 class="about-header" id="second-header">Finding Your New Home With Our Team</h3>
-                <br />
-                <br />
-            </div>
-
-            <div class="col-lg-8 col-md-7 col-sm-12 col-12 services-item-container">
-                <div class="about-stats-container fade-up">
-                    <h4 class="fancy-text white-text text-left">Figuring Out Your Ideal Home</h4>
-                    <hr />
-                    <p class="description-text-four text-left">Once your ideal home is determined, I will stay committed to finding it. Viewings will be scheduled regularly, where I will accompany you and offer advice on the current property. During this time, I will also present an analysis on current market trends, and whether or not a property you're interested is a worthwhile investment.</p>
-                </div>
-            </div>
-
-            <br />
-            <div class="col-1"></div>
-        </div>
-        <div class="row about-text">
-            <div class="col-lg-4 col-md-5 col-sm-12 col-12">
-            </div>
-            <div class="col-lg-8 col-md-7 col-sm-12 col-12 services-item-container">
-                <div class="about-stats-container fade-up">
-                    <h4 class="fancy-text white-text text-left">Negotiating Your Best Deal</h4>
-                    <hr />
-                    <p class="description-text-four">Once a home is found that fits your requirements, I will actively negotiate to get you the best deal. Using decades of experience, I'll ensure contracts and transaction documents are precise and up-to-date. Along with contract expertise, I will also give referrals for Portland's best lenders, appraisers, and inspectors to guarantee you're getting the best possible deal for the home you want.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-<!-- buying cards end-->
-<!-- about mid-->
-<div class="about-mid-one">
-    <div class="row h-50">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-12 about-mid-left-container">
-            <div class="about-mid-left row">
-                <div class="col-lg-4 col-md-4 col-sm-1 col-1">
-
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-11 col-11 side-fade">
-                    <h3>Above And Beyond</h3>
-                    <hr />
-                    <p>
-                        I will keep a constant lookout for prospective homes that align with your goals, ensuring that the homes I bring to your attention are ones that you'd be interested in while also being worth your time.
-                    </p>
-
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-0 col-0">
-
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-7 col-md-7 col-sm-12 col-12 buying-mid-right-container">
-            <div class="buying-mid-right">
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-- about mid end -->
-<!-- get in touch section -->
-<div class="service-third-section">
-    <div id="about" class="white-background container-fluid mobile-container">
-        <div class="about-header-container text-center">
-
-            <div class="services-container">
-                <div class="row about-text">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                        <h4 class="text-center header">Get In Touch With Us</h4>
-                    </div>
-                    <div class="col-lg-3 col-md-12 col-sm-0 col-0">
+                    <div class="col-lg-8 col-md-7 col-sm-12 col-12">
+                        <h6 class="header pt-4">
+                            When you start your search for a new home, an important first step is to realize what your main objectives are.
+                        </h6>
+                        <p class="description-text">
+                            What kind of home are you looking for? What's motivating you to make a move?
+                        </p>
+                        <p class="description-text">
+                            With the Life in Home Team, we'll start off by figuring out the answers to these questions together. We'll help figure out what kind of home we should start searching for, and how we can best fulfill your end goals.
+                        </p>
+                        <a class="general-button" href="#offset-four" id="down-arrow">
+                            <p>GET STARTED</p>
+                        </a>
+    
+                        <!-- button target -->
+                        <div class="general-offset" id="offset-four">
+    
+                        </div>
+    
+                        <br />
                     </div>
                 </div>
-                <br />
-                <div>
-                    <p class="description-text">If you're curious about the process of selling your home or buying a new one, or if you just have a few general questions, please feel free to reach out. We're more than happy to provide any information to get you started in the right direction of finding your new home.</p>
-                    <p class="description-text"></p>
-                </div>
+
             </div>
-            <br />
-            <br />
+
         </div>
     </div>
-</div>
-<!-- get in touch end -->
+    <!-- intro end-->
+
+    <!-- top wave-->
+    <div class="wave move-down-two">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-203.72 -57.88 1440.01 128.42" preserveAspectRatio="none">
+            <path fill="#7BB7BA" fill-opacity="1" d="M -203.716 -57.885 L -143.716 -57.885 C -83.716 -57.885 36.284 -57.885 156.284 -41.885 C 276.284 -25.885 396.284 6.115 516.284 22.115 C 636.284 38.115 756.284 38.115 876.284 27.415 C 996.284 17.115 1116.284 -4.885 1176.284 -15.185 L 1236.284 -25.885 L 1236.284 70.115 L 1176.284 70.115 C 1116.284 70.115 996.284 70.115 876.284 70.115 C 756.284 70.115 636.284 70.115 516.284 70.115 C 396.284 70.115 276.284 70.115 156.284 70.115 C 36.284 70.115 -83.716 70.115 -143.716 70.115 L -203.716 70.115 L -203.716 -57.885 Z"/>
+            <path fill=" #689b9e" fill-opacity="1" d="M -203.723 6.535 L -143.723 1.235 C -83.723 -4.465 36.277 -14.465 156.277 -4.165 C 276.277 6.535 396.277 38.535 516.277 54.535 C 636.277 70.535 756.277 70.535 876.277 54.535 C 996.277 38.535 1116.277 6.535 1176.277 -9.465 L 1236.277 -25.465 L 1236.277 70.535 L 1176.277 70.535 C 1116.277 70.535 996.277 70.535 876.277 70.535 C 756.277 70.535 636.277 70.535 516.277 70.535 C 396.277 70.535 276.277 70.535 156.277 70.535 C 36.277 70.535 -83.723 70.535 -143.723 70.535 L -203.723 70.535 L -203.723 6.535 Z"/>
+            </svg>
+    </div>
+    <!-- top wave end -->
+
+    <!-- buying cards -->
+    <div id="about" class="about-header-container container-fluid light-teal-background pt-5">
+        <div class="about-header-container text-left">
+
+            <div class="row about-text">
+                <div class="col-lg-4 col-md-5 col-sm-12 col-12">
+                    <h3 class="about-header" id="second-header">Finding Your New Home With Our Team</h3>
+                    <br />
+                    <br />
+                </div>
+
+                <div class="col-lg-8 col-md-7 col-sm-12 col-12 services-item-container">
+                    <div class="about-stats-container fade-up">
+                        <h4 class="fancy-text white-text text-left">Figuring Out Your Ideal Home</h4>
+                        <hr />
+                        <p class="description-text-four text-left">Once your ideal home is determined, I will stay committed to finding it. Viewings will be scheduled regularly, where I will accompany you and offer advice on the current property. During this time, I will also present an analysis on current market trends, and whether or not a property you're interested is a worthwhile investment.</p>
+                    </div>
+                </div>
+
+                <br />
+                <div class="col-1"></div>
+            </div>
+            <div class="row about-text">
+                <div class="col-lg-4 col-md-5 col-sm-12 col-12">
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-12 col-12 services-item-container">
+                    <div class="about-stats-container fade-up">
+                        <h4 class="fancy-text white-text text-left">Negotiating Your Best Deal</h4>
+                        <hr />
+                        <p class="description-text-four">Once a home is found that fits your requirements, I will actively negotiate to get you the best deal. Using decades of experience, I'll ensure contracts and transaction documents are precise and up-to-date. Along with contract expertise, I will also give referrals for Portland's best lenders, appraisers, and inspectors to guarantee you're getting the best possible deal for the home you want.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- buying cards end-->
+
+    <!-- about mid-->
+    <div class="about-mid-one">
+        <div class="row h-50">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-12 about-mid-left-container">
+                <div class="about-mid-left row">
+                    <div class="col-lg-4 col-md-4 col-sm-1 col-1">
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-11 col-11 side-fade">
+                        <h3>Above And Beyond</h3>
+                        <hr />
+                        <p>
+                            I will keep a constant lookout for prospective homes that align with your goals, ensuring that the homes I bring to your attention are ones that you'd be interested in while also being worth your time.
+                        </p>
+
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-0 col-0">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12 col-12 buying-mid-right-container">
+                <div class="buying-mid-right">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about mid end -->
+
+    <!-- get in touch section -->
+    <div class="service-third-section">
+        <div id="about" class="white-background container-fluid mobile-container">
+            <div class="about-header-container text-center">
+
+                <div class="services-container container">
+                    <div class="row about-text">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <h4 class="text-center header">Get In Touch With Us</h4>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-0 col-0">
+                        </div>
+                    </div>
+                    <br />
+                    <div>
+                        <p class="description-text">If you're curious about the process of selling your home or buying a new one, or if you just have a few general questions, please feel free to reach out. We're more than happy to provide any information to get you started in the right direction of finding your new home.</p>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+        </div>
+    </div>
+    <!-- get in touch end -->
 
     <!-- bottom buttons -->
     <div class="about-final pt-5">
@@ -241,9 +243,7 @@
     </div>
     <!-- bottom buttons end -->
 
-
     <!-- footer -->
-
     <div id="footer" class="footer-container mobile-container">
         <div class="footer-header-container container-fluid row">
             <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
@@ -302,7 +302,6 @@
         </div>
         <br />
     </div>
-
     <!-- footer end -->
 
     <script src="lib/jquery/dist/jquery.min.js"></script>

@@ -660,7 +660,7 @@ p, .button-link {
     }
 
     .bio-image-container img {
-        height: 60vw;
+        height: 60vh;
     }
 
 }
@@ -724,7 +724,7 @@ p, .button-link {
     }
 
     .bio-image-container img {
-        height: 35vw;
+        height: 35vh;
     }
 
     .top-wave {
@@ -789,7 +789,7 @@ p, .button-link {
     }
 
     .bio-image-container img {
-        height: 30vw;
+        height: 30vh;
     }
 
     .about-lower {
@@ -852,7 +852,7 @@ p, .button-link {
     }
 
     .bio-image-container img {
-        height: 20vw;
+        height: 20vh;
     }
 
     .about-lower {
@@ -867,21 +867,6 @@ p, .button-link {
 }
 
 @media only screen and (min-width: 1024px) {
-    h1 {
-        font-size: 78px;
-    }
-
-    h2 {
-        font-size: 56px;
-    }
-
-    h6 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 16px;
-    }
 
     .down-arrow {
         font-size: 45px;
@@ -916,6 +901,7 @@ p, .button-link {
     }
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 1700px) {
     h1 {
         font-size: 92px;
@@ -935,6 +921,10 @@ p, .button-link {
 
     .sub-header-text {
         font-size: 36px;
+    }
+
+    .bio-image-container img {
+        height: 30vh;
     }
 }
 
@@ -996,6 +986,8 @@ p, .button-link {
         height: 100%;
     }
 }
+=======
+>>>>>>> b03ac4329cb7d588463baf125a0d34261e90e409
 
 /* Animations
 -------------------------------------------------- */

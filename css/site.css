@@ -660,7 +660,7 @@ p, .button-link {
     }
 
     .bio-image-container img {
-        height: 60vh;
+        height: 60vw;
     }
 
 }
@@ -724,7 +724,7 @@ p, .button-link {
     }
 
     .bio-image-container img {
-        height: 35vh;
+        height: 35vw;
     }
 
     .top-wave {
@@ -789,7 +789,7 @@ p, .button-link {
     }
 
     .bio-image-container img {
-        height: 30vh;
+        height: 30vw;
     }
 
     .about-lower {
@@ -852,7 +852,7 @@ p, .button-link {
     }
 
     .bio-image-container img {
-        height: 20vh;
+        height: 20vw;
     }
 
     .about-lower {
@@ -935,10 +935,6 @@ p, .button-link {
 
     .sub-header-text {
         font-size: 36px;
-    }
-
-    .bio-image-container img {
-        height: 30vh;
     }
 }
 

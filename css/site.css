@@ -796,7 +796,6 @@ p, .button-link {
         height: 50vw;
     }
 
-
 }
 
 @media only screen and (min-width: 900px) {
@@ -852,7 +851,7 @@ p, .button-link {
     }
 
     .bio-image-container img {
-        height: 20vh;
+        height: 40vh;
     }
 
     .about-lower {
@@ -923,7 +922,7 @@ p, .button-link {
     }
 
     .bio-image-container img {
-        height: 30vh;
+        height: 35vh;
     }
 }
 

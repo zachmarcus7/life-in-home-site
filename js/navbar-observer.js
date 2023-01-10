@@ -6,7 +6,7 @@ const navbar = document.getElementById("main-nav");
 var changeNavOpacity = function () {
     // if they press the toggler once, the background for the nav gets set while
     // they stay on that page
-    navbar.style.backgroundColor = "rgb(12, 42, 60)";
+    navbar.style.backgroundColor = "rgb(39, 72, 92)";
 };
 
 const navbarOptions = {

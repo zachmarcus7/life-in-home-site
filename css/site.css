@@ -247,6 +247,7 @@ a {
 .header {
     font-family: 'Prata', serif;
     color: var(--main-color);
+    font-weight: 500 !important;
 }
 
 .header-one {

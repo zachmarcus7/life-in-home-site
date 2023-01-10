@@ -593,8 +593,8 @@ p, .button-link {
 }
 
 .nav-logo-container img {
-    height: 51px;
-    width: 154px;
+    height: 30px;
+    width: 120px;
 }
 
 .carousel-indicators li {
@@ -710,8 +710,8 @@ p, .button-link {
     }
 
     .nav-logo-container img {
-        height: 56px;
-        width: 169px;
+        height: 35px;
+        width: 125px;
     }
 
     .listing-container {
@@ -784,11 +784,6 @@ p, .button-link {
         text-shadow: 1px 1px black;
     }
 
-    .nav-logo-container img {
-        height: 61px;
-        width: 185px;
-    }
-
     .bio-image-container img {
         height: 30vh;
     }
@@ -837,8 +832,8 @@ p, .button-link {
     }
 
     .nav-logo-container img {
-        height: 72px;
-        width: 230px;
+        height: 38px;
+        width: 145px;
     }
 
     .listing-container {
@@ -1005,7 +1000,8 @@ p, .button-link {
 }
 
 .main-nav.active {
-    padding-top: 1%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     color: white;
     z-index: 99;
     transition: all 0.8s;

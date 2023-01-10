@@ -452,11 +452,11 @@ li::marker {
     position: absolute;
     width: 100%;
     background-image: url('../images/straight-gray.svg');
-    height: 150px;
+    height: 260px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
 }
 
 .light-teal-background {

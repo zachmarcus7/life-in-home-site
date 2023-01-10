@@ -1489,6 +1489,7 @@ ul li {
     width: 100%;
     background-color: var(--main-color);
     color: white !important;
+    padding-top: 2.5rem;
 }
 
 .footer-header-container {
@@ -1505,6 +1506,7 @@ ul li {
 .footer-logo-container img {
     height: 80px;
     width: 160px;
+    margin-bottom: 1.5rem !important;
 }
 
 .footer-connect p a i {

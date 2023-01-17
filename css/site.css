@@ -1421,6 +1421,17 @@ ul li {
 /* Contact Page
 -------------------------------------------------- */
 
+.contact-description-container-mid {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-description-container-mid p {
+    position: relative;
+    max-width: 600px;
+    padding-top: 10px;
+}
+
 .page-contact-header h3,
 .page-contact-header h5,
 .page-contact-header p {

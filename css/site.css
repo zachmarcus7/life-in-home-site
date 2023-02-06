@@ -23,13 +23,13 @@ a.navbar-brand {
 .fade-up { /*start*/
     opacity: 0;
     transform: translateY(15%);
-    transition: all ease-in 0.5s;
+    transition: all ease-in 0.45s;
 }
 
 .slight-fade-up { /*start*/
     opacity: 0;
     transform: translateY(5%);
-    transition: all ease-in 0.5s;
+    transition: all ease-in 0.45s;
 }
 
 .faded { /*end*/
@@ -40,7 +40,7 @@ a.navbar-brand {
 .side-fade { /*start*/
     opacity: 0;
     transform: translateX(-15%);
-    transition: all ease-in 0.5s;
+    transition: all ease-in 0.45s;
 }
 
 .side-faded { /*end*/
@@ -452,7 +452,7 @@ li::marker {
     position: absolute;
     width: 100%;
     background-image: url('../images/straight-gray.svg');
-    height: 260px;
+    height: 240px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -476,10 +476,12 @@ li::marker {
     color: white !important;
     text-align: center;
     transition: all 0.4s;
+    box-shadow:  0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
 }
 
 .general-button:hover {
-    background-color: rgb(59, 88, 89);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
 }
 
 .general-button:active {
@@ -1270,12 +1272,14 @@ ul li {
     background-color: var(--light-teal-color);
     text-align: center;
     transition: all 0.4s;
-    border: 5px white solid;
     border-radius: 8px;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+    cursor: pointer;
 }
 
 .about-final-button:hover {
-    background-color: rgb(59, 88, 89);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
 }
 
 .about-final-button:active {
@@ -1284,6 +1288,44 @@ ul li {
 
 .about-final-button p {
     margin-bottom: 0 !important;
+}
+
+@media (max-width: 576px) {
+    .about-final-button {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .about-final-button {
+        margin: 5px;
+    }
+}
+
+.about-final-button.top {
+    padding: 12px 24px;
+}
+
+@media (min-width: 1060px) {
+    .about-final-button.top {
+        min-height: 199.2px;
+    }
+}
+
+@media (min-width: 1070px) {
+    .about-final-button.top {
+        min-height: fit-content;
+    }
+}
+
+
+.get-in-touch-desc {
+    display: flex;
+    justify-content: center;
+}
+
+.get-in-touch-desc p {
+    max-width: 650px;
 }
 
 /* About Page
@@ -1600,4 +1642,9 @@ main, body {
 
 .dark-teal-text {
     color: rgb(59, 88, 89) !important;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
 }

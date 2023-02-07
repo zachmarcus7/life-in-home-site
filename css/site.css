@@ -261,7 +261,7 @@ a {
 }
 
 .white-text {
-    color: white;
+    color: white !important;
 }
 
 .teal-text {
@@ -1215,6 +1215,18 @@ ul li {
 
 }
 
+.reviews-arrow {
+    color: white !important;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.reviews-arrow:hover {
+    opacity: 50%;
+}
+
 .carousel-indicators li {
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
@@ -1272,7 +1284,7 @@ ul li {
     background-color: var(--light-teal-color);
     text-align: center;
     transition: all 0.4s;
-    border-radius: 8px;
+    border-radius: 0.3rem;
     box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
     cursor: pointer;
 }
@@ -1312,12 +1324,11 @@ ul li {
     }
 }
 
-@media (min-width: 1070px) {
+@media (min-width: 1075px) {
     .about-final-button.top {
         min-height: fit-content;
     }
 }
-
 
 .get-in-touch-desc {
     display: flex;

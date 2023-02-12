@@ -451,12 +451,12 @@ li::marker {
 .buffer {
     position: absolute;
     width: 100%;
-    background-image: url('../images/straight-gray.svg');
-    height: 240px;
+    height: 220px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background: linear-gradient(180deg, rgb(250, 250, 250), transparent);
 }
 
 .light-teal-background {
@@ -526,6 +526,10 @@ li::marker {
 
 .move-up {
     transform: translateY(-9%);
+}
+
+.pt-6 {
+    padding-top: 5rem;
 }
 
 /* Responsive Sizing
@@ -1471,6 +1475,72 @@ ul li {
     object-fit: contain;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+.small-listing-container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3rem;
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+    transition: 0.4s;
+}
+
+.small-listing-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+}
+
+.small-listing-image {
+    position: relative;
+}
+
+.small-listing-image img {
+    max-height: 250px;
+    width: 100%;
+    border-top-right-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+}
+
+.small-listing-address {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+.small-listing-address h4 {
+    color: white;
+}
+
+.listing-description {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+}
+
+.listing-description-top {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listing-description-top h6 {
+    font-family: 'Prata', serif;
+    color: var(--main-color);
+    font-weight: 500 !important;
+    font-size: 14px;
+}
+
+.listing-description-mid p {
+    color: rgb(80, 80, 80);
+    font-size: 13px;
+}
+
 /* Contact Page
 -------------------------------------------------- */
 
@@ -1659,3 +1729,146 @@ main, body {
     width: 600px;
     height: 300px;
 }
+
+/* Invididual listing page stylings
+-------------------------------------------------- */
+
+.small-listing-image h4 {
+    font-family: 'Prata', serif !important;
+}
+
+.grey-gradient {
+    background: linear-gradient(180deg, rgba(0,0,0,0.1), transparent);
+}
+
+.push-apart h6 {
+    color: #AAAAAA;
+}
+
+.individual-listing-header h5 {
+    background: #27485C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 0.3rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .third-col {
+        padding-left: 0px !important;
+    }
+
+    .individual-listing-header h3,
+    .individual-listing-header h5 {
+        text-align: center;
+    }
+
+    .push-apart {
+        text-align: center;
+    }
+
+    .map-container-outer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .individual-listing-bottom-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .individual-listing-bottom-desc {
+        text-align: center;
+    }
+
+    .individual-listing-logo-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .individual-listing-header {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .icon-and-words.middle {
+      justify-content: center;
+    }
+  
+    .icon-and-words.fourth {
+      justify-content: flex-end;
+    }
+
+    .individual-listing-bottom-buttons {
+        display: flex;
+    }
+
+  }
+
+  .individual-listing-header {
+    padding-bottom: 0.4rem;
+  }
+  
+  .icon-and-words {
+    display: flex;
+    color: rgb(170, 170, 170);
+  }
+  
+  .icon-and-words p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+    margin-bottom: 2px !important;
+  }
+  
+  .individual-listing-right {
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+    border-radius: 0.3rem;
+    padding: 1.5rem;
+  }
+
+  .individual-listing-header h5,
+  .individual-listing-right h5 {
+    font-family: 'Prata', serif !important;
+    font-weight: 500 !important;
+  }
+
+  .individual-listing-right .icon-and-words {
+    padding-bottom: 0.7rem;
+  }
+
+  .material-symbols-outlined {
+    font-weight: 200 !important;
+  }
+
+  .space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 992px) {
+    .border-right-lg {
+        border-right: 1px solid rgba(0,0,0,0.12);
+    }
+  }
+
+  .swiper-button-prev.individual-listing-swiper,
+  .swiper-button-next.individual-listing-swiper {
+    background-color: rgba(0,0,0,0.4);
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+  }
+
+  .swiper-button-next.individual-listing-swiper:after, 
+  .swiper-button-prev.individual-listing-swiper:after {
+    font-size: unset !important;
+  }

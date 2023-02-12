@@ -6,13 +6,14 @@
     <meta name="Description" content="We're a locally owned Realtor brokerage based out of Portland, OR. With over 35 years of experience, we promise to make your transition as easy as possible.">
     <title>Life In Home Team - Portland Oregon Realtors</title>
     
-    <!-- open graph -->
+    <!-- open graph start -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Life In Home Team - Portland Oregon Realtors" />
     <meta property="og:description" content="We're a locally owned Realtor brokerage based out of Portland, OR. With over 35 years of experience, we promise to make your transition as easy as possible" />
     <meta property="og:url" content="https://www.lifeinhometeam.com/" />
     <meta property="og:site_name" content="Life In Home Team Realty" />
+    <!-- open graph end -->
     
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/site.css" />
@@ -106,8 +107,9 @@
     <!-- about -->
     <div id="about">
         <div class=" main-page-container">
-            <div class="buffer">
-            </div>
+
+            <div class="buffer"></div>
+
             <div class="about-header-container container-fluid pt-5">
 
                 <div class="container">
@@ -180,7 +182,7 @@
         </div>
         <!-- top wave end -->
 
-        <!-- about stats -->
+        <!-- recent listings start -->
         <div class="about-text about-stats-container text-center d-flex justify-content-center container-fluid">
 
             <div class="container">
@@ -269,7 +271,7 @@
                 
             </div>
         </div>
-        <!-- about stats end -->
+        <!-- recent listings end -->
 
         <!-- about mid-->
         <div class="about-mid-one">
@@ -550,82 +552,7 @@
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/swiper/swiper-bundle.min.js"></script>
     <script src="lib/swiper/effect-carousel.esm.js"></script>
-
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // pass EffectCarousel module to modules
-            modules: [function CarouselSlider({ swiper, on }) {
-                on('beforeInit', () => {
-                    if (swiper.params.effect !== 'carousel') return;
-                    swiper.classNames.push(`${swiper.params.containerModifierClass}carousel`);
-                    const overwriteParams = {
-                    watchSlidesProgress: true,
-                    centeredSlides: true,
-                    };
-
-                    Object.assign(swiper.params, overwriteParams);
-                    Object.assign(swiper.originalParams, overwriteParams);
-                });
-                on('progress', () => {
-                    if (swiper.params.effect !== 'carousel') return;
-                    const scaleStep = 0.2;
-                    const zIndexMax = swiper.slides.length;
-                    for (let i = 0; i < swiper.slides.length; i += 1) {
-                    const slideEl = swiper.slides[i];
-                    const slideProgress = swiper.slides[i].progress;
-                    const absProgress = Math.abs(slideProgress);
-                    let modify = 1;
-                    if (absProgress > 1) {
-                        modify = (absProgress - 1) * 0.3 + 1;
-                    }
-                    const opacityEls = slideEl.querySelectorAll(
-                        '.swiper-carousel-animate-opacity',
-                    );
-                    const translate = `${slideProgress * modify * 50}%`;
-                    const scale = 1 - absProgress * scaleStep;
-                    const zIndex = zIndexMax - Math.abs(Math.round(slideProgress));
-                    slideEl.style.transform = `translateX(${translate}) scale(${scale})`;
-                    slideEl.style.zIndex = zIndex;
-                    if (absProgress > 3) {
-                        slideEl.style.opacity = 0;
-                    } else {
-                        slideEl.style.opacity = 1;
-                    }
-
-                    opacityEls.forEach((opacityEl) => {
-                        opacityEl.style.opacity = 1 - absProgress / 3;
-                    });
-                    }
-                });
-
-                on('setTransition', (s, duration) => {
-                    if (swiper.params.effect !== 'carousel') return;
-                    for (let i = 0; i < swiper.slides.length; i += 1) {
-                    const slideEl = swiper.slides[i];
-                    const opacityEls = slideEl.querySelectorAll(
-                        '.swiper-carousel-animate-opacity',
-                    );
-                    slideEl.style.transitionDuration = `${duration}ms`;
-                    opacityEls.forEach((opacityEl) => {
-                        opacityEl.style.transitionDuration = `${duration}ms`;
-                    });
-                    }
-                });
-            }],
-            effect: 'carousel',
-            grabCursor: true,
-            loop: true,
-            slidesPerView: 'auto',
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-            }
-        });
-    </script>
-
+    <script src="js/effect-carousel.js"></script>
     <script src="js/safar-smoothscroll.js"></script>
     <script src="js/navbar-observer.js"></script>
     <script src="js/up-observer.js"></script>

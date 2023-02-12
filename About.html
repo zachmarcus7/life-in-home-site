@@ -1,217 +1,232 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Life In Home</title>
-        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/site.css" />
-        <script> </script> <!-- chrome bug fix -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@300&display=swap" rel="stylesheet">
-        <!-- favicon -->
-        <link rel="icon" type="image/webp" href="images/mini-logo.webp">
-    </head>
 
-    <body data-spy="scroll" data-target=".main-nav">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life In Home</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script> </script> <!-- chrome bug fix -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/webp" href="images/mini-logo.webp">
+</head>
 
-        <header class="h-50" id="home">
-            <nav class="navbar navbar-expand-lg fixed-top main-nav nav-fade-in" id="main-nav">
-                <div class="nav-logo-container">
-                    <a class="navbar-brand" href="/">
-                        <img src="images/lih-logo-nav.svg" />
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="changeNavOpacity()">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+<body data-spy="scroll" data-target=".main-nav">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link sub-header" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sub-header" href="/Selling">Selling</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sub-header" href="/Buying">Buying</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sub-header" href="/Listings">Listings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sub-header nav-active" href="/About">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sub-header" href="/Contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!-- About Header Image -->
-            <div class="page-about-header-img h-50">
-                <div class="banner-container text-center">
-                    <h2 class="shadow-behind-text">Get To Know Us</h2>
-                </div>
+    <header class="h-50" id="home">
+        <nav class="navbar navbar-expand-lg fixed-top main-nav nav-fade-in" id="main-nav">
+            <div class="nav-logo-container">
+                <a class="navbar-brand" href="/">
+                    <img src="images/lih-logo-nav.svg" />
+                </a>
             </div>
-            <!-- About Header Image End -->
-        </header>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                onclick="changeNavOpacity()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-        <!-- About Body-->
-        <div>
-            <div id="about" class="about-container h-100">
-                <div class="buffer"></div>
-                <div class="about-header-container text-left pt-5">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link sub-header" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sub-header" href="/Selling">Selling</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sub-header" href="/Buying">Buying</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sub-header" href="/Listings">Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sub-header nav-active" href="/About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sub-header" href="/Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-                    <div class="container">
-                        <div class="row about-text">
-                            <div class="col-lg-4 col-md-12 col-sm-12 col-12 bio-image-container d-flex justify-content-center pb-3">
-                                <div class="about-img-container">
-                                    <img src="images/main-picture.jpg" class="img-fluid shaded" />
-                                </div>
-                                <br />
-                            </div>
-                            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
-                                <div class="general-container-outer">
-                                    <div class="general-container-inner page-about-header">
-                                        <h3>Nancy Shannon</h3>
-                                        <h5>Licensed Oregon Broker</h5>
-                                    </div>
-                                </div>
-                                <br />
-                                <p class="description-text">
-                                    At this point in my business, I find that many of my clients are homeowners making a lifestyle move - young families growing into their next home, single women enjoying ownership adventures, couples transitioning to new phases in their lives. I enjoy the whole process of helping them sell their current home and then finding the next perfect home.
-                                </p>
-                                <p class="description-text">
-                                    I am a hard-working, committed business owner and Broker. Gratefully, my past clients have voted for me as one of Portland Magazine's "5 Star Realtors" every year since 2012 to 2019. I embrace my role as an advocate for my clients and work diligently to maintain an excellent reputation among my peers and industry affiliates.
-                                    I have always sought careers that put me on the front line helping others. I chose real estate because HOME is one of the most powerful words in any language - and helping people find and enjoy the benefits of their own home builds a better community for all of us.
-                                </p>
-                                <a class="general-button pt-2" href="/Contact">
-                                    <p>GIVE US A CALL</p>
-                                </a>
-                                <br />
-                            </div>
-                        </div>
-                    </div>
-
-                    <br />
-                    <br />
-                    <br />
-
-                </div>
+        <!-- About Header Image -->
+        <div class="page-about-header-img h-50">
+            <div class="banner-container text-center">
+                <h2 class="shadow-behind-text">Get To Know Us</h2>
             </div>
         </div>
-        <!-- About Body End-->
+        <!-- About Header Image End -->
+    </header>
 
-        <!-- top wave-->
-        <div class="wave move-down-two">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-203.72 -57.88 1440.01 128.42" preserveAspectRatio="none">
-                <path fill="#7BB7BA" fill-opacity="1" d="M -203.716 -57.885 L -143.716 -57.885 C -83.716 -57.885 36.284 -57.885 156.284 -41.885 C 276.284 -25.885 396.284 6.115 516.284 22.115 C 636.284 38.115 756.284 38.115 876.284 27.415 C 996.284 17.115 1116.284 -4.885 1176.284 -15.185 L 1236.284 -25.885 L 1236.284 70.115 L 1176.284 70.115 C 1116.284 70.115 996.284 70.115 876.284 70.115 C 756.284 70.115 636.284 70.115 516.284 70.115 C 396.284 70.115 276.284 70.115 156.284 70.115 C 36.284 70.115 -83.716 70.115 -143.716 70.115 L -203.716 70.115 L -203.716 -57.885 Z"/>
-                <path fill=" #689b9e" fill-opacity="1" d="M -203.723 6.535 L -143.723 1.235 C -83.723 -4.465 36.277 -14.465 156.277 -4.165 C 276.277 6.535 396.277 38.535 516.277 54.535 C 636.277 70.535 756.277 70.535 876.277 54.535 C 996.277 38.535 1116.277 6.535 1176.277 -9.465 L 1236.277 -25.465 L 1236.277 70.535 L 1176.277 70.535 C 1116.277 70.535 996.277 70.535 876.277 70.535 C 756.277 70.535 636.277 70.535 516.277 70.535 C 396.277 70.535 276.277 70.535 156.277 70.535 C 36.277 70.535 -83.723 70.535 -143.723 70.535 L -203.723 70.535 L -203.723 6.535 Z"/>
-                </svg>
-        </div>
-        <!-- top wave end -->
-
-        <!-- expectations -->
-        <div class="text-left light-teal-background pb-2 pt-5">
-            <div class="fade-up">
+    <!-- About Body-->
+    <div>
+        <div id="about" class="about-container h-100">
+            <div class="buffer"></div>
+            <div class="about-header-container text-left pt-5">
 
                 <div class="container">
-
-                    <div class="about-text pb-3">
-                        <h2 class="white-text text-center pl-1 pr-1">What You Can Expect From Me</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-2 col-md-2 col-sm-0 col-0">
-                        </div>
-
-                        <div class="col-lg-8 col-md-12 col-sm-12 col-12 m-0">
-                            <div class="d-flex justify-content-center">
-                                <p class="white-text text-center">
-                                    First and foremost, you can expect honesty and integrity on my part. I will always be honest with you, even if it is uncomfortable for me to do so. This way, you receive a truthful and genuine perspective on whichever stage of the process we're in. You can also expect updates from me as often as you want them, whether that be weekly or daily. Lastly, I am a proactive agent with excellent negotiation skills, and I'll work hard to get you the end result you're wanting.
-                                </p>
+                    <div class="row about-text">
+                        <div
+                            class="col-lg-4 col-md-12 col-sm-12 col-12 bio-image-container d-flex justify-content-center pb-3">
+                            <div class="about-img-container">
+                                <img src="images/main-picture.jpg" class="img-fluid shaded" />
                             </div>
+                            <br />
                         </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="general-container-outer">
+                                <div class="general-container-inner page-about-header">
+                                    <h3>Nancy Shannon</h3>
+                                    <h5>Licensed Oregon Broker</h5>
+                                </div>
+                            </div>
+                            <br />
+                            <p class="description-text">
+                                At this point in my business, I find that many of my clients are homeowners making a
+                                lifestyle move - young families growing into their next home, single women enjoying
+                                ownership adventures, couples transitioning to new phases in their lives. I enjoy the
+                                whole process of helping them sell their current home and then finding the next perfect
+                                home.
+                            </p>
+                            <p class="description-text">
+                                I am a hard-working, committed business owner and Broker. Gratefully, my past clients
+                                have voted for me as one of Portland Magazine's "5 Star Realtors" every year since 2012
+                                to 2019. I embrace my role as an advocate for my clients and work diligently to maintain
+                                an excellent reputation among my peers and industry affiliates.
+                                I have always sought careers that put me on the front line helping others. I chose real
+                                estate because HOME is one of the most powerful words in any language - and helping
+                                people find and enjoy the benefits of their own home builds a better community for all
+                                of us.
+                            </p>
+                            <a class="general-button pt-2" href="/Contact">
+                                <p>GIVE US A CALL</p>
+                            </a>
+                            <br />
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="col-lg-2 col-md-2 col-sm-0 col-0">
+                <br />
+                <br />
+                <br />
+
+            </div>
+        </div>
+    </div>
+    <!-- About Body End-->
+
+    <!-- top wave-->
+    <div class="wave move-down-two">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-203.72 -57.88 1440.01 128.42" preserveAspectRatio="none">
+            <path fill="#7BB7BA" fill-opacity="1"
+                d="M -203.716 -57.885 L -143.716 -57.885 C -83.716 -57.885 36.284 -57.885 156.284 -41.885 C 276.284 -25.885 396.284 6.115 516.284 22.115 C 636.284 38.115 756.284 38.115 876.284 27.415 C 996.284 17.115 1116.284 -4.885 1176.284 -15.185 L 1236.284 -25.885 L 1236.284 70.115 L 1176.284 70.115 C 1116.284 70.115 996.284 70.115 876.284 70.115 C 756.284 70.115 636.284 70.115 516.284 70.115 C 396.284 70.115 276.284 70.115 156.284 70.115 C 36.284 70.115 -83.716 70.115 -143.716 70.115 L -203.716 70.115 L -203.716 -57.885 Z" />
+            <path fill=" #689b9e" fill-opacity="1"
+                d="M -203.723 6.535 L -143.723 1.235 C -83.723 -4.465 36.277 -14.465 156.277 -4.165 C 276.277 6.535 396.277 38.535 516.277 54.535 C 636.277 70.535 756.277 70.535 876.277 54.535 C 996.277 38.535 1116.277 6.535 1176.277 -9.465 L 1236.277 -25.465 L 1236.277 70.535 L 1176.277 70.535 C 1116.277 70.535 996.277 70.535 876.277 70.535 C 756.277 70.535 636.277 70.535 516.277 70.535 C 396.277 70.535 276.277 70.535 156.277 70.535 C 36.277 70.535 -83.723 70.535 -143.723 70.535 L -203.723 70.535 L -203.723 6.535 Z" />
+        </svg>
+    </div>
+    <!-- top wave end -->
+
+    <!-- expectations -->
+    <div class="text-left light-teal-background pb-2 pt-5">
+        <div class="fade-up">
+
+            <div class="container">
+
+                <div class="about-text pb-3">
+                    <h2 class="white-text text-center pl-1 pr-1">What You Can Expect From Me</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-0 col-0">
+                    </div>
+
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-12 m-0">
+                        <div class="d-flex justify-content-center">
+                            <p class="white-text text-center">
+                                First and foremost, you can expect honesty and integrity on my part. I will always be
+                                honest with you, even if it is uncomfortable for me to do so. This way, you receive a
+                                truthful and genuine perspective on whichever stage of the process we're in. You can
+                                also expect updates from me as often as you want them, whether that be weekly or daily.
+                                Lastly, I am a proactive agent with excellent negotiation skills, and I'll work hard to
+                                get you the end result you're wanting.
+                            </p>
                         </div>
                     </div>
 
+                    <div class="col-lg-2 col-md-2 col-sm-0 col-0">
+                    </div>
                 </div>
 
             </div>
-            <br />
-            <br />
-            <br />
 
         </div>
-        <!-- expectations end -->
+        <br />
+        <br />
+        <br />
 
-        <!-- footer -->
-        <div id="footer" class="footer-container">
-            <div class="footer-header-container container-fluid row">
-                <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 footer-bottom-left-header align-content-center">
-                    <h3>Contact</h3>
-                    <p>Nancy@LifeInHomeTeam.com</p>
-                    <a href="tel:+1-503-516-9400" class="white-text">
-                        <p class="number-link">503.516.9400</p>
+    </div>
+    <!-- expectations end -->
+
+    <!-- footer -->
+    <div id="footer" class="footer-container mt-5">
+        <div class="footer-header-container container-fluid row">
+            <div class="col-lg-1 col-md-1 col-0"></div>
+            <div class="col-lg-3 col-md-3 col-12 footer-bottom-left-header align-content-center pb-4">
+                <h3>Contact</h3>
+                <p>Nancy@LifeInHomeTeam.com</p>
+                <a href="tel:+1-503-516-9400" class="white-text">
+                    <p class="number-link">503.516.9400</p>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 footer-connect pb-4">
+                <h3>Connect</h3>
+                <p>
+                    <a href="https://www.linkedin.com/in/nancy-shannon-38773a17b">
+                        <i class="fa-brands fa-linkedin footer-fa-brands fa-2x"></i>
                     </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12 footer-connect">
-                    <h3>Connect</h3>
-                    <p>
-                        <a href="https://www.linkedin.com/in/nancy-shannon-38773a17b">
-                            <i class="fa-brands fa-linkedin footer-fa-brands fa-2x"></i>
-                        </a>
-                        <a href="https://www.facebook.com/NancyShannonrealtor/">
-                            <i class="fa-brands fa-facebook-square footer-fa-brands fa-2x"></i>
-                        </a>
-                    </p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                    <h3>Location</h3>
-                    <p>10135 Se Sunnyside Rd, St. 150</p>
-                    <p>Clackamas, OR 97015</p>
-                    <br />
-                    <br />
-                    <br />
-                </div>
-                <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
+                    <a href="https://www.facebook.com/NancyShannonrealtor/">
+                        <i class="fa-brands fa-facebook-square footer-fa-brands fa-2x"></i>
+                    </a>
+                </p>
             </div>
-            <div class="row">
-                <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 footer-bottom-left-header d-flex justify-content-center">
-                    <div class="footer-logo-container">
-                        <img src="images/fair-housing.png" />
-                    </div>
-                    <br />
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12 footer-connect text-center mt-auto ">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 d-flex justify-content-center mt-auto">
-                    <br />
-                    <div class="footer-logo-container">
-                        <img src="images/ppg-logo-white.webp" />
-                    </div>
-                    <br />
-                </div>
-                <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
+            <div class="col-lg-3 col-md-3 col-12 pb-4">
+                <h3>Location</h3>
+                <p>10135 Se Sunnyside Rd, St. 150</p>
+                <p>Clackamas, OR 97015</p>
             </div>
-            <br />
+            <div class="col-lg-1 col-md-1 col-0"></div>
         </div>
-        <!-- footer end -->
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-0"></div>
+            <div class="col-lg-3 col-md-3 col-12 footer-bottom-left-header d-flex justify-content-center pb-4">
+                <div class="footer-logo-container">
+                    <img src="../images/fair-housing.png" />
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 footer-connect text-center mt-auto pb-4">
+                <p>© 2023 Life in Home Team</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-center mt-auto pb-4">
+                <div class="footer-logo-container">
+                    <img src="../images/ppg-logo-white.webp" />
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-0"></div>
+        </div>
+    </div>
+    <!-- footer end -->
 
-        <script src="lib/jquery/dist/jquery.min.js"></script>
-        <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/safar-smoothscroll.js"></script>
-        <script src="js/navbar-observer.js"></script>
-        <script src="js/up-observer.js"></script>
-        <script src="js/left-observer.js"></script>
-        <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/safar-smoothscroll.js"></script>
+    <script src="js/navbar-observer.js"></script>
+    <script src="js/up-observer.js"></script>
+    <script src="js/left-observer.js"></script>
+    <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
 
-    </body>
+</body>
 </html>

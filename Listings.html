@@ -1,343 +1,342 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Life In Home</title>
-        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/site.css" />
-        <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" />
-        <script> </script> <!-- chrome bug fix -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@300&display=swap" rel="stylesheet">
-        <!-- favicon -->
-        <link rel="icon" type="image/webp" href="images/mini-logo.webp">
-    
-    </head>
-    <body data-spy="scroll" data-target=".main-nav"> 
 
-        <header class="h-50" id="home">
-            <nav class="navbar navbar-expand-lg fixed-top main-nav nav-fade-in" id="main-nav">
-                <div class="nav-logo-container">
-                    <a class="navbar-brand" href="/">
-                        <img src="images/lih-logo-nav.svg" />
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="changeNavOpacity()">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life In Home</title>
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" />
+  <script> </script> <!-- chrome bug fix -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" type="image/webp" href="images/mini-logo.webp">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link sub-header" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sub-header" href="/Selling">Selling</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sub-header" href="/Buying">Buying</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sub-header nav-active" href="/Listings">Listings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sub-header" href="/About">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sub-header" href="/Contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="selling-header-img h-50">
-                <div class="banner-container text-center">
-                    <h2 class="shadow-behind-text">Current Listings</h2>
-                </div>
+</head>
+
+<body data-spy="scroll" data-target=".main-nav">
+
+  <header class="h-50" id="home">
+    <nav class="navbar navbar-expand-lg fixed-top main-nav nav-fade-in" id="main-nav">
+      <div class="nav-logo-container">
+        <a class="navbar-brand" href="/">
+          <img src="images/lih-logo-nav.svg" />
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        onclick="changeNavOpacity()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link sub-header" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sub-header" href="/Selling">Selling</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sub-header" href="/Buying">Buying</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sub-header nav-active" href="/Listings">Listings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sub-header" href="/About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sub-header" href="/Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="selling-header-img h-50">
+      <div class="banner-container text-center">
+        <h2 class="shadow-behind-text">Current Listings</h2>
+      </div>
+    </div>
+  </header>
+
+  <div class="buffer"></div>
+
+  <!-- listings container start -->
+  <div class="container pt-5">
+    <div class="row">
+
+      <!-- small listing container start -->
+      <div class="col-lg-4 col-md-6 pt-4">
+        <a href="listings/3811-se-washington.html">
+          <div class="small-listing-container">
+
+            <div class="small-listing-image">
+              <img src="images/listings/washington-1.jpg">
+              <div class="small-listing-address">
+                <h4>3811 SE Washington St</h4>
+              </div>
             </div>
-        </header>
 
-        <div class="buffer"></div>
+            <div class="listing-description">
 
-        <!-- listings container start -->
-        <div class="container pt-5">
-          <div class="row">
-        
-            <!-- small listing container start -->
-            <div class="col-lg-4 col-md-6 pt-4">
-              <a href="listings/3811-se-washington.html">
-                <div class="small-listing-container">
-        
-                  <div class="small-listing-image">
-                    <img src="images/listings/washington-1.jpg">
-                    <div class="small-listing-address">
-                      <h4>3811 SE Washington St</h4>
-                    </div>
-                  </div>
-               
-                  <div class="listing-description">
-          
-                    <div class="listing-description-top">
-                      <h6>$419,950</h6>
-                      <h6>1,086 ft²</h6>
-                      <h6>3 Bedrooms</h6>
-                    </div>
+              <div class="listing-description-top">
+                <h6>$419,950</h6>
+                <h6>1,086 ft²</h6>
+                <h6>3 Bedrooms</h6>
+              </div>
 
-                    <div class="listing-description-mid">
-                      <p>Lovely One Level Milwaukie Home</p>
-                    </div>
-          
-                  </div>
-                </div>
-              </a>
+              <div class="listing-description-mid">
+                <p>Lovely One Level Milwaukie Home</p>
+              </div>
+
             </div>
-            <!-- small listing container end -->
-
-            <!-- small listing container start -->
-            <div class="col-lg-4 col-md-6 pt-4">
-              <a href="listings/12721-se-opal.html">
-                <div class="small-listing-container">
-        
-                  <div class="small-listing-image">
-                    <img src="images/listings/opal-1.jpg">
-                    <div class="small-listing-address">
-                      <h4>12721 SE Opal Way</h4>
-                    </div>
-                  </div>
-                
-                  <div class="listing-description">
-          
-                    <div class="listing-description-top">
-                      <h6>$499,900</h6>
-                      <h6>1,798 ft²</h6>
-                      <h6>3 Bedrooms</h6>
-                    </div>
-
-                    <div class="listing-description-mid">
-                      <p>A home you’ll love – in the heart of Clackamas, Oregon!</p>
-                    </div>
-          
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- small listing container end -->
-
-            <!-- small listing container start -->
-            <div class="col-lg-4 col-md-6 pt-4">
-              <a href="listings/3248-sw-20th.html">
-                <div class="small-listing-container">
-        
-                  <div class="small-listing-image">
-                    <img src="images/listings/20th-2.jpg">
-                    <div class="small-listing-address">
-                      <h4>3248 SW 20th St</h4>
-                    </div>
-                  </div>
-                
-                  <div class="listing-description">
-          
-                    <div class="listing-description-top">
-                      <h6>$499,990</h6>
-                      <h6>1,402 ft²</h6>
-                      <h6>4 Bedrooms</h6>
-                    </div>
-
-                    <div class="listing-description-mid">
-                      <p>Beautifully Updated Binford Farms Home</p>
-                    </div>
-          
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- small listing container end -->
-
-            <!-- small listing container start -->
-            <div class="col-lg-4 col-md-6 pt-4">
-              <a href="listings/1030-se-linn.html">
-                <div class="small-listing-container">
-        
-                  <div class="small-listing-image">
-                    <img src="images/listings/linn-1.jpg">
-                    <div class="small-listing-address">
-                      <h4>1030 Linn St</h4>
-                    </div>
-                  </div>
-                
-                  <div class="listing-description">
-          
-                    <div class="listing-description-top">
-                      <h6>$479,000</h6>
-                      <h6>1,500 ft²</h6>
-                      <h6>2 Bedrooms</h6>
-                    </div>
-
-                    <div class="listing-description-mid">
-                      <p>Charming Townhome nestled in the Heart of the Sellwood neighborhood</p>
-                    </div>
-          
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- small listing container end -->
-
-            <!-- small listing container start -->
-            <div class="col-lg-4 col-md-6 pt-4">
-              <a href="listings/1770-se-oak.html">
-                <div class="small-listing-container">
-        
-                  <div class="small-listing-image">
-                    <img src="images/listings/oak-1.jpg">
-                    <div class="small-listing-address">
-                      <h4>1770 SE Oak Shore Court</h4>
-                    </div>
-                  </div>
-                
-                  <div class="listing-description">
-          
-                    <div class="listing-description-top">
-                      <h6>$593,500</h6>
-                      <h6>1,971 ft²</h6>
-                      <h6>4 Bedrooms</h6>
-                    </div>
-
-                    <div class="listing-description-mid">
-                      <p>Charming Updated Custom-Designed Home</p>
-                    </div>
-          
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- small listing container end -->
-
-            <!-- small listing container start -->
-            <div class="col-lg-4 col-md-6 pt-4">
-              <a href="listings/896-se-river.html">
-                <div class="small-listing-container">
-        
-                  <div class="small-listing-image">
-                    <img src="images/listings/river-rd-1.jpg">
-                    <div class="small-listing-address">
-                      <h4>896 SE River Forest Rd</h4>
-                    </div>
-                  </div>
-                
-                  <div class="listing-description">
-          
-                    <div class="listing-description-top">
-                      <h6>$714,000</h6>
-                      <h6>2,334 ft²</h6>
-                      <h6>3 Bedrooms</h6>
-                    </div>
-
-                    <div class="listing-description-mid">
-                      <p>Gorgeous Custom Built Craftsman Home</p>
-                    </div>
-          
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- small listing container end -->
-
-            <!-- small listing container start -->
-            <div class="col-lg-4 col-md-6 pt-4">
-              <a href="listings/4353-se-brooklyn.html">
-                <div class="small-listing-container">
-        
-                  <div class="small-listing-image">
-                    <img src="images/listings/brooklyn-1.jpg">
-                    <div class="small-listing-address">
-                      <h4>4353 Se Brooklyn St</h4>
-                    </div>
-                  </div>
-                
-                  <div class="listing-description">
-          
-                    <div class="listing-description-top">
-                      <h6>$484,950</h6>
-                      <h6>2,248 ft²</h6>
-                      <h6>4 Bedrooms</h6>
-                    </div>
-
-                    <div class="listing-description-mid">
-                      <p>Classic Creston Home</p>
-                    </div>
-          
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- small listing container end -->
-        
           </div>
-        </div>
-        <!-- listings container end -->
-        
-        <!-- footer -->
-        <div id="footer" class="footer-container mt-5">
-            <div class="footer-header-container container-fluid row">
-                <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 footer-bottom-left-header align-content-center">
-                    <h3>Contact</h3>
-                    <p>Nancy@LifeInHomeTeam.com</p>
-                    <a href="tel:+1-503-516-9400" class="white-text">
-                        <p class="number-link">503.516.9400</p>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12 footer-connect">
-                    <h3>Connect</h3>
-                    <p>
-                        <a href="https://www.linkedin.com/in/nancy-shannon-38773a17b">
-                            <i class="fa-brands fa-linkedin footer-fa-brands fa-2x"></i>
-                        </a>
-                        <a href="https://www.facebook.com/NancyShannonrealtor/">
-                            <i class="fa-brands fa-facebook-square footer-fa-brands fa-2x"></i>
-                        </a>
-                    </p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                    <h3>Location</h3>
-                    <p>10135 Se Sunnyside Rd, St. 150</p>
-                    <p>Clackamas, OR 97015</p>
-                    <br />
-                    <br />
-                    <br />
-                </div>
-                <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 footer-bottom-left-header d-flex justify-content-center">
-                    <div class="footer-logo-container">
-                        <img src="images/fair-housing.png" />
-                    </div>
-                    <br />
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12 footer-connect text-center mt-auto ">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-12 d-flex justify-content-center mt-auto">
-                    <br />
-                    <div class="footer-logo-container">
-                        <img src="images/ppg-logo-white.webp" />
-                    </div>
-                    <br />
-                </div>
-                <div class="col-lg-1 col-md-1 col-sm-0 col-0"></div>
-            </div>
-            <br />
-        </div>
-        <!-- footer end -->
+        </a>
+      </div>
+      <!-- small listing container end -->
 
-        <script src="lib/jquery/dist/jquery.min.js"></script>
-        <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/safar-smoothscroll.js"></script>
-        <script src="js/navbar-observer.js"></script>
-        <script src="js/slight-up-observer.js"></script>
-        <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
-    </body>
+      <!-- small listing container start -->
+      <div class="col-lg-4 col-md-6 pt-4">
+        <a href="listings/12721-se-opal.html">
+          <div class="small-listing-container">
+
+            <div class="small-listing-image">
+              <img src="images/listings/opal-1.jpg">
+              <div class="small-listing-address">
+                <h4>12721 SE Opal Way</h4>
+              </div>
+            </div>
+
+            <div class="listing-description">
+
+              <div class="listing-description-top">
+                <h6>$499,900</h6>
+                <h6>1,798 ft²</h6>
+                <h6>3 Bedrooms</h6>
+              </div>
+
+              <div class="listing-description-mid">
+                <p>A home you’ll love – in the heart of Clackamas, Oregon!</p>
+              </div>
+
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- small listing container end -->
+
+      <!-- small listing container start -->
+      <div class="col-lg-4 col-md-6 pt-4">
+        <a href="listings/3248-sw-20th.html">
+          <div class="small-listing-container">
+
+            <div class="small-listing-image">
+              <img src="images/listings/20th-2.jpg">
+              <div class="small-listing-address">
+                <h4>3248 SW 20th St</h4>
+              </div>
+            </div>
+
+            <div class="listing-description">
+
+              <div class="listing-description-top">
+                <h6>$499,990</h6>
+                <h6>1,402 ft²</h6>
+                <h6>4 Bedrooms</h6>
+              </div>
+
+              <div class="listing-description-mid">
+                <p>Beautifully Updated Binford Farms Home</p>
+              </div>
+
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- small listing container end -->
+
+      <!-- small listing container start -->
+      <div class="col-lg-4 col-md-6 pt-4">
+        <a href="listings/1030-se-linn.html">
+          <div class="small-listing-container">
+
+            <div class="small-listing-image">
+              <img src="images/listings/linn-1.jpg">
+              <div class="small-listing-address">
+                <h4>1030 Linn St</h4>
+              </div>
+            </div>
+
+            <div class="listing-description">
+
+              <div class="listing-description-top">
+                <h6>$479,000</h6>
+                <h6>1,500 ft²</h6>
+                <h6>2 Bedrooms</h6>
+              </div>
+
+              <div class="listing-description-mid">
+                <p>Charming Townhome nestled in the Heart of the Sellwood neighborhood</p>
+              </div>
+
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- small listing container end -->
+
+      <!-- small listing container start -->
+      <div class="col-lg-4 col-md-6 pt-4">
+        <a href="listings/1770-se-oak.html">
+          <div class="small-listing-container">
+
+            <div class="small-listing-image">
+              <img src="images/listings/oak-1.jpg">
+              <div class="small-listing-address">
+                <h4>1770 SE Oak Shore Court</h4>
+              </div>
+            </div>
+
+            <div class="listing-description">
+
+              <div class="listing-description-top">
+                <h6>$593,500</h6>
+                <h6>1,971 ft²</h6>
+                <h6>4 Bedrooms</h6>
+              </div>
+
+              <div class="listing-description-mid">
+                <p>Charming Updated Custom-Designed Home</p>
+              </div>
+
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- small listing container end -->
+
+      <!-- small listing container start -->
+      <div class="col-lg-4 col-md-6 pt-4">
+        <a href="listings/896-se-river.html">
+          <div class="small-listing-container">
+
+            <div class="small-listing-image">
+              <img src="images/listings/river-rd-1.jpg">
+              <div class="small-listing-address">
+                <h4>896 SE River Forest Rd</h4>
+              </div>
+            </div>
+
+            <div class="listing-description">
+
+              <div class="listing-description-top">
+                <h6>$714,000</h6>
+                <h6>2,334 ft²</h6>
+                <h6>3 Bedrooms</h6>
+              </div>
+
+              <div class="listing-description-mid">
+                <p>Gorgeous Custom Built Craftsman Home</p>
+              </div>
+
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- small listing container end -->
+
+      <!-- small listing container start -->
+      <div class="col-lg-4 col-md-6 pt-4">
+        <a href="listings/4353-se-brooklyn.html">
+          <div class="small-listing-container">
+
+            <div class="small-listing-image">
+              <img src="images/listings/brooklyn-1.jpg">
+              <div class="small-listing-address">
+                <h4>4353 Se Brooklyn St</h4>
+              </div>
+            </div>
+
+            <div class="listing-description">
+
+              <div class="listing-description-top">
+                <h6>$484,950</h6>
+                <h6>2,248 ft²</h6>
+                <h6>4 Bedrooms</h6>
+              </div>
+
+              <div class="listing-description-mid">
+                <p>Classic Creston Home</p>
+              </div>
+
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- small listing container end -->
+
+    </div>
+  </div>
+  <!-- listings container end -->
+
+  <!-- footer -->
+  <div id="footer" class="footer-container mt-5">
+    <div class="footer-header-container container-fluid row">
+      <div class="col-lg-1 col-md-1 col-0"></div>
+      <div class="col-lg-3 col-md-3 col-12 footer-bottom-left-header align-content-center pb-4">
+        <h3>Contact</h3>
+        <p>Nancy@LifeInHomeTeam.com</p>
+        <a href="tel:+1-503-516-9400" class="white-text">
+          <p class="number-link">503.516.9400</p>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12 footer-connect pb-4">
+        <h3>Connect</h3>
+        <p>
+          <a href="https://www.linkedin.com/in/nancy-shannon-38773a17b">
+            <i class="fa-brands fa-linkedin footer-fa-brands fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/NancyShannonrealtor/">
+            <i class="fa-brands fa-facebook-square footer-fa-brands fa-2x"></i>
+          </a>
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-12 pb-4">
+        <h3>Location</h3>
+        <p>10135 Se Sunnyside Rd, St. 150</p>
+        <p>Clackamas, OR 97015</p>
+      </div>
+      <div class="col-lg-1 col-md-1 col-0"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 col-md-1 col-0"></div>
+      <div class="col-lg-3 col-md-3 col-12 footer-bottom-left-header d-flex justify-content-center pb-4">
+        <div class="footer-logo-container">
+          <img src="../images/fair-housing.png" />
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12 footer-connect text-center mt-auto pb-4">
+        <p>© 2023 Life in Home Team</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-center mt-auto pb-4">
+        <div class="footer-logo-container">
+          <img src="../images/ppg-logo-white.webp" />
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1 col-0"></div>
+    </div>
+  </div>
+  <!-- footer end -->
+
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/safar-smoothscroll.js"></script>
+  <script src="js/navbar-observer.js"></script>
+  <script src="js/slight-up-observer.js"></script>
+  <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

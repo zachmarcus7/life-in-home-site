@@ -1042,6 +1042,7 @@ ul li {
 
 /* Home
 -------------------------------------------------- */
+
 #home {
     margin: 0 !important;
     padding: 0 !important;
@@ -1060,6 +1061,12 @@ ul li {
     text-align: center;
     overflow: hidden;
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .home-page-buttons {
+        padding: 0px;
+    }
+}​
 
 .carousel {
     z-index: 0;

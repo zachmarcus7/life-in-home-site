@@ -1,5 +1,4 @@
 ﻿const swiper = new Swiper('.swiper', {
-    // pass EffectCarousel module to modules
     modules: [function CarouselSlider({ swiper, on }) {
         on('beforeInit', () => {
             if (swiper.params.effect !== 'carousel') return;

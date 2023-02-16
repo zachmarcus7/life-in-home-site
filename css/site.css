@@ -1538,7 +1538,7 @@ a {
 
 .listing-description-top h6 {
     font-family: 'Prata', serif;
-    color: var(--main-color);
+    color: #212529;
     font-weight: 500 !important;
     font-size: 14px;
 }

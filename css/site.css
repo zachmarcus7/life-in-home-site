@@ -448,6 +448,19 @@ li::marker {
     z-index: 10;
 }
 
+.general-container-bottom {
+    padding: 20px;
+    padding-bottom: 33px;
+    position: absolute;
+    z-index: -2;
+    background-color: rgb(233, 234, 236);
+    transform: translate(-20px, 20px);
+}
+
+.absolute {
+    position: absolute;
+}
+
 .shadow-behind-text {
     text-shadow: 1px 1px 2px black;
 }
@@ -801,7 +814,19 @@ p, .button-link {
     .about-lower {
         height: 50vw;
     }
+}
 
+@media only screen and (max-width: 768px) {
+    .headline-container {
+        height: 165px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .headline-right {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 @media only screen and (min-width: 900px) {

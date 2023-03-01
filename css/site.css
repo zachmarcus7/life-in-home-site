@@ -1096,7 +1096,7 @@ ul li {
     .home-page-buttons {
         padding: 0px;
     }
-}​
+}
 
 .carousel {
     z-index: 0;
@@ -1152,6 +1152,103 @@ ul li {
     font-family: 'Great Vibes', cursive;
 }
 
+.symbols-title-container {
+    position: relative !important;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .symbols-title-container {
+        padding-top: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .symbols-title-container {
+        padding-top: 6rem;
+    }
+}
+
+.symbols-title {
+    text-align: center;
+    z-index: 30;
+    background-color: white;
+    position: absolute;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.symbols-title-line {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    z-index: 2;
+}
+
+.symbols-main-container {
+    padding-bottom: 7rem;
+}
+
+.symbols-clickable {
+    transition: 0.3s ease-out;
+    transition-property: transform;
+}
+
+.symbols-clickable:hover {
+    transform: translateY(-3px);
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.center-column h4 {
+    color: rgb(39, 72, 92);
+}
+
+.center-column p {
+    text-align: center;
+    color: rgb(170, 170, 170);
+    max-width: 250px;
+}
+
+.icon-container {
+    height: 75px;
+    width: 75px;
+    position: relative;
+    overflow: hidden !important;
+}
+
+.icon-container svg {
+    position: absolute;
+    z-index: 22;
+    height: 60px;
+    width: 60px;
+    margin-left: 2px;
+}
+
+.material-symbols-outlined {
+    font-size: 60px !important;
+    font-weight: 300 !important;
+    position: absolute;
+    z-index: 20;
+    color: rgb(39, 72, 92) !important; 
+    font-weight: 300 !important;
+}
+
+.symbols-top-left {
+    background-color: rgb(233, 234, 236);
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 3px;
+}
+  
 .home-page-lower-container {
     position: absolute;
     z-index: 9;
@@ -1378,6 +1475,19 @@ ul li {
 
 .get-in-touch-desc p {
     max-width: 650px;
+}
+
+/* Home Bottom
+-------------------------------------------------- */
+
+.bottom-symbols-container {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.bottom-symbols-container h3 {
+    text-align: center;
+    padding-bottom: 2rem;
 }
 
 /* About Page

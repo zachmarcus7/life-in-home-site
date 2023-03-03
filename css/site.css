@@ -1483,10 +1483,10 @@ ul li {
     background-color: var(--light-teal-color);
 }
 
-.bio-image-container {
+.bio-image-container img {
     width: 100%;
     object-fit: cover !important;
-    max-height: 300px;
+    max-height: 300px !important;
 }
 
 /* Services Page

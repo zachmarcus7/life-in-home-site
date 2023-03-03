@@ -683,11 +683,6 @@ p, .button-link {
     .project-single-container {
         padding-bottom: 9% !important;
     }
-
-    .bio-image-container img {
-        height: 60vh;
-    }
-
 }
 
 @media only screen and (min-width: 350px) {
@@ -748,10 +743,6 @@ p, .button-link {
         padding-right: 7%;
     }
 
-    .bio-image-container img {
-        height: 35vh;
-    }
-
     .top-wave {
         transform: translateY(0%);
     }
@@ -806,10 +797,6 @@ p, .button-link {
 
     .home-page-header, .banner-sub-header {
         text-shadow: 1px 1px black;
-    }
-
-    .bio-image-container img {
-        height: 30vh;
     }
 
     .about-lower {
@@ -882,10 +869,6 @@ p, .button-link {
         padding-right: 10%;
     }
 
-    .bio-image-container img {
-        height: 40vh;
-    }
-
     .about-lower {
         height: 38vw;
     }
@@ -951,10 +934,6 @@ p, .button-link {
 
     .sub-header-text {
         font-size: 28px;
-    }
-
-    .bio-image-container img {
-        height: 35vh;
     }
 }
 
@@ -1506,8 +1485,8 @@ ul li {
 
 .bio-image-container {
     width: 100%;
-    object-fit: contain;
-    overflow: hidden;
+    object-fit: cover !important;
+    max-height: 300px;
 }
 
 /* Services Page

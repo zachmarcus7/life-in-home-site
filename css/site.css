@@ -228,7 +228,7 @@ html, body {
 }
 
 h1, h2, h3 {
-    font-family: 'Prata', serif;
+    font-family: 'Source Serif Pro', serif;
     font-style: normal;
 }
 
@@ -249,9 +249,9 @@ a {
 }
 
 .header {
-    font-family: 'Prata', serif;
+    font-family: 'Source Serif Pro', serif;
     color: var(--main-color);
-    font-weight: 500 !important;
+    font-weight: 600 !important;
 }
 
 .header-one {
@@ -260,7 +260,7 @@ a {
 }
 
 .sub-header {
-    font-family: 'Prata', serif;
+    font-family: 'Source Serif Pro', serif;
     font-style: normal;
 }
 
@@ -307,7 +307,7 @@ a {
 }
 
 .description-text-start {
-    font-family: 'Prata', serif;
+    font-family: 'Source Serif Pro', serif;
     color: white;
 }
 
@@ -316,12 +316,12 @@ a {
 }
 
 .description-text-start-teal {
-    font-family: 'Prata', serif;
+    font-family: 'Source Serif Pro', serif;
     color: var(--secondary-color);
 }
 
 .fancy-text {
-    font-family: 'Prata', serif;
+    font-family: 'Source Serif Pro', serif;
 }
 
 .list-text-container {
@@ -1647,7 +1647,7 @@ a {
 }
 
 .listing-description-top h6 {
-    font-family: 'Prata', serif;
+    font-family: 'Source Serif Pro', serif;
     color: #212529;
     font-weight: 500 !important;
     font-size: 15px;
@@ -1851,7 +1851,7 @@ main, body {
 -------------------------------------------------- */
 
 .small-listing-image h4 {
-    font-family: 'Prata', serif !important;
+    font-family: 'Source Serif Pro', serif !important;
 }
 
 .grey-gradient {
@@ -1953,7 +1953,7 @@ main, body {
 
   .individual-listing-header h5,
   .individual-listing-right h5 {
-    font-family: 'Prata', serif !important;
+    font-family: 'Source Serif Pro', serif !important;
     font-weight: 500 !important;
   }
 

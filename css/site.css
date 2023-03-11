@@ -281,7 +281,8 @@ a {
 }
 
 .description-text-header {
-    color: var(--light-gray-color) !important;
+    color: rgb(140, 140, 140) !important;
+    line-height: 1.8 !important;
 }
 
 .description-text {

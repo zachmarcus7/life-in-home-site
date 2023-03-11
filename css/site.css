@@ -281,16 +281,17 @@ a {
 }
 
 .description-text-header {
+    color: var(--light-gray-color) !important;
+}
+
+.description-text {
     color: rgb(140, 140, 140) !important;
     line-height: 1.8 !important;
 }
 
-.description-text {
-    color: var(--dark-gray-color);
-}
-
 .description-text-white {
     color: white;
+    line-height: 1.8;
 }
 
 .description-text-two {
@@ -305,6 +306,7 @@ a {
 
 .description-text-four {
     color: var(--light-gray-color);
+    line-height: 1.8;
 }
 
 .description-text-start {

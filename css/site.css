@@ -9,6 +9,7 @@
     --mid-gray-color: rgb(185, 185, 185);
     --dark-teal-color: rgb(84 142 145);
     --light-teal-color: rgb(104, 155, 158);
+    --default-text: rgb(96, 88, 106);
 }
 
 a.navbar-brand {
@@ -267,13 +268,13 @@ a {
 .content-top-icon {
     display: flex;
     justify-content: center;
-    padding-top: 2.5rem;
     transform: translate(10px, 0px);
 }
 
 .content-header {
     text-align: center;
     padding: 0rem 2.5rem 0.5rem 2.5rem;
+    color: var(--main-color);
 }
 
 .content-sub-header {
@@ -300,8 +301,59 @@ a {
     max-width: 900px;
 }
 
+.slight-move-down {
+    transform: translateY(3px);
+}
+
+.blog-text {
+    color: var(--default-text);
+}
+
+.blog-left {
+    position: sticky;
+    top: 80px;
+}
+
+@media (max-width: 768px) {
+    .blog-left {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .blog-left a {
+        padding: 10px;
+    }
+}
+
 .blog-left i {
     color: var(--dark-teal-color);
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.blog-image-caption {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.blog-image-caption p {
+    color: #AAAAAA;
+}
+
+.default-list {
+    list-style: initial !important;
+}
+
+.default-list li {
+    text-align: left !important;
+    color: var(--default-text);
 }
 
 .white-text {
@@ -604,7 +656,7 @@ h2 {
 }
 
 h6, .home-button-text {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .banner-container, .top-container {
@@ -616,7 +668,11 @@ h6, .home-button-text {
 }
 
 p, .button-link {
-    font-size: 14px;
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.8;
 }
 
 .button-link {
@@ -874,7 +930,7 @@ p, .button-link {
     }
 
     p {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .about-lower {
@@ -1194,7 +1250,7 @@ ul li {
 .center-column p {
     text-align: center;
     color: rgb(170, 170, 170);
-    max-width: 250px;
+    max-width: 220px;
 }
 
 .icon-container {
@@ -1906,7 +1962,7 @@ main, body {
 }
 
 .individual-listing p {
-    color: rgb(140, 140, 140) !important;
+    color: var(--default-text) !important;
     line-height: 1.8;
 }
 
@@ -1987,6 +2043,7 @@ main, body {
     align-items: center;
     padding-left: 8px;
     margin-bottom: 2px !important;
+    color: rgb(170, 170, 170) !important;
   }
   
   .individual-listing-right {

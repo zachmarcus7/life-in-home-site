@@ -15,7 +15,6 @@ const navbarOptions = {
 
 var navbarObserver = new IntersectionObserver(entries => {
     navbar.classList.toggle('active', !entries[0].isIntersecting);
-    console.log("interecting");
 }, navbarOptions);
 
 // this is for the intersection observer keeping track of elements

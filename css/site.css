@@ -274,7 +274,8 @@ a {
 .content-header {
     text-align: center;
     padding: 0rem 2.5rem 0.5rem 2.5rem;
-    color: rgb(61, 63, 65);
+    color: rgb(65, 67, 70);
+    font-weight: 600;
 }
 
 .content-sub-header,
@@ -345,7 +346,7 @@ a {
 .blog-image {
     width: 100%;
     height: auto;
-    max-height: 300px;
+    max-height: 500px;
     object-fit: cover;
 }
 
@@ -357,6 +358,30 @@ a {
 
 .blog-image-caption p {
     color: #AAAAAA;
+}
+
+.blog-quote .fa-quote-left {
+    color: var(--main-color) !important;
+}
+
+.blog-quote-underline {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding-top: 2rem; 
+    width: 50%;
+}
+
+@media(max-width: 768px) {
+    .blog-quote {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+@media(min-width: 768px) {
+    .blog-quote {
+        padding-left: 4rem !important;
+        padding-right: 5rem !important;
+    }
 }
 
 .default-list {

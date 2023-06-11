@@ -387,6 +387,14 @@ a {
     }
 }
 
+.blog-page-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    justify-content: space-between;
+}
+
 .default-list {
     list-style: initial !important;
 }

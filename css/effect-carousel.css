@@ -25,7 +25,6 @@
 .swiper-carousel .swiper-slide {
   width: 520px;
   height: 380px;
-  border-radius: 8px;
   background: #18212b;
   max-width: calc(100% - 48px);
 }
@@ -43,7 +42,6 @@
   height: 100%;
   display: block;
   object-fit: cover;
-  border-radius: 8px;
   -webkit-box-reflect: below 5px -webkit-linear-gradient(bottom, rgba(255, 0, 0, 0.1) 0%, transparent 32px, transparent 100%);
 }
 

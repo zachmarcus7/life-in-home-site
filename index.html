@@ -28,7 +28,7 @@
 
 <body data-spy="scroll" data-target=".main-nav">
 
-  <!-- home -->
+  <!-- home start -->
   <header id="home" class="h-100">
     <div>
       <nav class="navbar navbar-expand-lg fixed-top main-nav nav-fade-in" id="main-nav">
@@ -60,6 +60,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link sub-header" href="/Listings">Listings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sub-header" href="/Blog">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link sub-header" href="/About">About</a>
@@ -112,13 +115,13 @@
     </div>
 
   </header>
-  <!-- end home-->
+  <!-- home end -->
 
   <!-- main content start -->
   <div id="about">
-    <div class=" main-page-container">
 
-      <div class="buffer"></div>
+    <!-- top portion start -->
+    <div class=" main-page-container">
 
       <div class="about-header-container container-fluid pt-5">
 
@@ -226,114 +229,188 @@
       <div class="offset-two" id="offset-two"></div>
       <!-- button target end -->
     </div>
+    <!-- top portion end -->
 
     <!-- top wave -->
     <div class="wave move-down-two">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="-203.72 -57.88 1440.01 128.42" preserveAspectRatio="none">
-        <path fill="#7BB7BA" fill-opacity="1"
+        <path fill="var(--light-teal-color-faded)" fill-opacity="1"
           d="M -203.716 -57.885 L -143.716 -57.885 C -83.716 -57.885 36.284 -57.885 156.284 -41.885 C 276.284 -25.885 396.284 6.115 516.284 22.115 C 636.284 38.115 756.284 38.115 876.284 27.415 C 996.284 17.115 1116.284 -4.885 1176.284 -15.185 L 1236.284 -25.885 L 1236.284 70.115 L 1176.284 70.115 C 1116.284 70.115 996.284 70.115 876.284 70.115 C 756.284 70.115 636.284 70.115 516.284 70.115 C 396.284 70.115 276.284 70.115 156.284 70.115 C 36.284 70.115 -83.716 70.115 -143.716 70.115 L -203.716 70.115 L -203.716 -57.885 Z" />
-        <path fill=" #689b9e" fill-opacity="1"
+        <path fill="var(--light-teal-color)" fill-opacity="1"
           d="M -203.723 6.535 L -143.723 1.235 C -83.723 -4.465 36.277 -14.465 156.277 -4.165 C 276.277 6.535 396.277 38.535 516.277 54.535 C 636.277 70.535 756.277 70.535 876.277 54.535 C 996.277 38.535 1116.277 6.535 1176.277 -9.465 L 1236.277 -25.465 L 1236.277 70.535 L 1176.277 70.535 C 1116.277 70.535 996.277 70.535 876.277 70.535 C 756.277 70.535 636.277 70.535 516.277 70.535 C 396.277 70.535 276.277 70.535 156.277 70.535 C 36.277 70.535 -83.723 70.535 -143.723 70.535 L -203.723 70.535 L -203.723 6.535 Z" />
       </svg>
     </div>
     <!-- top wave end -->
 
     <!-- recent listings start -->
-    <div class="about-text about-stats-container text-center d-flex justify-content-center container-fluid">
+    <div class="listings-outer-container">
+      <div class="container p-4">
+        <h3 class="general-header pb-3 text-center">Recent Listings</h3>
 
-      <div class="container">
-
-        <h3 class="white-text pb-3">Recent Listings</h3>
-
-        <div class="swiper swiper-carousel swiper-initialized swiper-horizontal swiper-watch-progress">
+        <div class="swiper-container listings-swiper pb-3 pt-2">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-                <img src="images/listings/59th-1.jpeg" alt="Home for sale in Hollywood District">
-                <div class="slide-content">
-                  <h2>1925 NE 59th Ave</h2>
-                  <p>Charming Craftsman Tudor in Rose City Park • $639,000</p>
+              <a href="listings/1925-ne-59th.html">
+                <div class="small-listing-container">
+      
+                  <div class="small-listing-image">
+                    <img src="images/listings/59th-1.jpeg" alt="Home for sale in Hollywood District">
+                    <div class="small-listing-address">
+                      <h4>1925 NE 59th Ave</h4>
+                    </div>
+                  </div>
+      
+                  <div class="listing-description">
+                    <div class="listing-description-top">
+                      <h6>$639,000</h6>
+                      <h6>2,495 Sq Ft.</h6>
+                      <h6>3 Bedrooms</h6>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-                <img src="images/listings/river-rd-1.jpg" alt="Home for sale in Oak Grove, Oregon">
-                <div class="slide-content">
-                  <h2>896 SE River Forest Rd</h2>
-                  <p>Gorgeous Custom Built Craftsman Home • $714,000</p>
+              <a href="listings/896-se-river.html">
+                <div class="small-listing-container">
+      
+                  <div class="small-listing-image">
+                    <img src="images/listings/river-rd-1.jpg" alt="Home for sale in Milwaukie">
+                    <div class="small-listing-address">
+                      <h4>896 SE River Forest Rd</h4>
+                    </div>
+                  </div>
+      
+                  <div class="listing-description">
+                    <div class="listing-description-top">
+                      <h6>$714,000</h6>
+                      <h6>2,334 Sq Ft.</h6>
+                      <h6>3 Bedrooms</h6>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-                <img src="images/listings/opal-1.jpg" alt="Home for sale in Happy Valley, Oregon" />
-                <div class="slide-content">
-                  <h2>12721 SE Opal Way</h2>
-                  <p>A home you’ll love – in the heart of Clackamas, Oregon! • $499,900</p>
+              <a href="listings/12721-se-opal.html">
+                <div class="small-listing-container">
+      
+                  <div class="small-listing-image">
+                    <img src="images/listings/opal-1.jpg" alt="Home for sale in Happy Valley">
+                    <div class="small-listing-address">
+                      <h4>12721 SE Opal Way</h4>
+                    </div>
+                  </div>
+      
+                  <div class="listing-description">
+                    <div class="listing-description-top">
+                      <h6>$499,900</h6>
+                      <h6>1,798 Sq Ft.</h6>
+                      <h6>3 Bedrooms</h6>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-                <img src="images/listings/washington-1.jpg" alt="Home for sale in Milwaukie, Oregon" />
-                <div class="slide-content">
-                  <h2>3811 SE Washington St</h2>
-                  <p>Lovely One Level Milwaukie Home • $419,950</p>
+              <a href="listings/3248-sw-20th.html">
+                <div class="small-listing-container">
+      
+                  <div class="small-listing-image">
+                    <img src="images/listings/20th-2.jpg" alt="Home for sale in Gresham">
+                    <div class="small-listing-address">
+                      <h4>3248 SW 20th St</h4>
+                    </div>
+                  </div>
+      
+                  <div class="listing-description">
+                    <div class="listing-description-top">
+                      <h6>$499,990</h6>
+                      <h6>1,402 Sq Ft.</h6>
+                      <h6>4 Bedrooms</h6>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-                <img src="images/listings/oak-1.jpg" alt="Home for sale in Oaks Grove">
-                <div class="slide-content">
-                  <h2>1770 SE Oak Shore Court</h2>
-                  <p>Charming Updated Custom-Designed Home • $593,500</p>
+              <a href="listings/3811-se-washington.html">
+                <div class="small-listing-container">
+      
+                  <div class="small-listing-image">
+                    <img src="images/listings/washington-1.jpg" alt="Home for Sale in Inner SE Portland">
+                    <div class="small-listing-address">
+                      <h4>3811 SE Washington St</h4>
+                    </div>
+                  </div>
+      
+                  <div class="listing-description">
+                    <div class="listing-description-top">
+                      <h6>$419,950</h6>
+                      <h6>1,086 Sq Ft.</h6>
+                      <h6>3 Bedrooms</h6>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-                <img src="images/listings/20th-2.jpg" alt="Home for sale in Gresham" />
-                <div class="slide-content">
-                  <h2>3248 SW 20th St</h2>
-                  <p>Beautifully Updated Binford Farms Home • $499,990</p>
+              <a href="listings/1030-se-linn.html">
+                <div class="small-listing-container">
+      
+                  <div class="small-listing-image">
+                    <img src="images/listings/linn-1.jpg" alt="Home for sale in Oak Grove">
+                    <div class="small-listing-address">
+                      <h4>1030 Linn St</h4>
+                    </div>
+                  </div>
+      
+                  <div class="listing-description">
+                    <div class="listing-description-top">
+                      <h6>$479,000</h6>
+                      <h6>1,500 Sq Ft.</h6>
+                      <h6>2 Bedrooms</h6>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-                <img src="images/listings/linn-1.jpg" alt="Home for sale in Sellwood">
-                <div class="slide-content">
-                  <h2>1030 SE Linn St</h2>
-                  <p>Charming Townhome nestled in the Heart of the Sellwood neighborhood • $479,000
-                  </p>
+              <a href="listings/1770-se-oak.html">
+                <div class="small-listing-container">
+      
+                  <div class="small-listing-image">
+                    <img src="images/listings/oak-1.jpg" alt="Home for sale in Milwaukie">
+                    <div class="small-listing-address">
+                      <h4>1770 SE Oak Shore Court</h4>
+                    </div>
+                  </div>
+      
+                  <div class="listing-description">
+                    <div class="listing-description-top">
+                      <h6>$593,500</h6>
+                      <h6>1,971 Sq Ft.</h6>
+                      <h6>4 Bedrooms</h6>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-                <img src="images/listings/brooklyn-1.jpg" alt="Fixer-upper for sale in inner SE Portland">
-                <div class="slide-content">
-                  <h2>4353 SE Brooklyn Street</h2>
-                  <p>Classic Creston Home • $484,950</p>
-                </div>
-              </div>
+              </a>
             </div>
 
           </div>
+        </div>
 
+        <div class="swiper-pagination-container">
           <div class="swiper-button-prev"></div>
+          <div class="swiper-button-mid"></div>
           <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
         </div>
 
       </div>
@@ -345,8 +422,8 @@
       <div class="row h-50">
         <div class="col-md-6 col-12 about-mid-left-container">
           <div class="about-mid-left row">
-            <div class="col-xl-5 col-md-4 col-1"></div>
-            <div class="col-xl-4 col-md-6 col-10 side-fade">
+            <div class="col-xl-3 col-md-2 col-1"></div>
+            <div class="col-xl-5 col-md-7 col-10 side-fade">
               <h3>Guiding You Every Step of the Way</h3>
               <hr />
               <p>
@@ -355,7 +432,7 @@
                 its market, we'll help guide you every step of the way.
               </p>
             </div>
-            <div class="col-md-2 col-0">
+            <div class="col-md-1 col-0">
             </div>
           </div>
         </div>
@@ -366,40 +443,46 @@
     </div>
     <!-- about mid end -->
 
-    <!-- testimonials -->
-    <div class="about-lower text-center light-teal-background">
-      <div class="pl-5 pr-5">
-        <h3 class="general-header pb-3">What Our Clients Have To Say</h3>
-        <div>
-          <a class="reviews-arrow" onclick="leftClick()">
-            <i class="fa-solid fa-chevron-left"></i>
-          </a>
-          <a class="reviews-arrow" onclick="rightClick()">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-
+    <!-- client reviews start -->
+    <div class="reviews-outer-container">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-2 col-lg-3"></div>
-          <div class="col-xl-8 col-lg-6 pt-3 pb-5 carousel-container">
-            <div id="client-testimonial-carousel" class="carousel slide text-center" data-ride="carousel"
-              data-interval="21000">
-              <div class="about-lower-carousel-inner" role="listbox">
-                <div class="carousel-item active text-center p-4 h-50">
-                  <blockquote class="blockquote text-center">
-                    <p class="mb-0 description-text-white">
-                      <i class="fa fa-quote-left"></i>
-                      Nancy Shannon was a calming
-                      presence in every part of the selling process and explained each step along
-                      the way. She kept us well informed, was super friendly and obviously really
-                      knows her stuff. She did more than we thought a realtor would do; we
-                      especially appreciated how she arranged and met with a couple contractors to
-                      obtain quotes on issues relating to the inspection.
-                      <i class="fa-solid fa-quote-right"></i>
-                    </p>
-                    <footer class="blockquote-footer">Lori Prouty</footer>
+        <h3 class="white-text pb-3 text-center">Client Reviews</h3>
+
+        <div class="swiper-pagination-container">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-mid"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="swiper-container review-swiper">
+          <div class="swiper-wrapper">
+
+            <!-- review container start -->
+            <div class="swiper-slide">
+              <div class="swiper-carousel-animate-opacity">
+                <div class="review-quote">
+
+                  <div class="review-image-container pb-3">
+                    <div class="client-image">
+                      <div class="media">
+                          <div class="media-left">
+                              <img src="images/customer-6.png" alt="self" />
+                          </div>
+                          <div class="client-image-words">
+                              <h5 class="header mb-0">Barbara Olson-Brown</h5>
+                              <p class="client-sub-header">Previous Client</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <h6 class="client-text mb-0">
+                    Nancy approached her task of selling the house with professionalism. I was truly
+                    impressed with the empathy she showed in the suggestions she made. She had trade
+                    professionals who she could recommend for the repairs and improvements the home
+                    needed. 
+                  </h6>
+                  <div class="d-flex flex-column align-items-end">
                     <p class="client-review-stars">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -407,122 +490,142 @@
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                     </p>
-                  </blockquote>
+                  </div>
                 </div>
-                <div class="carousel-item text-center p-4 h-50">
-                  <blockquote class="blockquote text-center">
-                    <p class="mb-0 description-text-white">
-                      <i class="fa fa-quote-left"></i>
-                      Nancy Shannon is a consummate professional.
-                      Drawing on decades of experience, she is knowledgeable in all aspects of
-                      residential real estate property buying and selling. She has a keen eye for
-                      the “diamond in the rough” and was instrumental in determining my property
-                      value.
-                      <i class="fa-solid fa-quote-right"></i>
-                    </p>
-                    <footer class="blockquote-footer">Dawn Thompson</footer>
-                    <p class="client-review-stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </p>
-                  </blockquote>
-                </div>
-                <div class="carousel-item text-center p-4 h-50">
-                  <blockquote class="blockquote text-center">
-                    <p class="mb-0 description-text-white">
-                      <i class="fa fa-quote-left"></i>
-                      Nancy Shannon helped me through the task of
-                      selling my home of 44 years. She was professional and extremely hard
-                      working. She had a plan and covered all details efficiently and with
-                      knowledge and grace. She was on top of every detail. She has a list of great
-                      resources who she could recommend to answer any of my needs.
-                      <i class="fa-solid fa-quote-right"></i>
-                    </p>
-                    <footer class="blockquote-footer">Margaret Nielsem</footer>
-                    <p class="client-review-stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </p>
-                  </blockquote>
-                </div>
-                <div class="carousel-item text-center p-4 h-50">
-                  <blockquote class="blockquote text-center">
-                    <p class="mb-0 description-text-white">
-                      <i class="fa fa-quote-left"></i>
-                      Eight years later, Nancy is still helping
-                      me with contractor recommendations and advice on the market. My home today
-                      is worth so much more because of Nancy's vision and knowledge. I could not
-                      have chosen a better qualified real estate agent and I will never choose
-                      anyone else. If you are considering Nancy, stop considering and sign up
-                      immediately. She will take care of you as if you are family. Trust me.
-                      <i class="fa-solid fa-quote-right"></i>
-                    </p>
-                    <footer class="blockquote-footer">Brian Caufield</footer>
-                    <p class="client-review-stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </p>
-                  </blockquote>
-                </div>
-                <div class="carousel-item text-center p-4 h-50">
-                  <blockquote class="blockquote text-center">
-                    <p class="mb-0 description-text-white">
-                      <i class="fa fa-quote-left"></i>
-                      Nancy Shannon was pleasant and professional
-                      from the minute we invited her into our home to help us sell. She is honest,
-                      caring and made us feel comfortable with the process. Nancy gave us her
-                      honest opinion on any updates or changes to be made to the house. She was
-                      right there 100% to help us with the selling process. Wonderful realtor and
-                      a smooth selling experience.
-                      <i class="fa-solid fa-quote-right"></i>
-                    </p>
-                    <footer class="blockquote-footer">Gene Hukkanen</footer>
-                    <p class="client-review-stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </p>
-                  </blockquote>
-                </div>
-              </div>
-              <div class="d-flex justify-content-center">
-                <a id="review-left" class="carousel-control-prev" href="#client-testimonial-carousel" role="button"
-                  data-slide="prev" hidden>
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a id="review-right" class="carousel-control-next" href="#client-testimonial-carousel" role="button"
-                  data-slide="next" hidden>
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
               </div>
             </div>
+             <!-- review container end -->
+
+            <!-- review container start -->
+            <div class="swiper-slide">
+              <div class="swiper-carousel-animate-opacity">
+                <div class="review-quote">
+
+                  <div class="review-image-container pb-3">
+                    <div class="client-image">
+                      <div class="media">
+                          <div class="media-left">
+                              <img src="images/customer-7.png" alt="self" />
+                          </div>
+                          <div class="client-image-words">
+                              <h5 class="header mb-0">Patricia Heneghan</h5>
+                              <p class="client-sub-header">Previous Client</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <h6 class="client-text mb-0">
+                    Nancy Shannon is the consummate professional realtor. Her calm demeanor and 
+                    presence kept me grounded through challenging sale negotiations and after the sale. 
+                    From our first meeting, I felt heard & supported through every step of the process.
+                  </h6>
+                  <div class="d-flex flex-column align-items-end">
+                    <p class="client-review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- review container end -->
+
+            <!-- review container start -->
+            <div class="swiper-slide">
+              <div class="swiper-carousel-animate-opacity">
+                <div class="review-quote">
+
+                  <div class="review-image-container pb-3">
+                    <div class="client-image">
+                      <div class="media">
+                          <div class="media-left">
+                              <img src="images/customer-8.png" alt="self" />
+                          </div>
+                          <div class="client-image-words">
+                              <h5 class="header mb-0">Phil Senatra</h5>
+                              <p class="client-sub-header">Previous Client</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <h6 class="client-text mb-0">
+                    Nancy is such a pleasure to work with. Knowledgeable and helpful. She was with 
+                    me for every step in the transaction and it couldn't have been smoother. 
+                    She supported an important change in listing price that provided multiple offers.
+                    The presentation of the home on the internet was first rate.
+                  </h6>
+
+                  <div class="d-flex flex-column align-items-end">
+                    <p class="client-review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- review container end -->
+
+            <!-- review container start -->
+            <div class="swiper-slide">
+              <div class="swiper-carousel-animate-opacity">
+                <div class="review-quote">
+
+                  <div class="review-image-container pb-3">
+                    <div class="client-image">
+                      <div class="media">
+                          <div class="media-left">
+                              <img src="images/customer-9.png" alt="self" />
+                          </div>
+                          <div class="client-image-words">
+                              <h5 class="header mb-0">Brian Caufield</h5>
+                              <p class="client-sub-header">Previous Client</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <h6 class="client-text mb-0">
+                    I had the good fortune of being paired with Nancy in 2013 when I began my 
+                    search for a home in Portland.  Nancy took the time to first obtain my interests, 
+                    likes and dislikes, and general budget. From there, unlike other agents, she found 
+                    me homes that fit my style and budget. 
+                  </h6>
+                  <div class="d-flex flex-column align-items-end">
+                    <p class="client-review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- review container end -->
+
           </div>
-          <div class="col-xl-2 col-lg-3"></div>
         </div>
+
       </div>
-
     </div>
-    <!-- testimonials end -->
+    <!-- client reviews end -->
 
-    <!-- bottom wave-->
+    <!-- bottom wave start -->
     <div class="wave move-up">
       <svg xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 1440 117.3" 
         preserveAspectRatio="none">
-        <path fill="#689b9e" fill-opacity="1"
+        <path fill="var(--light-teal-color)" fill-opacity="1"
           d="M0,64L80,58.7C160,53,320,43,480,58.7C640,75,800,117,960,117.3C1120,117,1280,75,1360,53.3L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" 
         />
       </svg>
@@ -578,51 +681,63 @@
   </div>
   <!-- main content end -->
 
-  <!-- footer -->
+  <!-- footer start -->
   <div id="footer" class="footer-container mt-5">
-    <div class="footer-header-container container-fluid row">
-      <div class="col-lg-1 col-md-1 col-0"></div>
-      <div class="col-lg-3 col-md-3 col-12 footer-bottom-left-header align-content-center pb-4">
-        <h3>Contact</h3>
-        <p>Nancy@SellingPdxMetroHomes.com</p>
-        <a href="tel:+1-503-516-9400" class="white-text">
-          <p class="number-link">503.516.9400</p>
-        </a>
-      </div>
-      <div class="col-lg-4 col-md-4 col-12 footer-connect pb-4">
-        <h3>Connect</h3>
-        <p>
-          <a href="https://www.linkedin.com/in/nancy-shannon-38773a17b">
-            <i class="fa-brands fa-linkedin footer-fa-brands fa-2x"></i>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-1 col-0"></div> 
+ 
+        <!-- footer left column start -->
+        <div class="col-md-4 pb-4">
+          <h3 class="pb-2">Contact</h3>
+          <a href="tel:+1-503-516-9400">
+            <p class="footer-link">503.516.9400</p>
           </a>
-          <a href="https://www.facebook.com/NancyShannonrealtor/">
-            <i class="fa-brands fa-facebook-square footer-fa-brands fa-2x"></i>
+          <a href="mailto:Nancy@sellingpdxmetrohomes.com">
+            <p class="footer-link">Our Email</p>
           </a>
-        </p>
-      </div>
-      <div class="col-lg-3 col-md-3 col-12 pb-4">
-        <h3>Location</h3>
-        <p>10135 Se Sunnyside Rd, St. 150</p>
-        <p>Clackamas, OR 97015</p>
-      </div>
-      <div class="col-lg-1 col-md-1 col-0"></div>
-    </div>
-    <div class="row">
-      <div class="col-lg-1 col-md-1 col-0"></div>
-      <div class="col-lg-3 col-md-3 col-12 footer-bottom-left-header d-flex justify-content-center pb-4">
-        <div class="footer-logo-container">
-          <img src="images/fair-housing.png" alt="Portland Oregon Realtor Fair Housing" />
+          <p>
+            <a href="https://www.linkedin.com/in/nancy-shannon-38773a17b">
+              <i class="fa-brands fa-linkedin footer-fa-brands fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/NancyShannonrealtor/">
+              <i class="fa-brands fa-facebook-square footer-fa-brands fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/lifeinhomegirl/">
+              <i class="fa-brands fa-square-instagram footer-fa-brands fa-2x"></i>
+            </a>
+          </p>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-12 footer-connect text-center mt-auto pb-4">
-        <p>© 2023 Life in Home Team</p>
-      </div>
-      <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-center mt-auto pb-4">
-        <div class="footer-logo-container">
-          <img src="images/ppg-logo-white.webp" alt="Portland Oregon Realtor, PPG" />
+        <!-- footer left column end -->
+  
+        <!-- footer mid column start -->
+        <div class="col-md-3 pb-4">
+          <h3 class="pb-2">Company</h3>
+          <a href="/About">
+            <p class="footer-link">About Us</p>
+          </a>
+          <a href="/Listings">
+            <p class="footer-link">Our Listings</p>
+          </a>
+          <a href="/Blog">
+            <p class="footer-link">Our Blog</p>
+          </a>
         </div>
+        <!-- footer mid column end -->
+  
+        <!-- footer right column start -->
+        <div class="col-md-4 mt-auto pb-4 d-flex flex-column footer-logos">
+          <div class="footer-logo-container">
+            <img src="images/ppg-logo-white.webp" alt="Portland Oregon Realtor, PPG" />
+          </div>
+          <div class="footer-logo-container">
+            <img src="images/fair-housing.png" alt="Portland Oregon Realtor Fair Housing" />
+          </div>
+        </div>
+        <!-- footer right column end -->
+  
       </div>
-      <div class="col-lg-1 col-md-1 col-0"></div>
     </div>
   </div>
   <!-- footer end -->
@@ -636,8 +751,9 @@
   <script src="js/navbar-observer.js"></script>
   <script src="js/up-observer.js"></script>
   <script src="js/left-observer.js"></script>
-  <script src="js/review-arrows.js"></script>
+  <script src="js/listings-swiper.js"></script>
+  <script src="js/review-swiper.js"></script>
   <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
-</body>
 
+</body>
 </html>

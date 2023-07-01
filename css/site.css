@@ -336,7 +336,7 @@ a {
     }
 
     .blog-left a {
-        padding: 10px;
+        margin: 15px;
     }
 }
 
@@ -1402,6 +1402,7 @@ ul li {
     background-color: var(--light-teal-color);
     padding-top: 3rem;
     padding-bottom: 3rem;
+    max-width: 100vw !important;
 }
 
 .reviews-outer-container .container,
@@ -1848,7 +1849,7 @@ a {
     font-family: 'Source Serif Pro', serif;
     color: #212529;
     font-weight: 500 !important;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .listing-description-mid p {
@@ -1996,8 +1997,13 @@ a {
 }
 
 .footer-container p {
-    font-size: 14px !important;
+    font-size: 16px !important;
     color: rgb(239, 240, 241);
+    margin-bottom: 0px !important;
+}
+
+.footer-container a {
+    margin-right: 8px;
 }
 
 main, body {

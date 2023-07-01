@@ -1,7 +1,7 @@
 // set variable for number of swiper slides
 var slides = 2;
 
-if (window.innerWidth < 768) {
+if (window.innerWidth < 992) {
     slides = 1;
 }
 
@@ -10,13 +10,13 @@ var swiperTwo = new Swiper(".review-swiper", {
     spaceBetween: 30,
     loop: true,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        nextEl: ".rev-next",
+        prevEl: ".rev-prev"
     }
 });
 
 addEventListener("resize", () => {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 992) {
         slides = 1;
     }
     else {
@@ -28,8 +28,8 @@ addEventListener("resize", () => {
         spaceBetween: 30,
         loop: true,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+            nextEl: ".rev-next",
+            prevEl: ".rev-prev"
         }
     });
 });

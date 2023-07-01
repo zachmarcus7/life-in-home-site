@@ -4,8 +4,8 @@
             if (swiper.params.effect !== 'carousel') return;
             swiper.classNames.push(`${swiper.params.containerModifierClass}carousel`);
             const overwriteParams = {
-            watchSlidesProgress: true,
-            centeredSlides: true,
+                watchSlidesProgress: true,
+                centeredSlides: true,
             };
 
             Object.assign(swiper.params, overwriteParams);

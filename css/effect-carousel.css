@@ -74,11 +74,3 @@
   overflow: hidden;
   color: white;
 }
-
-/*
-@media (max-width: 640px) {
-  .swiper-carousel .swiper-button-next, .swiper-carousel .swiper-button-prev {
-    display: none !important;
- }
-}
-*/

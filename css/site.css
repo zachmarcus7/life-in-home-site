@@ -34,6 +34,11 @@
   --default-text: rgb(96, 88, 106);
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 /* ------------------------------------------------------------------ */
 /* b. Fade-in Effects
 /* ------------------------------------------------------------------ */
@@ -499,9 +504,9 @@ li::marker {
 
 .blog-quote-underline,
 .review-quote-underline {
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid var(--main-color);
   padding-top: 2rem;
-  width: 50%;
+  width: 30%;
 }
 
 @media(max-width: 768px) {
@@ -515,6 +520,22 @@ li::marker {
   .blog-quote {
     padding-left: 4rem !important;
     padding-right: 5rem !important;
+  }
+}
+
+.blog-quote-outer {
+  background-color: var(--light-gray-color);
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .blog-quote-outer {
+    background-color: var(--light-gray-color);
+    border-radius: 4px;
+    padding: 1rem 1rem 2rem 1rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
   }
 }
 
@@ -1710,14 +1731,14 @@ ul li {
 
 .bottom-section-main-container {
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 0rem;
   background: var(--light-gray-color);
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 4px;
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 3rem 1.6rem 2rem 1.6rem;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
   max-width: 800px;
@@ -1728,6 +1749,7 @@ ul li {
     padding: 3rem 4rem 4rem 4rem !important;
     margin-right: 2rem !important;
     margin-left: 2rem !important;
+    margin-bottom: 5rem !important;
   }
 }
 
@@ -1750,7 +1772,7 @@ ul li {
 }
 
 .bottom-section-image img {
-  height: 70px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1758,7 +1780,7 @@ ul li {
 
 @media (min-width: 768px) {
   .bottom-section-image img {
-    height: 80px !important;
+    height: 70px !important;
   }
 }
 
@@ -2167,8 +2189,7 @@ a {
   margin-right: 8px;
 }
 
-main,
-body {
+main, body {
   padding-bottom: 0 !important;
 }
 

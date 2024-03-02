@@ -1,3 +1,13 @@
+/* ------------------------------------------------------------------ */
+/* Styles specific to the swiper.js carousel.
+/* ------------------------------------------------------------------ */
+
+:root {
+  --swiper-navigation-color: #fff;
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-inactive-color: #fff;
+}
+
 .swiper-carousel {
   position: relative;
   margin: 0 auto;
@@ -9,12 +19,6 @@
 
 .swiper-carousel .swiper-slide, .swiper-carousel swiper-slide {
   position: relative;
-}
-
-:root {
-  --swiper-navigation-color: #fff;
-  --swiper-pagination-color: #fff;
-  --swiper-pagination-bullet-inactive-color: #fff;
 }
 
 .swiper-carousel {

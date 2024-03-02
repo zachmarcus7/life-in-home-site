@@ -1793,8 +1793,14 @@ ul li {
 }
 
 .bottom-symbols-container {
-  padding-top: 8rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .bottom-symbols-container {
+    padding-top: 8rem !important;
+  }
 }
 
 .bottom-symbols-container h3 {

@@ -309,7 +309,7 @@ a {
 }
 
 .content-bottom-header p {
-  background: rgb(241, 243, 245);
+  background: var(--light-gray-color);
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 6px;
@@ -526,7 +526,7 @@ li::marker {
 .blog-quote-outer {
   background-color: var(--light-gray-color);
   border-radius: 4px;
-  padding: 1rem;
+  padding: 1rem 0.5rem 1.5rem 0.5rem;
 }
 
 @media (min-width: 768px) {

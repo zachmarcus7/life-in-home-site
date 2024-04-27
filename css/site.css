@@ -1875,7 +1875,7 @@ ul li {
 .bio-image-container img {
   width: 100%;
   object-fit: cover !important;
-  height: 275px;
+  height: 285px;
 }
 
 .bio-left {
@@ -1926,7 +1926,7 @@ ul li {
   .about-img-container::before {
     left: -1rem !important;
     top: 0.5rem !important;
-    height: 280px !important;
+    height: 290px !important;
   }
   
 }

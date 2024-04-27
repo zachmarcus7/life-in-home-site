@@ -873,6 +873,10 @@ p {
   transform: translateY(-20%);
 }
 
+.sub-header-text {
+  font-size: 1rem;
+}
+
 @media only screen and (min-width: 325px) {
 
   .banner-container,
@@ -1058,6 +1062,10 @@ p {
   .about-lower {
     height: 48vw;
   }
+
+  .sub-header-text {
+    font-size: 1.2rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1108,7 +1116,7 @@ p {
   }
 
   .sub-header-text {
-    font-size: 28px;
+    font-size: 22px !important;
   }
 }
 
@@ -1125,10 +1133,6 @@ p {
 @media (min-width: 2200px) {
   .about-mid-left-text {
     padding-left: 14rem;
-  }
-
-  h2 {
-    font-size: 62px;
   }
 }
 

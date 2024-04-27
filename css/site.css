@@ -1264,7 +1264,7 @@ ul li {
   transform: translate(-50%, -50%);
   max-height: 100%;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
   max-width: 900px;
 }
@@ -1276,7 +1276,7 @@ ul li {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
   z-index: -1;
 }
 
@@ -1870,7 +1870,7 @@ ul li {
 .bio-image-container img {
   width: 100%;
   object-fit: cover !important;
-  max-height: 275px;
+  height: 275px;
 }
 
 .bio-left {
@@ -1925,7 +1925,7 @@ ul li {
   }
 
   .bio-image-container img {
-    max-height: 200px;
+    height: 180px !important;
   }
   
 }

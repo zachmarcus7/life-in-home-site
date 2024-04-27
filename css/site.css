@@ -1276,7 +1276,7 @@ ul li {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2.5px);
   z-index: -1;
 }
 
@@ -1293,16 +1293,6 @@ ul li {
   width: 40%;
   border-color: white;
 }
-
-/*
-.banner-container h2 {
-  animation: title-fade-in 0.8s;
-}
-
-.banner-container h6 {
-  animation: sub-title-fade-in 2s;
-}
-*/
 
 .top-container {
   word-wrap: break-word;
@@ -1871,7 +1861,6 @@ ul li {
   width: 100%;
   object-fit: cover !important;
   height: 275px;
-  border: 2px solid white;
 }
 
 .bio-left {
@@ -1923,11 +1912,6 @@ ul li {
     left: -1rem !important;
     top: 0.5rem !important;
     height: 190px !important;
-  }
-
-  .bio-image-container img {
-    height: 180px !important;
-    min-height: 100% !important; /* Safari fix */
   }
   
 }

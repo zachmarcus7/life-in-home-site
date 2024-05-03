@@ -2400,3 +2400,7 @@ main, body {
   width: 600px;
   height: 300px;
 }
+
+.swiper-pagination-bullet {
+  display: none !important;
+}

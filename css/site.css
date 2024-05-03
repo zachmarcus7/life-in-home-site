@@ -2124,6 +2124,7 @@ a {
 
 .small-listing-address h4 {
   color: white;
+  font-family: 'Source Serif Pro' !important;
 }
 
 .listing-description {

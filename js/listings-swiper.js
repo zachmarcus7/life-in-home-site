@@ -3,17 +3,16 @@
 /* 1 to 3 slides can be shown at once.
 /* ------------------------------------------------------------------ */
 
-// set variable for number of swiper slides
-var slides = 3;
+// Set variable for number of swiper slides
+let slides = 3;
 
 if (window.innerWidth > 768 && window.innerWidth < 992) {
   slides = 2;
-}
-else if (window.innerWidth < 768) {
+} else if (window.innerWidth < 768) {
   slides = 1;
 }
 
-var swiperOne = new Swiper(".listings-swiper", {
+let swiperOne = new Swiper(".listings-swiper", {
   slidesPerView: slides,
   spaceBetween: 30,
   loop: true,
@@ -26,13 +25,14 @@ var swiperOne = new Swiper(".listings-swiper", {
 addEventListener("resize", () => {
   if (window.innerWidth > 768 && window.innerWidth < 992) {
     slides = 2;
-  }
-  else if (window.innerWidth < 768) {
+  } else if (window.innerWidth < 768) {
     slides = 1;
-  }
-  else {
+  } else {
     slides = 3;
   }
+
+  // Destroy the previous instance before creating a new one
+  swiperOne.destroy(true, true);
 
   swiperOne = new Swiper(".listings-swiper", {
     slidesPerView: slides,

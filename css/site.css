@@ -1840,6 +1840,7 @@ ul li {
 .bottom-section-main-container h3 {
   text-align: center;
   color: var(--main-color);
+  margin-bottom: 1.5rem;
 }
 
 .bottom-section-main-container hr {
@@ -2304,7 +2305,7 @@ a {
 
 @media (max-width: 768px) {
   .footer-container {
-    text-align: center;
+    padding-left: 1rem;
   }
 }
 

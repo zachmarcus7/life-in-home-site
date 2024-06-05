@@ -532,6 +532,39 @@ li::marker {
   background-color: var(--dark-teal-color);
 }
 
+.event-blog-image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.event-blog-image {
+  height: auto;
+  object-fit: cover;
+  margin-top: -1rem;
+  margin-bottom: 2.3rem;
+  box-shadow: 0 3px 5px rgba(0,0,0,.02),0 0 2px rgba(0,0,0,.05),0 1px 4px rgba(0,0,0,.08)!important;
+}
+
+@media (max-width: 991px) {
+  .event-blog-image {
+    max-height: 500px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .event-blog-image-container {
+    background-color: var(--light-gray-color);
+    margin-bottom: 2rem;
+  }
+
+  .event-blog-image {
+    width: 900px;
+  }
+}
+
 .blog-image {
   width: 100%;
   height: auto;

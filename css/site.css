@@ -318,6 +318,10 @@ a {
   border-radius: 6px;
   margin-right: 8px;
   margin-left: 8px;
+  font-family: 'Source Serif Pro';
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(140, 140, 140) !important;
 }
 
 .default-list {

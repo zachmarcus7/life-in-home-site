@@ -2149,6 +2149,18 @@ a {
   width: 100%;
 }
 
+@media (max-width: 991px) {
+  .small-listing-image img {
+    height: 220px;
+  }
+}
+
+@media (min-width: 992px) {
+  .small-listing-image img {
+    height: 240px;
+  }
+}
+
 .small-listing-address {
   position: absolute;
   left: 10px;

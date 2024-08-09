@@ -1440,8 +1440,14 @@ ul li {
 .symbols-title-line {
   position: absolute;
   height: 1px;
-  width: 60%;
+  width: 100%;
   z-index: 2;
+}
+
+@media (min-width: 992px) {
+  .symbols-title-line {
+    width: 60%;
+  }
 }
 
 .symbols-main-container {
@@ -1566,7 +1572,8 @@ ul li {
   transition: all 0.2s;
   box-shadow: 0 1px 8px rgba(0,0,0,.08),0 3px 4px rgba(0,0,0,.1),0 1px 4px -1px rgba(0,0,0,.1)!important;
   color: white !important;
-  padding: 0.1rem 1.5rem;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .banner-button-two {
@@ -1581,7 +1588,8 @@ ul li {
   transition: all 0.2s;
   box-shadow: 0 1px 8px rgba(0,0,0,.08),0 3px 4px rgba(0,0,0,.1),0 1px 4px -1px rgba(0,0,0,.1)!important;
   color: white !important;
-  padding: 0.1rem 1.5rem;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .banner-button-one:hover {
@@ -2378,9 +2386,9 @@ a {
 .contact-left p {
   font-size: 1rem !important;
   margin-bottom: 0px !important;
-  color: var(--light-gray-text);
+  color: var(--light-gray-text) !important;
   line-height: 1.5 !important;
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Source Serif Pro', serif !important;
 }
 
 .contact-left hr {

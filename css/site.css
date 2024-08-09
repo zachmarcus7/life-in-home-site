@@ -2383,7 +2383,8 @@ a {
   margin-bottom: 0px !important;
 }
 
-.contact-left p {
+.contact-left p,
+.contact-phone {
   font-size: 1rem !important;
   margin-bottom: 0px !important;
   color: var(--light-gray-text) !important;

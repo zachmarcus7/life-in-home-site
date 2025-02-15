@@ -1691,6 +1691,12 @@ ul li {
   color: rgb(120, 120, 123);
 }
 
+@media (min-width: 992px) {
+  .client-text {
+    min-height: 190px;
+  }
+}
+
 .carousel-item {
   margin: 10%;
 }

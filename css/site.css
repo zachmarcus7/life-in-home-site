@@ -145,7 +145,7 @@ html, body {
 
 .carousel-one {
   position: absolute;
-  background-image: url('../images/Listings/lenore-0.jpg');
+  background-image: url('../images/Listings/81st-1.jpeg');
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -155,6 +155,16 @@ html, body {
 
 .carousel-two {
   position: absolute;
+  background-image: url('../images/Listings/lenore-0.jpg');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-three {
+  position: absolute;
   background-image: url('../images/Listings/woodward-1.jpg');
   height: 100%;
   width: 100%;
@@ -163,16 +173,6 @@ html, body {
   background-size: cover;
   backdrop-filter: blur(0.9px);
   -webkit-backdrop-filter: blur(0.9px);
-}
-
-.carousel-three {
-  position: absolute;
-  background-image: url('../images/Listings/81st-1.jpeg');
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .carousel-four {

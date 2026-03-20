@@ -145,7 +145,7 @@ html, body {
 
 .carousel-one {
   position: absolute;
-  background-image: url('../images/Listings/81st-1.jpeg');
+  background-image: url('../images/Listings/lenore-0.jpg');
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -155,7 +155,7 @@ html, body {
 
 .carousel-two {
   position: absolute;
-  background-image: url('../images/Listings/opal-2.jpg');
+  background-image: url('../images/Listings/woodward-1.jpg');
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -167,7 +167,7 @@ html, body {
 
 .carousel-three {
   position: absolute;
-  background-image: url('../images/Listings/river-rd-2.jpg');
+  background-image: url('../images/Listings/81st-1.jpeg');
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@ html, body {
 
 .carousel-five {
   position: absolute;
-  background-image: url('../images/Listings/128th-4.jpeg');
+  background-image: url('../images/Listings/river-rd-2.jpg');
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -1664,19 +1664,236 @@ ul li {
 
 .review-swiper {
   padding-top: 2rem;
-  padding-bottom: 1rem;
 }
 
 .client-image img {
-  height: 6rem;
-  width: 6rem;
+  height: 8rem;
+  width: 8rem;
   object-fit: contain;
-  border-radius: 50%;
+  border-radius: 20px;
+  margin-left: 1rem;
 }
 
 .client-image-words {
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-left: 1rem;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.photo-wrap {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 2;
+  margin-right: -48px;
+}
+
+.photo {
+  width: 250px;
+  height: 310px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #c8bfb2 0%, #a89880 100%);
+  font-size: 90px;
+  box-shadow: 0 1px 7px rgba(0,0,0,.1),0 4px 5px -2px rgba(0,0,0,.12),0 10px 15px -5px rgba(0,0,0,.2);
+  border: 3px solid white;
+}
+
+.photo-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+.card {
+  background: white;
+  border-radius: 6px;
+  box-shadow: var(--card-shadow);
+  padding: 44px 40px 36px 80px;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.review-card {
+  background-color: white !important;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .02), 0 0 2px rgba(0, 0, 0, .05), 0 1px 4px rgba(0, 0, 0, .08);
+  border-radius: 2px !important;
+  padding-top: 7.5% !important;
+  padding-bottom: 7.5% !important;
+}
+
+@media (min-width: 992px) {
+  .testimonial {
+    width: 880px;
+    margin-left: 5rem;
+  }
+}
+
+/* ── Reviews Mobile ── */
+@media (max-width: 992px) {
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Photo bleeds above the card on mobile */
+  .photo-wrap {
+    margin-right: 0;
+    margin-bottom: -56px;
+    z-index: 2;
+  }
+
+  .photo-wrap::after {
+    bottom: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .photo {
+    width: 200px;
+    height: 220px;
+    font-size: 60px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 72px 28px 32px 28px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .stars { justify-content: center; }
+  .divider { margin-left: auto; margin-right: auto; }
+  .bg-quote { font-size: 120px; right: 12px; }
+  .review-text { font-size: 17px; }
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 80px; height: 80px;
+  background: linear-gradient(225deg, var(--cream) 0%, transparent 60%);
+}
+
+.bg-quote {
+  position: absolute;
+  top: 10px;
+  right: 28px;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1;
+  color: rgb(187 191 202);
+  opacity: 0.18;  
+  pointer-events: none;
+  user-select: none;
+}
+
+.bg-quote svg {
+  height: 90px;
+  width: 90px;
+  fill: rgb(187 191 202);
+}
+
+@media (max-width: 992px) {
+  .bg-quote {
+    top: -20px !important;
+    right: 10px !important;
+  }
+
+  .bg-quote svg {
+    height: 75px;
+    width: 75px;
+  }
+
+  .desktop-review-pagination,
+  .stars {
+    display: none !important;
+  }
+  
+}
+
+@media (min-width: 992px) {
+
+  .mobile-review-pagination {
+    display: none !important;
+  }
+
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.stars span {
+  color: var(--main-color);
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.review-text {
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.75;
+  color: rgb(120, 120, 123);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .review-text {
+    padding-top: 3.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .review-text {
+    margin-right: 1.5rem;
+  }
+
+  .review-card {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.divider {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  margin-bottom: 20px;
+}
+
+.client-name {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--main-color) !important;
+  margin-bottom: 4px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.client-label {
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: rgb(140, 140, 140) !important;
 }
 
 .client-sub-header {

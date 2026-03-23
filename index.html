@@ -1,859 +1,422 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="Description" content="We're a locally owned Realtor brokerage based out of Portland, OR. With over 35 years of experience, we promise to make your transition as easy as possible.">
-  <title>Life In Home Team Realty</title>
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Life In Home Team Realty" />
-  <meta property="og:description" content="We're a locally owned Realtor brokerage based out of Portland, OR. With over 35 years of experience, we promise to make your transition as easy as possible" />
-  <meta property="og:url" content="https://www.lifeinhometeam.com/" />
-  <meta property="og:site_name" content="Life In Home Team Realty" />
-  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/site.css" />
-  <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/effect-carousel.css" />
-  <script> </script> <!-- chrome bug fix -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/mini-logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life in Home Team · Portland Real Estate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/index.css">
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".main-nav">
-
-  <!-- home start -->
-  <header id="home" class="h-100">
-
-    <nav class="navbar navbar-expand-lg fixed-top main-nav nav-fade-in" id="main-nav">
-      <div class="nav-logo-container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/lih-logo-nav.svg" alt="Life in Home mini logo" />
-        </a>
-      </div>
-      <button class="navbar-toggler" 
-        type="button" 
-        data-toggle="collapse" 
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-        onclick="changeNavOpacity()">
-        <i class="fa-solid fa-bars"></i>
+<!-- NAV -->
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Life in <em>Home</em> Team</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="Selling.html">Selling</a></li>
+      <li><a href="Buying.html">Buying</a></li>
+      <li><a href="Listings.html">Listings</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="tel:+15035169400" class="nav-phone">503.516.9400</a>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link sub-header nav-active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Selling.html">Selling</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Buying.html">Buying</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Listings.html">Listings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="About.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    </div>
+  </div>
+</nav>
 
-    <!-- banner start -->
-    <div class="banner-container text-center">
-      <h6 class="shadow-behind-text sub-header sub-header-text">Life in Home Team</h6>
-      <h2 class="shadow-behind-text">Matching your Lifestyle to your Perfect Home</h2>
-      <div class="d-flex justify-content-center">
-        <a href="#offset-one" id="learn-more-button">
-          <p class="banner-button-one">Learn More</p>
-        </a>
-        <a href="Listings.html">
-          <p class="banner-button-two">View Listings</p>
-        </a>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__photo">
+    <img src="https://www.lifeinhometeam.com/images/Listings/lenore-01.jpg" alt="Portland home" />
+    <div class="hero__photo-overlay"></div>
+    <div class="hero__card">
+      <div class="hero__card-label">Featured Listing</div>
+      <div class="hero__card-addr">10884 SE Lenore St</div>
+      <div class="hero__card-price">$898,000 &nbsp;·&nbsp; 7 Bed &nbsp;·&nbsp; 4,139 sq ft</div>
+    </div>
+  </div>
+  <div class="hero__content">
+    <div class="hero__eyebrow">Portland, Oregon</div>
+    <h1 class="hero__h1">Matching your <em>lifestyle</em><br>to your perfect home.</h1>
+    <p class="hero__sub">When you need a real estate partner who truly listens — to the complexities of buying or selling, and to the personal details that matter most.</p>
+    <div class="hero__btns">
+      <a href="Listings.html" class="btn-gold">Browse Listings</a>
+      <a href="#intro" class="btn-ghost-light">Learn More</a>
+    </div>
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <div class="hero__stat-num">17<sup>yr</sup></div>
+        <div class="hero__stat-label">In Business</div>
+      </div>
+      <div class="hero__stat">
+        <div class="hero__stat-num">98<sup>%</sup></div>
+        <div class="hero__stat-label">Satisfaction</div>
+      </div>
+      <div class="hero__stat">
+        <div class="hero__stat-num">340<sup>+</sup></div>
+        <div class="hero__stat-label">Homes Closed</div>
       </div>
     </div>
-    <!-- banner end -->
+  </div>
+</section>
 
-    <!-- down arrow start -->
-    <div class="home-page-lower-container">
-      <a class="logo-container down-arrow" href="#offset-one" id="down-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-          <path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/>
-        </svg>
+<!-- INTRO -->
+<section class="intro section section--lg" id="intro">
+  <div class="container">
+    <div class="intro-inner">
+
+      <div class="intro__left reveal">
+        <div class="intro__eyebrow">Your New Beginning</div>
+        <h2 class="intro__heading">
+          Real estate done<br>with <em>genuine care</em>
+        </h2>
+        <p class="intro__body">
+          Buying or selling a home is one of the most personal decisions you'll ever make. We don't just guide you through transactions — we take the time to understand your situation, your goals, and the life you're building.
+        </p>
+        <div class="intro__cta-row">
+          <a href="About.html" class="btn-forest">Meet Nancy</a>
+          <a href="Contact.html" class="intro__link">
+            Get in touch
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="intro__right reveal">
+        <div class="intro__feature">
+          <div class="intro__feature-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <circle cx="11" cy="8" r="4" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M4 19c0-3.866 3.134-7 7-7h0c3.866 0 7 3.134 7 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="intro__feature-text">
+            <div class="intro__feature-title">We listen first</div>
+            <div class="intro__feature-desc">Unlike agents who lead with listings, we start with your story, your timeline, your needs, and the vision you have for what comes next.</div>
+          </div>
+        </div>
+
+        <div class="intro__feature">
+          <div class="intro__feature-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M3 11l8-8 8 8M5 9.5V18h4v-5h4v5h4V9.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="intro__feature-text">
+            <div class="intro__feature-title">Deep local knowledge</div>
+            <div class="intro__feature-desc">17 years navigating Portland's neighborhoods means we know the nuances. From SE to NE, Milwaukie to the Hollywood District.</div>
+          </div>
+        </div>
+
+        <div class="intro__feature">
+          <div class="intro__feature-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M11 3v2M11 17v2M3 11H1M21 11h-2M5.636 5.636l-1.414-1.414M17.778 17.778l-1.414-1.414M5.636 16.364L4.222 17.778M17.778 4.222l-1.414 1.414" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="11" cy="11" r="4" stroke="currentColor" stroke-width="1.4"/>
+            </svg>
+          </div>
+          <div class="intro__feature-text">
+            <div class="intro__feature-title">Clarity through complexity</div>
+            <div class="intro__feature-desc">From first showing to closing day, we handle every detail so you can focus on the transition itself, not the paperwork.</div>
+          </div>
+        </div>
+
+        <div class="intro__feature">
+          <div class="intro__feature-icon">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M11 2l2.4 7.2H21l-6.2 4.5 2.4 7.2L11 16.4l-6.2 5.5 2.4-7.2L1 9.2h7.6L11 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="intro__feature-text">
+            <div class="intro__feature-title">5-star track record</div>
+            <div class="intro__feature-desc">Over 340 homes closed and a consistent 5-star rating from clients.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services section" id="services">
+  <div class="container">
+    <div class="services__header reveal">
+      <h2 class="services__title">How we can<br><em>help you</em></h2>
+      <p class="services__subtitle">Tailored guidance for every stage of your property journey.</p>
+    </div>
+    <div class="services__grid">
+      <a href="Buying.html" class="svc svc--featured reveal">
+        <span class="svc__num">01</span>
+        <svg class="svc__icon" viewBox="0 0 48 48" fill="none"><path d="M8 22L24 8l16 14v20H32V30H16v12H8V22z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <h3 class="svc__title">Buying</h3>
+        <p class="svc__desc">We streamline your home search — understanding your needs first, then finding homes that genuinely fit your lifestyle and budget.</p>
+        <span class="svc__link">Get started <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="Selling.html" class="svc reveal">
+        <span class="svc__num">02</span>
+        <svg class="svc__icon" viewBox="0 0 48 48" fill="none"><rect x="10" y="14" width="28" height="22" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M18 14V10a6 6 0 0112 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="25" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+        <h3 class="svc__title">Selling</h3>
+        <p class="svc__desc">Strategic pricing, expert staging, and targeted marketing to get you top dollar in the shortest time.</p>
+        <span class="svc__link">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="Listings.html" class="svc reveal">
+        <span class="svc__num">03</span>
+        <svg class="svc__icon" viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="32" height="28" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M16 20h8M16 26h14M16 32h18" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/></svg>
+        <h3 class="svc__title">Listings</h3>
+        <p class="svc__desc">Browse our curated portfolio of Portland-area properties, each matched to quality and livability.</p>
+        <span class="svc__link">Browse all <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
     </div>
-    <!-- down arrow end -->
-
-    <!-- background carousel start -->
-    <div id="carouselExampleIndicators" 
-      class="carousel carousel-fade h-100" 
-      data-ride="carousel" 
-      data-interval="3800"
-      data-pause="false">
-
-      <div class="carousel-filter-one"></div>
-      <div class="carousel-filter-two"></div>
-
-      <div class="carousel-inner">
-        <div class="carousel-item carousel-one active">
-        </div>
-        <div class="carousel-item carousel-two">
-        </div>
-        <div class="carousel-item carousel-three">
-        </div>
-        <div class="carousel-item carousel-four">
-        </div>
-        <div class="carousel-item carousel-five">
-        </div>
-      </div>
-
-      <div class="offset-one" id="offset-one"></div>
-    </div>
-    <!-- background carousel end -->
-
-  </header>
-  <!-- home end -->
-
-  <!-- main content start -->
-  <div id="about">
-
-    <!-- top portion start -->
-    <div class=" main-page-container">
-      <div class="about-header-container container-fluid pt-5">
-        <div class="container">
-          <div class="row about-text">
-            
-            <div class="col-lg-4 col-md-5 col-sm-12 col-12 pb-4">
-              <div class="headline-container">
-                <div class="general-container-outer absolute">
-                  <div class="general-container-inner">
-                    <h3 class="about-header" id="second-header">
-                      The Beginning of Finding your New Home
-                    </h3>
-                  </div>
-                </div>
-                <div class="general-container-bottom">
-                  <h3 class="about-header" id="second-header">
-                    The Beginning of Finding your New Home
-                  </h3>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-lg-8 col-md-7 col-12">
-              <div class="pt-4">
-                <div class="pb-3 headline-right">
-                  <h5 class="header pb-2">
-                    When you're looking for a Real Estate partner to help guide you with the
-                    complexities of
-                    buying or selling a home, you've come to the right place.
-                  </h5>
-                  <p class="description-text">
-                    We understand that the process of buying or selling a home
-                    can be difficult. With us, you'll be given the service and attention to
-                    detail that will allow you to relax and deal with the personal aspects of your
-                    transition.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="symbols-title-container">
-            <hr class="symbols-title-line">
-            <h3 class="symbols-title">Our Services</h3>
-          </div>
-
-          <!-- intro icon containers start -->
-          <div class="row symbols-main-container">
-
-            <div class="col-md-4 col-12 pt-3">
-              <a href="Buying.html">
-
-                <div class="icon-text-container">
-                  <div class="icon-container">
-                    <div class="symbols-top-left"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                      height="48" 
-                      viewBox="0 96 960 960" 
-                      width="48" 
-                      fill="white"
-                      class="symbols-clickable" 
-                      stroke="rgb(39, 72, 92)" 
-                      stroke-width="20">
-                      <path d="M200 890V517l-73 56-20-27 93-72V370h35v76l245-186 374 285-21 28-73-57v374H543V655H416v235H200Zm0-573q0-39 24-67t72-28q33 0 47.5-17t14.5-43h35q0 40-24.5 67.5T296 257q-33 0-47 17.5T235 317h-35Z" />
-                    </svg>
-                  </div>
-
-                  <h5 class="header">Buying</h5>
-                  <p class="description-text text-align-center">Streamline your home search with our guidance and expertise</p>
-
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4 col-12 pt-3">
-              <a href="Selling.html" class="icon-grey-container">
-                <div class="icon-text-container">
-
-                  <div class="icon-container">
-                    <div class="symbols-top-left"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                      height="48" 
-                      viewBox="0 96 960 960" 
-                      width="48" 
-                      fill="white"
-                      class="symbols-clickable" 
-                      stroke="rgb(39, 72, 92)" 
-                      stroke-width="20">
-                      <path d="M463 940V752H246l-98-98 98-97h217v-75H179V287h284v-75h35v75h217l97 97-97 98H498v75h284v195H498v188h-35Z" />
-                    </svg>
-                  </div>
-
-                  <h5 class="header">Selling</h5>
-                  <p class="description-text text-align-center">Simplify the listing process with our expert help and dedication</p>
-
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4 col-12 pt-3">
-              <a href="Listings.html" class="icon-grey-container">
-
-                <div class="icon-text-container">
-                  <div class="icon-container">
-                    <div class="symbols-top-left"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                      class="symbols-clickable" 
-                      height="48" 
-                      viewBox="0 96 960 960"
-                      width="48" 
-                      fill="white" 
-                      stroke="rgb(39, 72, 92)" 
-                      stroke-width="20">
-                      <path d="M132 899v-35h85V252h321v41h121v354h-35V328h-86v571H132Zm286.789-291q13.611 0 22.911-9.589 9.3-9.59 9.3-22.2 0-12.611-9.089-22.411-9.09-9.8-22.7-9.8-12.611 0-22.411 9.589-9.8 9.59-9.8 22.2 0 12.611 9.589 22.411 9.59 9.8 22.2 9.8Zm302.973 318L754 853l75-33-75-34-32.238-71-32.238 71L615 820l74.524 33 32.238 73Z" />
-                    </svg>
-                  </div>
-
-                  <h5 class="header">Listings</h5>
-                  <p class="description-text text-align-center">Discover the right home for you by browsing our current listings</p>
-
-                </div>
-              </a>
-            </div>
-
-          </div>
-          <!-- intro icon containers end -->
-
-        </div>
-      </div>
-
-      <!-- home button target start -->
-      <div class="offset-two" id="offset-two"></div>
-      <!-- home button target end -->
-      
-    </div>
-    <!-- top portion end -->
-
-    <!-- top wave start -->
-    <div class="wave move-down-two">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-203.72 -57.88 1440.01 128.42" preserveAspectRatio="none">
-        <path 
-          fill="var(--light-teal-color-faded)" 
-          fill-opacity="1"
-          d="M -203.716 -57.885 L -143.716 -57.885 C -83.716 -57.885 36.284 -57.885 156.284 -41.885 C 276.284 -25.885 396.284 6.115 516.284 22.115 C 636.284 38.115 756.284 38.115 876.284 27.415 C 996.284 17.115 1116.284 -4.885 1176.284 -15.185 L 1236.284 -25.885 L 1236.284 70.115 L 1176.284 70.115 C 1116.284 70.115 996.284 70.115 876.284 70.115 C 756.284 70.115 636.284 70.115 516.284 70.115 C 396.284 70.115 276.284 70.115 156.284 70.115 C 36.284 70.115 -83.716 70.115 -143.716 70.115 L -203.716 70.115 L -203.716 -57.885 Z" 
-        />
-        <path 
-          fill="var(--light-teal-color)" 
-          fill-opacity="1"
-          d="M -203.723 6.535 L -143.723 1.235 C -83.723 -4.465 36.277 -14.465 156.277 -4.165 C 276.277 6.535 396.277 38.535 516.277 54.535 C 636.277 70.535 756.277 70.535 876.277 54.535 C 996.277 38.535 1116.277 6.535 1176.277 -9.465 L 1236.277 -25.465 L 1236.277 70.535 L 1176.277 70.535 C 1116.277 70.535 996.277 70.535 876.277 70.535 C 756.277 70.535 636.277 70.535 516.277 70.535 C 396.277 70.535 276.277 70.535 156.277 70.535 C 36.277 70.535 -83.723 70.535 -143.723 70.535 L -203.723 70.535 L -203.723 6.535 Z" 
-        />
-      </svg>
-    </div>
-    <!-- top wave end -->
-
-    <!-- recent listings start -->
-    <div class="listings-outer-container">
-      <div class="container p-4">
-        <h3 class="general-header pb-3 text-center">Recent Listings</h3>
-
-        <div class="swiper-container listings-swiper pb-3 pt-2">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <a href="Listings/10884-se-lenore.html">
-                <div class="small-listing-container">
-                  <div class="small-listing-image">
-                    <img src="images/Listings/lenore-1.jpg" alt="Home for sale in Sellwood">
-                    <div class="small-listing-address">
-                      <h4>10884 SE Lenore St</h4>
-                    </div>
-                  </div>
-                  <div class="listing-description">
-                    <div class="listing-description-top">
-                      <h6>$898,000</h6>
-                      <h6>4,139 Sq Ft.</h6>
-                      <h6>7 Bedrooms</h6>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a href="Listings/16552-se-woodward.html">
-                <div class="small-listing-container">
-                  <div class="small-listing-image">
-                    <img src="images/Listings/woodward-1.jpg" alt="Home for sale in Sellwood">
-                    <div class="small-listing-address">
-                      <h4>16552 SE Woodward St</h4>
-                    </div>
-                  </div>
-                  <div class="listing-description">
-                    <div class="listing-description-top">
-                      <h6>$500,000</h6>
-                      <h6>2,172 Sq Ft.</h6>
-                      <h6>3 Bedrooms</h6>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a href="Listings/7835-se-cesar.html">
-                <div class="small-listing-container">
-                  <div class="small-listing-image">
-                    <img src="images/Listings/cesar-1.jpg" alt="Home for sale in Sellwood">
-                    <div class="small-listing-address">
-                      <h4>7835 SE Cesar E Chavez Blvd</h4>
-                    </div>
-                  </div>
-                  <div class="listing-description">
-                    <div class="listing-description-top">
-                      <h6>$589,500</h6>
-                      <h6>1,777 Sq Ft.</h6>
-                      <h6>4 Bedrooms</h6>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a href="Listings/316-se-81st.html">
-                <div class="small-listing-container">
-                  <div class="small-listing-image">
-                    <img src="images/Listings/81st-1.jpeg" alt="Home for sale in Montavilla">
-                    <div class="small-listing-address">
-                      <h4>316 SE 81st Ave</h4>
-                    </div>
-                  </div>
-                  <div class="listing-description">
-                    <div class="listing-description-top">
-                      <h6>$549,000</h6>
-                      <h6>1,194 Sq Ft.</h6>
-                      <h6>3 Bedrooms</h6>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a href="Listings/896-se-river.html">
-                <div class="small-listing-container">
-                  <div class="small-listing-image">
-                    <img src="images/Listings/river-rd-1.jpg" alt="Home for sale in Milwaukie">
-                    <div class="small-listing-address">
-                      <h4>896 SE River Forest Rd</h4>
-                    </div>
-                  </div>
-                  <div class="listing-description">
-                    <div class="listing-description-top">
-                      <h6>$714,000</h6>
-                      <h6>2,334 Sq Ft.</h6>
-                      <h6>3 Bedrooms</h6>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a href="Listings/1925-ne-59th.html">
-                <div class="small-listing-container">
-                  <div class="small-listing-image">
-                    <img src="images/Listings/59th-1.jpeg" alt="Home for sale in Hollywood District">
-                    <div class="small-listing-address">
-                      <h4>1925 NE 59th Ave</h4>
-                    </div>
-                  </div>
-                  <div class="listing-description">
-                    <div class="listing-description-top">
-                      <h6>$639,000</h6>
-                      <h6>2,495 Sq Ft.</h6>
-                      <h6>3 Bedrooms</h6>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a href="Listings/1770-se-oak.html">
-                <div class="small-listing-container">
-                  <div class="small-listing-image">
-                    <img src="images/Listings/oak-1.jpg" alt="Home for sale in Milwaukie">
-                    <div class="small-listing-address">
-                      <h4>1770 SE Oak Shore Court</h4>
-                    </div>
-                  </div>
-                  <div class="listing-description">
-                    <div class="listing-description-top">
-                      <h6>$593,500</h6>
-                      <h6>1,971 Sq Ft.</h6>
-                      <h6>4 Bedrooms</h6>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="swiper-pagination-container">
-          <div class="swiper-button-prev listing-prev"></div>
-          <div class="swiper-button-mid"></div>
-          <div class="swiper-button-next listing-next"></div>
-        </div>
-
-      </div>
-    </div>
-    <!-- recent listings end -->
-
-    <!-- about mid start -->
-    <div class="about-mid-one">
-      <div class="row h-50">
-        <div class="col-md-6 col-12 about-mid-left-container">
-          <div class="about-mid-left row">
-            <div class="col-xl-3 col-md-2 col-1"></div>
-            <div class="col-xl-5 col-md-7 col-10 about-mid-left-text">
-              <h3>Guiding You Every Step of the Way</h3>
-              <hr />
-              <p>
-                Our experience, dedication, and consistent communication will help ensure the successful
-                and profitable sale of your home. With a strong understanding of the Portland area and
-                its market, we'll help guide you every step of the way.
-              </p>
-            </div>
-            <div class="col-md-1 col-0">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-12 about-mid-right-container">
-          <div class="about-mid-right"></div>
-        </div>
-      </div>
-    </div>
-    <!-- about mid end -->
-
-    <!-- client reviews start -->
-    <div class="reviews-outer-container">
-      <div class="container">
-        <h3 class="white-text pb-3 text-center">Client Reviews</h3>
-
-        <div class="swiper-pagination-container desktop-review-pagination">
-          <div class="swiper-button-prev rev-prev"></div>
-          <div class="swiper-button-mid"></div>
-          <div class="swiper-button-next rev-next"></div>
-        </div>
-
-        <div class="swiper-container review-swiper">
-          <div class="swiper-wrapper">
-
-            <!-- review container start -->
-            <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-            
-                <div class="testimonial">
-            
-                  <div class="photo-wrap">
-                    <img class="photo" src="images/happy-client-1.jpg" alt="client" />
-                  </div>
-            
-                  <div class="card review-card">
-                    <div class="bg-quote">
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        height="24px" 
-                        viewBox="0 -960 960 960" 
-                        width="24px" 
-                        fill="#1f1f1f"
-                      >
-                        <path
-                          d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92Z" 
-                        />
-                      </svg>
-                    </div>
-            
-                    <div class="stars">
-                      <span>★ ★ ★ ★ ★</span>
-                    </div>
-            
-                    <p class="review-text">
-                      I'm so excited to start this new chapter in our new home with my daughter. I'm truly grateful to Nancy for
-                      helping make it all possible. I couldn't have asked for a better person to work with, and I highly recommend her to anyone looking for an outstanding realtor.
-                    </p>
-            
-                    <div class="divider"></div>
-            
-                    <div class="client-info">
-                      <div class="client-name">Ryan Owen</div>
-                      <div class="client-label">Previous Buyer — March, 2026</div>
-                    </div>
-                  </div>
-            
-                </div>
-              </div>
-            </div>
-            <!-- review container end -->
-
-            <!-- review container start -->
-            <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-            
-                <div class="testimonial">
-            
-                  <div class="photo-wrap">
-                    <img class="photo" src="images/customer-6.png" alt="client" />
-                  </div>
-            
-                  <div class="card review-card">
-                    <div class="bg-quote">
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        height="24px" 
-                        viewBox="0 -960 960 960" 
-                        width="24px" 
-                        fill="#1f1f1f"
-                      >
-                        <path
-                          d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92Z" 
-                        />
-                      </svg>
-                    </div>
-            
-                    <div class="stars">
-                      <span>★ ★ ★ ★ ★</span>
-                    </div>
-            
-                    <p class="review-text">
-                      Nancy approached her task of selling the house with professionalism. I was truly
-                      impressed with the empathy she showed in the suggestions she made. She had trade
-                      professionals who she could recommend for the repairs and improvements the home
-                      needed. 
-                    </p>
-            
-                    <div class="divider"></div>
-            
-                    <div class="client-info">
-                      <div class="client-name">Barbara Olson-Brown</div>
-                      <div class="client-label">Previous Client</div>
-                    </div>
-                  </div>
-            
-                </div>
-              </div>
-            </div>
-            <!-- review container end -->
-
-            <!-- review container start -->
-            <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-            
-                <div class="testimonial">
-            
-                  <div class="photo-wrap">
-                    <img class="photo" src="images/customer-7.png" alt="client" />
-                  </div>
-            
-                  <div class="card review-card">
-                    <div class="bg-quote">
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        height="24px" 
-                        viewBox="0 -960 960 960" 
-                        width="24px" 
-                        fill="#1f1f1f"
-                      >
-                        <path
-                          d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92Z" 
-                        />
-                      </svg>
-                    </div>
-            
-                    <div class="stars">
-                      <span>★ ★ ★ ★ ★</span>
-                    </div>
-            
-                    <p class="review-text">
-                      Nancy Shannon is the consummate professional realtor. Her calm demeanor and 
-                      presence kept me grounded through challenging sale negotiations and after the sale. 
-                      From our first meeting, I felt heard & supported through every step of the process.
-                    </p>
-            
-                    <div class="divider"></div>
-            
-                    <div class="client-info">
-                      <div class="client-name">Patricia Heneghan</div>
-                      <div class="client-label">Previous Client</div>
-                    </div>
-                  </div>
-            
-                </div>
-              </div>
-            </div>
-            <!-- review container end -->
-
-            <!-- review container start -->
-            <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-            
-                <div class="testimonial">
-            
-                  <div class="photo-wrap">
-                    <img class="photo" src="images/customer-8.png" alt="client" />
-                  </div>
-            
-                  <div class="card review-card">
-                    <div class="bg-quote">
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        height="24px" 
-                        viewBox="0 -960 960 960" 
-                        width="24px" 
-                        fill="#1f1f1f"
-                      >
-                        <path
-                          d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92Z" 
-                        />
-                      </svg>
-                    </div>
-            
-                    <div class="stars">
-                      <span>★ ★ ★ ★ ★</span>
-                    </div>
-            
-                    <p class="review-text">
-                      Nancy is such a pleasure to work with. Knowledgeable and helpful. She was with 
-                      me for every step in the transaction and it couldn't have been smoother. 
-                      She supported an important change in listing price that provided multiple offers.
-                      The presentation of the home on the internet was first rate.
-                    </p>
-            
-                    <div class="divider"></div>
-            
-                    <div class="client-info">
-                      <div class="client-name">Phil Senatra</div>
-                      <div class="client-label">Previous Client</div>
-                    </div>
-                  </div>
-            
-                </div>
-              </div>
-            </div>
-            <!-- review container end -->
-
-            <!-- review container start -->
-            <div class="swiper-slide">
-              <div class="swiper-carousel-animate-opacity">
-            
-                <div class="testimonial">
-            
-                  <div class="photo-wrap">
-                    <img class="photo" src="images/customer-9.png" alt="client" />
-                  </div>
-            
-                  <div class="card review-card">
-                    <div class="bg-quote">
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        height="24px" 
-                        viewBox="0 -960 960 960" 
-                        width="24px" 
-                        fill="#1f1f1f"
-                      >
-                        <path
-                          d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92Z" 
-                        />
-                      </svg>
-                    </div>
-            
-                    <div class="stars">
-                      <span>★ ★ ★ ★ ★</span>
-                    </div>
-            
-                    <p class="review-text">
-                      I had the good fortune of being paired with Nancy in 2013 when I began my 
-                      search for a home in Portland.  Nancy took the time to first obtain my interests, 
-                      likes and dislikes, and general budget. From there, unlike other agents, she found 
-                      me homes that fit my style and budget. 
-                    </p>
-            
-                    <div class="divider"></div>
-            
-                    <div class="client-info">
-                      <div class="client-name">Brian Caufield</div>
-                      <div class="client-label">Previous Client</div>
-                    </div>
-                  </div>
-            
-                </div>
-              </div>
-            </div>
-            <!-- review container end -->
-
-          </div>
-        </div>
-
-        <div class="swiper-pagination-container mobile-review-pagination">
-          <div class="swiper-button-prev rev-prev"></div>
-          <div class="swiper-button-mid"></div>
-          <div class="swiper-button-next rev-next"></div>
-        </div>
-
-      </div>
-    </div>
-    <!-- client reviews end -->
-
-    <!-- bottom wave start -->
-    <div class="wave move-up">
-      <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 1440 117.3" 
-        preserveAspectRatio="none"
-      >
-        <path 
-          fill="var(--light-teal-color)" 
-          fill-opacity="1"
-          d="M0,64L80,58.7C160,53,320,43,480,58.7C640,75,800,117,960,117.3C1120,117,1280,75,1360,53.3L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" 
-        />
-      </svg>
-    </div>
-    <!-- bottom wave end -->
-
-    <!-- bottom section start -->
-    <div class="d-flex justify-content-center align-items-center">
-      <div class="bottom-section-main-container">
-
-        <h3>We'd Love to Hear From You!</h3>
-        <p>
-          Years of experience in the industry have equipped us to address nearly every real estate need you may have. Whether it's locating your ideal home, securing the best loan, or maximizing the value in selling your home, 
-          we are here to guide you. Some of our designations include the Seniors Real Estate Specialist designation, as well as the 
-          Accredited Buyer Representative designation, which provides specialized training to make the buying process smoother and more efficient.
-        </p>
-
-        <div class="bottom-section-sub-container">
-          <div class="bottom-section-image d-flex">
-            <img src="images/NAR_Logo.png" alt="National Association of Realtors Logo" />
-            <img src="images/SRS_Logo_1.png" alt="Seniors Real Estate Specialist Designation Logo" />
-            <img src="images/ABR_Logo.png" alt="Accredited Buyer Representative Logo" />
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <!-- bottom section end -->
-
   </div>
-  <!-- main content end -->
+</section>
 
-  <!-- footer start -->
-  <div id="footer" class="footer-container mt-5">
-    <div class="container">
-      <div class="row">
+<!-- LISTINGS -->
+<section class="listings section">
+  <div class="container">
+    <div class="listings__header reveal">
+      <h2 class="listings__title">Recent Listings</h2>
+      <a href="Listings.html" class="listings__view-all">View all <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="listings__grid">
+      <a href="Listings/10884-se-lenore.html" class="listing reveal">
+        <span class="listing__tag">Featured</span>
+        <div class="listing__img-wrap"><img class="listing__img" src="https://www.lifeinhometeam.com/images/Listings/lenore-1.jpg" alt="10884 SE Lenore St" /></div>
+        <div class="listing__info">
+          <div class="listing__addr">10884 SE Lenore St</div>
+          <div class="listing__meta"><span class="listing__price">$898,000</span><span class="listing__detail">7 Bed</span><span class="listing__detail">4,139 sq ft</span></div>
+        </div>
+      </a>
+      <a href="Listings/16552-se-woodward.html" class="listing reveal">
+        <div class="listing__img-wrap"><img class="listing__img" src="https://www.lifeinhometeam.com/images/Listings/woodward-1.jpg" alt="16552 SE Woodward" /></div>
+        <div class="listing__info">
+          <div class="listing__addr">16552 SE Woodward St</div>
+          <div class="listing__meta"><span class="listing__price">$500,000</span><span class="listing__detail">3 Bed · 2,172 sq ft</span></div>
+        </div>
+      </a>
+      <a href="Listings/7835-se-cesar.html" class="listing reveal">
+        <div class="listing__img-wrap"><img class="listing__img" src="https://www.lifeinhometeam.com/images/Listings/cesar-1.jpg" alt="7835 SE Cesar E Chavez" /></div>
+        <div class="listing__info">
+          <div class="listing__addr">7835 SE Cesar E Chavez Blvd</div>
+          <div class="listing__meta"><span class="listing__price">$589,500</span><span class="listing__detail">4 Bed · 1,777 sq ft</span></div>
+        </div>
+      </a>
+      <a href="Listings/316-se-81st.html" class="listing reveal">
+        <div class="listing__img-wrap"><img class="listing__img" src="https://www.lifeinhometeam.com/images/Listings/81st-1.jpeg" alt="316 SE 81st Ave" /></div>
+        <div class="listing__info">
+          <div class="listing__addr">316 SE 81st Ave</div>
+          <div class="listing__meta"><span class="listing__price">$549,000</span><span class="listing__detail">3 Bed · 1,194 sq ft</span></div>
+        </div>
+      </a>
+      <a href="Listings/896-se-river.html" class="listing reveal">
+        <div class="listing__img-wrap"><img class="listing__img" src="https://www.lifeinhometeam.com/images/Listings/river-rd-1.jpg" alt="896 SE River Forest Rd" /></div>
+        <div class="listing__info">
+          <div class="listing__addr">896 SE River Forest Rd</div>
+          <div class="listing__meta"><span class="listing__price">$714,000</span><span class="listing__detail">3 Bed · 2,334 sq ft</span></div>
+        </div>
+      </a>
+      <a href="Listings/1925-ne-59th.html" class="listing reveal">
+        <div class="listing__img-wrap"><img class="listing__img" src="https://www.lifeinhometeam.com/images/Listings/59th-1.jpeg" alt="1925 NE 59th Ave" /></div>
+        <div class="listing__info">
+          <div class="listing__addr">1925 NE 59th Ave</div>
+          <div class="listing__meta"><span class="listing__price">$639,000</span><span class="listing__detail">3 Bed · 2,495 sq ft</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
-        <div class="col-md-1 col-0"></div> 
- 
-        <!-- footer left column start -->
-        <div class="col-md-4 pb-4">
-          <h3 class="pb-2">Contact</h3>
-          <a href="tel:+1-503-516-9400">
-            <p class="footer-link">503.516.9400</p>
-          </a>
-          <a href="mailto:homeswithnancyshannon@gmail.com">
-            <p class="footer-link">Our Email</p>
-          </a>
-          <p>
-            <a href="https://www.linkedin.com/in/nancy-shannon-38773a17b">
-              <i class="fa-brands fa-linkedin footer-fa-brands fa-2x"></i>
-            </a>
-            <a href="https://www.facebook.com/NancyShannonrealtor/">
-              <i class="fa-brands fa-facebook-square footer-fa-brands fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com/lifeinhomegirl/">
-              <i class="fa-brands fa-square-instagram footer-fa-brands fa-2x"></i>
-            </a>
-          </p>
+<!-- TRUST -->
+<div class="trust-section">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust__cell reveal"><div class="trust__num">17<sup>yr</sup></div><div class="trust__label">In Business</div></div>
+      <div class="trust__cell reveal"><div class="trust__num">98<sup>%</sup></div><div class="trust__label">Client Satisfaction</div></div>
+      <div class="trust__cell reveal"><div class="trust__num">340<sup>+</sup></div><div class="trust__label">Homes Closed</div></div>
+      <div class="trust__cell reveal"><div class="trust__num">5<sup>★</sup></div><div class="trust__label">Average Rating</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section">
+  <div class="container">
+    <div class="testimonials__header">
+      <div class="reveal">
+        <div class="testimonials__eyebrow">Client Reviews</div>
+        <h2 class="testimonials__title">What our clients say</h2>
+      </div>
+      <div class="reveal">
+        <div class="testimonials__avg">
+          <div class="testimonials__stars">★★★★★</div>
+          <div class="testimonials__avg-text">5.0 average across all reviews</div>
         </div>
-        <!-- footer left column end -->
-  
-        <!-- footer mid column start -->
-        <div class="col-md-3 pb-4">
-          <h3 class="pb-2">Company</h3>
-          <a href="About.html">
-            <p class="footer-link">About Us</p>
-          </a>
-          <a href="Listings.html">
-            <p class="footer-link">Our Listings</p>
-          </a>
-          <a href="Blog.html">
-            <p class="footer-link">Our Blog</p>
-          </a>
+      </div>
+    </div>
+    <div class="testimonials__grid">
+      <div class="review reveal">
+        <div class="review__quote-mark">"</div>
+        <div class="review__stars">★★★★★</div>
+        <p class="review__text">I'm so excited to start this new chapter in our new home with my daughter. I'm truly grateful to Nancy for helping make it all possible. I couldn't have asked for a better person to work with.</p>
+        <div class="review__author">
+          <img class="review__avatar" src="https://www.lifeinhometeam.com/images/happy-client-1.jpg" alt="Ryan Owen" />
+          <div><div class="review__name">Ryan Owen</div><div class="review__role">Buyer · March 2026</div></div>
         </div>
-        <!-- footer mid column end -->
-  
-        <!-- footer right column start -->
-        <div class="col-md-4 mt-auto pb-4 d-flex flex-column footer-logos">
-          <div class="footer-logo-container">
-            <img src="images/ppg-logo-white.webp" alt="Portland Oregon Realtor, PPG" />
-          </div>
-          <div class="footer-logo-container">
-            <img src="images/fair-housing.png" alt="Portland Oregon Realtor Fair Housing" />
-          </div>
+      </div>
+      <div class="review reveal">
+        <div class="review__quote-mark">"</div>
+        <div class="review__stars">★★★★★</div>
+        <p class="review__text">Nancy approached her task with real professionalism. I was truly impressed with the empathy she showed — and her network of trade professionals for repairs and improvements was invaluable.</p>
+        <div class="review__author">
+          <img class="review__avatar" src="https://www.lifeinhometeam.com/images/customer-6.png" alt="Barbara Olson-Brown" />
+          <div><div class="review__name">Barbara Olson-Brown</div><div class="review__role">Seller</div></div>
         </div>
-        <!-- footer right column end -->
-  
+      </div>
+      <div class="review reveal">
+        <div class="review__quote-mark">"</div>
+        <div class="review__stars">★★★★★</div>
+        <p class="review__text">Nancy's calm demeanor kept me grounded through challenging sale negotiations. From our first meeting, I felt heard and supported through every step of the process.</p>
+        <div class="review__author">
+          <img class="review__avatar" src="https://www.lifeinhometeam.com/images/customer-7.png" alt="Patricia Heneghan" />
+          <div><div class="review__name">Patricia Heneghan</div><div class="review__role">Seller</div></div>
+        </div>
+      </div>
+      <div class="review reveal">
+        <div class="review__quote-mark">"</div>
+        <div class="review__stars">★★★★★</div>
+        <p class="review__text">Nancy is a pleasure to work with — knowledgeable and helpful every step. Her recommendation on listing price produced multiple offers. The home's presentation online was first rate.</p>
+        <div class="review__author">
+          <img class="review__avatar" src="https://www.lifeinhometeam.com/images/customer-8.png" alt="Phil Senatra" />
+          <div><div class="review__name">Phil Senatra</div><div class="review__role">Seller</div></div>
+        </div>
+      </div>
+      <div class="review reveal">
+        <div class="review__quote-mark">"</div>
+        <div class="review__stars">★★★★★</div>
+        <p class="review__text">Nancy took the time to understand my interests, likes, dislikes, and budget — then, unlike other agents, she found me homes that actually fit my style. That made all the difference.</p>
+        <div class="review__author">
+          <img class="review__avatar" src="https://www.lifeinhometeam.com/images/customer-9.png" alt="Brian Caufield" />
+          <div><div class="review__name">Brian Caufield</div><div class="review__role">Buyer · 2013</div></div>
+        </div>
+      </div>
+      <!-- CTA card in reviews grid -->
+      <div class="review reveal" style="background:var(--forest);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;">
+        <div style="font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:16px;">Ready to start?</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:white;line-height:1.25;margin-bottom:24px;">Let's find your<br><em style="font-style:italic;color:var(--sage)">perfect home</em><br>together.</h3>
+        <a href="Contact.html" class="btn-gold">Get in Touch</a>
       </div>
     </div>
   </div>
-  <!-- footer end -->
+</section>
 
-  <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/swiper/swiper-bundle.min.js"></script>
-  <script src="lib/swiper/effect-carousel.esm.js"></script>
-  <script src="js/safari-smoothscroll.js"></script>
-  <script src="js/navbar-observer.js"></script>
-  <script src="js/up-observer.js"></script>
-  <script src="js/left-observer.js"></script>
-  <script src="js/listings-swiper.js"></script>
-  <script src="js/review-swiper.js"></script>
-  <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
+<!-- ABOUT / CONTACT -->
+<section class="about-section section">
+  <div class="container">
+    <div class="about-inner">
+      <div class="reveal">
+        <div class="about__eyebrow">We'd Love to Hear From You</div>
+        <h2 class="about__heading">Expert guidance,<br><em>every step of the way</em></h2>
+        <p class="about__body">Years of experience in Portland's real estate market have equipped us to handle nearly every situation — from locating your ideal home and securing the best loan, to maximizing value when selling.</p>
+        <div class="about__creds">
+          <div class="about__cred">Seniors Real Estate Specialist (SRES)</div>
+          <div class="about__cred">Accredited Buyer's Representative (ABR)</div>
+          <div class="about__cred">National Association of Realtors Member</div>
+          <div class="about__cred">PPG · Equal Housing Opportunity</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="about__contact-title">Get in touch</div>
+        <div class="about__contact-links">
+          <a href="tel:+15035169400" class="about__contact-link">
+            <div class="about__contact-link-icon"><svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M4 2.5h3.5L9 6 7 7.5a9 9 0 004.5 4.5L13 10l3.5 1.5V15A1.5 1.5 0 0115 16.5 13.5 13.5 0 011.5 3 1.5 1.5 0 014 2.5z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><div class="about__contact-link-label">Call us</div><div class="about__contact-link-val">503.516.9400</div></div>
+          </a>
+          <a href="mailto:homeswithnancyshannon@gmail.com" class="about__contact-link">
+            <div class="about__contact-link-icon"><svg width="16" height="16" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="1" stroke="white" stroke-width="1.2"/><path d="M2 6l7 5 7-5" stroke="white" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+            <div><div class="about__contact-link-label">Email us</div><div class="about__contact-link-val">homeswithnancyshannon@gmail.com</div></div>
+          </a>
+        </div>
+        <a href="Contact.html" class="btn-gold">Send a Message</a>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- FOOTER -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer__brand">Life in <em>Home</em> Team</div>
+        <p class="footer__tagline">Portland's trusted partner for buying, selling, and finding the home that fits your life.</p>
+        <div class="footer__contact">
+          <a href="tel:+15035169400">503.516.9400</a>
+          <a href="mailto:homeswithnancyshannon@gmail.com">homeswithnancyshannon@gmail.com</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigate</div>
+        <ul class="footer__links">
+          <li><a href="#">Home</a></li>
+          <li><a href="Selling.html">Selling</a></li>
+          <li><a href="Buying.html">Buying</a></li>
+          <li><a href="Listings.html">Listings</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__links">
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="https://get.homebot.ai/?agentId=5e71664fb5932300977a9982">Home Value Tool</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="footer-bottom-inner">
+      <p>© 2026 Life in Home Team · Portland, OR · Licensed Oregon Realtors</p>
+      <p>PPG Member · Equal Housing Opportunity</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        const siblings = Array.from(e.target.parentElement?.children || []);
+        const idx = siblings.indexOf(e.target);
+        setTimeout(() => e.target.classList.add('in'), (idx % 4) * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  const burger = document.getElementById('navBurger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  // Close when a link is tapped
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      burger.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
+</script>
 </body>
 </html>

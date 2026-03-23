@@ -1,368 +1,428 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="Description" content="We're a locally owned Realtor brokerage based out of Portland, OR. With over 35 years of experience, we promise to make your transition as easy as possible.">
-  <title>The Steps of Selling a Home in Portland, OR</title>
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="The Steps of Selling a Home in Portland, OR" />
-  <meta property="og:description" content="We're a locally owned Realtor brokerage based out of Portland, OR. With over 35 years of experience, we promise to make your transition as easy as possible" />
-  <meta property="og:url" content="https://www.lifeinhometeam.com/" />
-  <meta property="og:site_name" content="Life In Home Team Realty" />
-  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/site.css" />
-  <script> </script> <!-- chrome bug fix -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/mini-logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selling Your Home · Life in Home Team · Portland, OR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".main-nav">
-  <header class="h-25 vh-25" id="home">
-    <nav class="navbar navbar-expand-lg fixed-top main-nav nav-fade-in" id="main-nav">
-      <div class="nav-logo-container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/lih-logo-nav.svg" alt="Life in Home mini logo" />
-        </a>
-      </div>
-      <button class="navbar-toggler" 
-        type="button" 
-        data-toggle="collapse" 
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-        onclick="changeNavOpacity()">
-        <i class="fa-solid fa-bars"></i>
+<!-- ── NAV ── -->
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Life in <em>Home</em> Team</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Selling.html" class="active">Selling</a></li>
+      <li><a href="Buying.html">Buying</a></li>
+      <li><a href="Listings.html">Listings</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="tel:+15035169400" class="nav-phone">503.516.9400</a>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link sub-header nav-active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Selling.html">Selling</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Buying.html">Buying</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Listings.html">Listings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="About.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Contact.html">Contact</a>
-          </li>
+    </div>
+  </div>
+</nav>
+
+<!-- ── PAGE HERO ── -->
+<section class="page-hero">
+  <div class="page-hero__photo">
+    <img
+      src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=1400&q=80"
+      alt="Beautiful Portland home for sale"
+    />
+    <div class="page-hero__photo-overlay"></div>
+    <div class="page-hero__stat-card">
+      <div class="page-hero__stat-card-num">98<sup>%</sup></div>
+      <div class="page-hero__stat-card-label">List-to-Sale Ratio</div>
+    </div>
+  </div>
+
+  <div class="page-hero__content">
+    <div class="page-hero__eyebrow">Portland, Oregon</div>
+    <h1 class="page-hero__h1">
+      Sell your home<br>for <em>more</em> than<br>you expect.
+    </h1>
+    <p class="page-hero__sub">
+      Strategic pricing, expert staging, and a hands-on approach — so you can focus on the next chapter while we handle everything else.
+    </p>
+    <div class="page-hero__btns">
+      <a href="https://get.homebot.ai/?agentId=5e71664fb5932300977a9982" target="_blank" class="btn-gold">Get Your Home Value</a>
+      <a href="#process" class="btn-ghost-light">See Our Process</a>
+    </div>
+    <div class="page-hero__stats">
+      <div class="page-hero__stat">
+        <div class="page-hero__stat-num">17<sup>yr</sup></div>
+        <div class="page-hero__stat-label">In Business</div>
+      </div>
+      <div class="page-hero__stat">
+        <div class="page-hero__stat-num">340<sup>+</sup></div>
+        <div class="page-hero__stat-label">Homes Closed</div>
+      </div>
+      <div class="page-hero__stat">
+        <div class="page-hero__stat-num">5<sup>★</sup></div>
+        <div class="page-hero__stat-label">Avg. Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY SELL WITH US ── -->
+<section class="why-section section--lg">
+  <div class="container">
+    <div class="why-inner">
+
+      <div class="reveal">
+        <div class="why__eyebrow">Why Sell With Us</div>
+        <h2 class="why__heading">
+          Your home deserves<br><em>expert representation</em>
+        </h2>
+        <p class="why__body">
+          We don't just list your property — we position it. Our deep knowledge of Portland's neighborhoods, combined with a proven marketing strategy, means your home gets in front of the right buyers at the right time.
+        </p>
+        <div class="why__cta-row">
+          <a href="Contact.html" class="btn-forest">Talk to Nancy</a>
+          <a href="#process" class="why__link">
+            See the process
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="why__features reveal">
+        <div class="why__feature">
+          <div class="why__feature-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M3 14l4-4 3 3 6-8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="3" cy="14" r="1.2" fill="currentColor"/>
+              <circle cx="7" cy="10" r="1.2" fill="currentColor"/>
+              <circle cx="10" cy="13" r="1.2" fill="currentColor"/>
+              <circle cx="16" cy="5" r="1.2" fill="currentColor"/>
+            </svg>
+          </div>
+          <div>
+            <div class="why__feature-title">Strategic Pricing</div>
+            <div class="why__feature-desc">Data-driven analysis of current Portland comps ensures your list price attracts serious buyers — without leaving money on the table.</div>
+          </div>
+        </div>
+
+        <div class="why__feature">
+          <div class="why__feature-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="3" y="5" width="14" height="11" rx="1" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M7 5V3.5a3 3 0 016 0V5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="10" cy="10.5" r="2" stroke="currentColor" stroke-width="1.4"/>
+            </svg>
+          </div>
+          <div>
+            <div class="why__feature-title">Professional Staging & Photos</div>
+            <div class="why__feature-desc">We present your home in its best light — staging recommendations, professional photography, and a listing that stands out online.</div>
+          </div>
+        </div>
+
+        <div class="why__feature">
+          <div class="why__feature-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M17 8A7 7 0 113 8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M10 1v4M10 15v4M1 8h2M17 8h2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="why__feature-title">Maximum Exposure</div>
+            <div class="why__feature-desc">MLS, RMLS, open houses, postcards, email campaigns, and social media — every channel working together to reach your buyer.</div>
+          </div>
+        </div>
+
+        <div class="why__feature">
+          <div class="why__feature-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 2l1.8 5.4H17l-4.5 3.3 1.7 5.3L10 13l-4.2 3 1.7-5.3L3 7.4h5.2L10 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="why__feature-title">Negotiation on Your Behalf</div>
+            <div class="why__feature-desc">When offers arrive, we advocate fiercely for your interests — price, contingencies, and terms that protect you at every turn.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ── -->
+<section class="process-section section" id="process">
+  <div class="container">
+    <div class="process__header reveal">
+      <div>
+        <div class="process__eyebrow">Our Process</div>
+        <h2 class="process__heading">Three clear phases<br>from <em>listing to closing</em></h2>
+      </div>
+      <p class="process__subtitle">A transparent, step-by-step approach so you always know exactly where things stand.</p>
+    </div>
+
+    <div class="process__steps">
+      <div class="step reveal">
+        <div class="step__ghost">01</div>
+        <div class="step__phase">Phase One</div>
+        <h3 class="step__title">First Steps &amp; Preparation</h3>
+        <ul class="step__list">
+          <li>Complete walk-through of your home with our team</li>
+          <li>Staging recommendations tailored to your property</li>
+          <li>Professional photography scheduled and coordinated</li>
+          <li>Seller's Notes and Home Features document created</li>
+          <li>Final walk-through review before going live</li>
         </ul>
       </div>
-    </nav>
-    <div class="selling-header-img h-25"></div>
-  </header>
 
-  <!-- intro start -->
-  <div id="about" class="about-container">
-    <div class="about-header-container text-left pt-5">
-      <div class="container">
-        <div class="row about-text">
-          <div class="col-lg-4 col-md-5 col-12 pb-1">
-            <div class="headline-container">
-              <div class="general-container-outer absolute">
-                <div class="general-container-inner">
-                  <h3 class="about-header" id="second-header">
-                    The Steps of Selling Your Home
-                  </h3>
-                </div>
-              </div>
-              <div class="general-container-bottom">
-                <h3 class="about-header" id="second-header">
-                  The Steps of Selling Your Home
-                </h3>
-              </div>
-            </div>
+      <div class="step reveal">
+        <div class="step__ghost">02</div>
+        <div class="step__phase">Phase Two</div>
+        <h3 class="step__title">Listing &amp; Marketing</h3>
+        <ul class="step__list">
+          <li>Listing signpost and Perma-Flyer installed</li>
+          <li>Property uploaded to MLS and RMLS</li>
+          <li>Email campaigns and postcard outreach</li>
+          <li>Social media announcements and targeted promotion</li>
+          <li>Open House events hosted and promoted</li>
+        </ul>
+      </div>
+
+      <div class="step reveal">
+        <div class="step__ghost">03</div>
+        <div class="step__phase">Phase Three</div>
+        <h3 class="step__title">Offers &amp; Closing</h3>
+        <ul class="step__list">
+          <li>Agent and buyer feedback collected and reviewed</li>
+          <li>Regular progress reports — daily or weekly</li>
+          <li>Comparable pricing reviewed for ongoing competitiveness</li>
+          <li>Skilled negotiation to secure best possible terms</li>
+          <li>Smooth close with full transaction support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TRUE MARKET VALUE ── -->
+<section class="value-section section">
+  <div class="container">
+    <div class="value-inner">
+
+      <div class="reveal">
+        <div class="value__eyebrow">True Market Value</div>
+        <h2 class="value__heading">
+          Get <em>top dollar</em><br>in the shortest time.
+        </h2>
+        <p class="value__body">
+          We position your home to showcase its best architectural features and warmest qualities — because buyers fall in love before they make an offer. Our pricing strategy is anchored in real Portland market data, reviewed continuously throughout your listing.
+        </p>
+        <a href="https://get.homebot.ai/?agentId=5e71664fb5932300977a9982" target="_blank" class="value__tool">
+          <div class="value__tool-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M2 10l8-8 8 8M4 8.5V17h4v-5h4v5h4V8.5" stroke="#c99a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
-          <div class="col-lg-8 col-md-7 col-12 headline-right">
-            <h5 class="header pt-4">
-              When you're considering selling your home, an important first step is to take a few
-              things into consideration.
-            </h5>
-            <p class="description-text">
-              What are the current market conditions? What are the best selling points of your home? What
-              do you think are the drawbacks?
-            </p>
-            <p class="description-text">
-              With the Life in Home Team, we'll start off by figuring out the answers to these questions
-              together. We'll then let you know how we can best promote your home in the context of the
-              current market and get you the best deal possible.
-            </p>
-            <a class="general-button" href="#offset-three" id="down-arrow">
-              <p>Get Started</p>
-            </a>
-            <!-- button target -->
-            <div class="general-offset" id="offset-three"></div>
+          <div>
+            <div class="value__tool-label">Free Tool</div>
+            <div class="value__tool-name">Home Pricing Calculator</div>
+            <div class="value__tool-hint">Instant estimate based on current Portland comps →</div>
           </div>
+        </a>
+        <a href="Contact.html" class="value__tool">
+          <div class="value__tool-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="2" y="5" width="16" height="11" rx="1" stroke="#c99a58" stroke-width="1.4"/>
+              <path d="M2 7.5l8 5.5 8-5.5" stroke="#c99a58" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="value__tool-label">Get in Touch</div>
+            <div class="value__tool-name">Contact Us</div>
+            <div class="value__tool-hint">Reach out today with any questions →</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="value__points reveal">
+        <div class="value__point">
+          <div class="value__point-title">Architectural Highlights</div>
+          <div class="value__point-desc">We identify the features that make your home unique — craftsman details, natural light, outdoor space — and make sure buyers notice them.</div>
+        </div>
+        <div class="value__point">
+          <div class="value__point-title">Market Timing</div>
+          <div class="value__point-desc">Portland's neighborhoods move differently. We advise on the right moment to list for maximum buyer competition and the best possible price.</div>
+        </div>
+        <div class="value__point">
+          <div class="value__point-title">Ongoing Competitive Analysis</div>
+          <div class="value__point-desc">Comparable sales are reviewed continuously — not just at listing — so your price stays sharp throughout the entire selling window.</div>
+        </div>
+        <div class="value__point">
+          <div class="value__point-title">Warm, Inviting Presentation</div>
+          <div class="value__point-desc">From staging to photography to the MLS listing itself, every detail is crafted to help buyers picture themselves living there.</div>
         </div>
       </div>
 
     </div>
   </div>
-  <!-- intro end-->
+</section>
 
-  <!-- top wave-->
-  <div class="wave move-down-two">
-    <svg xmlns="http://www.w3.org/2000/svg" 
-      viewBox="-203.72 -57.88 1440.01 128.42" 
-      preserveAspectRatio="none">
-      <path 
-        fill="var(--light-teal-color-faded)" 
-        fill-opacity="1"
-        d="M -203.716 -57.885 L -143.716 -57.885 C -83.716 -57.885 36.284 -57.885 156.284 -41.885 C 276.284 -25.885 396.284 6.115 516.284 22.115 C 636.284 38.115 756.284 38.115 876.284 27.415 C 996.284 17.115 1116.284 -4.885 1176.284 -15.185 L 1236.284 -25.885 L 1236.284 70.115 L 1176.284 70.115 C 1116.284 70.115 996.284 70.115 876.284 70.115 C 756.284 70.115 636.284 70.115 516.284 70.115 C 396.284 70.115 276.284 70.115 156.284 70.115 C 36.284 70.115 -83.716 70.115 -143.716 70.115 L -203.716 70.115 L -203.716 -57.885 Z" 
-      />
-      <path 
-        fill="var(--light-teal-color)" 
-        fill-opacity="1"
-        d="M -203.723 6.535 L -143.723 1.235 C -83.723 -4.465 36.277 -14.465 156.277 -4.165 C 276.277 6.535 396.277 38.535 516.277 54.535 C 636.277 70.535 756.277 70.535 876.277 54.535 C 996.277 38.535 1116.277 6.535 1176.277 -9.465 L 1236.277 -25.465 L 1236.277 70.535 L 1176.277 70.535 C 1116.277 70.535 996.277 70.535 876.277 70.535 C 756.277 70.535 636.277 70.535 516.277 70.535 C 396.277 70.535 276.277 70.535 156.277 70.535 C 36.277 70.535 -83.723 70.535 -143.723 70.535 L -203.723 70.535 L -203.723 6.535 Z" 
-      />
-    </svg>
+<!-- ── TRUST STRIP ── -->
+<div class="trust-section">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust__cell reveal"><div class="trust__num">17<sup>yr</sup></div><div class="trust__label">In Business</div></div>
+      <div class="trust__cell reveal"><div class="trust__num">98<sup>%</sup></div><div class="trust__label">List-to-Sale Ratio</div></div>
+      <div class="trust__cell reveal"><div class="trust__num">340<sup>+</sup></div><div class="trust__label">Homes Closed</div></div>
+      <div class="trust__cell reveal"><div class="trust__num">5<sup>★</sup></div><div class="trust__label">Avg. Rating</div></div>
+    </div>
   </div>
-  <!-- top wave end -->
+</div>
 
-  <!-- selling cards -->
-  <div id="about" class="about-header-container container-fluid light-teal-background pt-5 pb-4">
-    <div class="about-header-container text-left">
-      <div class="row about-text">
-        <div class="col-lg-4 col-md-5 col-sm-12 col-12">
-          <h3 class="about-header" id="second-header">Listing Your Home With Our Team</h3>
-        </div>
-        <div class="col-lg-8 col-md-7 col-12 services-item-container">
-          <div class="about-stats-container fade-up">
-            <h4 class="fancy-text white-text text-left">First Steps</h4>
-            <hr />
-            <p class="description-text-four text-left">
-              Our initial meeting will be an opportunity for us to
-              gain a better understanding of your home. We'll do a complete walk-through, present
-              recommendations, and schedule a time for professional photos to be taken. To conclude this
-              initial step, we'll schedule a final walk-through before your home goes on the market.
-              During this time, we'll draw up the Seller's Notes and create the Home Features document.
-            </p>
-          </div>
-        </div>
-        <div class="col-1"></div>
-      </div>
-      <div class="row about-text">
-        <div class="col-lg-4 col-md-5 col-12">
-        </div>
-        <div class="col-lg-8 col-md-7 col-12 services-item-container">
-          <div class="about-stats-container fade-up">
-            <h4 class="fancy-text white-text text-left">Listing Your Property</h4>
-            <hr />
-            <p class="description-text-four">
-              When listing your home, we'll first get it prepared for
-              viewing. An order listing signpost will be installed outside of your home, along with a
-              Perma-Flyer that contains the necessary details. Any staging that needs to be done will also
-              occur in this phase. When your property is ready, it will then be uploaded into the MLS
-              system and will subsequently go live on RMLS.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row about-text">
-        <div class="col-lg-4 col-md-5 col-12">
-        </div>
-        <div class="col-lg-8 col-md-7 col-12 services-item-container">
-          <div class="about-stats-container fade-up">
-            <h4 class="fancy-text white-text text-left">Finding Your Buyer</h4>
-            <hr />
-            <p class="description-text-four">
-              Once your property is available for viewing, we'll give buyers
-              the opportunity to see your home with Open House events. Along with this, additional
-              marketing pieces will be sent out, such as postcards, emails, various social media
-              announcements, etc. During this phase, we'll secure feedback from the other agents on tour
-              and regularly follow-up with them, along with other prospective buyers. Daily/Weekly
-              progress reports will be given to update sellers, and comparable properties will be reviewed
-              to determine if the price is still competitive.
-            </p>
+<!-- ── TESTIMONIAL ── -->
+<section class="testimonial-section section">
+  <div class="container">
+    <div class="testimonial-inner">
+      <div class="testimonial__label reveal">Client Stories</div>
+      <div class="reveal">
+        <blockquote class="testimonial__quote">
+          "Nancy approached her task of selling the house with real professionalism. I was truly impressed with the empathy she showed in every suggestion she made — and her network of trade professionals for repairs was invaluable."
+        </blockquote>
+        <div class="testimonial__attribution">
+          <div class="testimonial__line"></div>
+          <div>
+            <div class="testimonial__name">Barbara Olson-Brown</div>
+            <div class="testimonial__detail">Previous Seller · Portland, OR</div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- selling cards end-->
+</section>
 
-  <!-- mid start -->
-  <div class="about-mid-one">
-    <div class="row h-50">
-      <div class="col-md-5 col-12 about-mid-left-container">
-        <div class="about-mid-left row">
-          <div class="col-xl-5 col-md-4 col-1">
-          </div>
-          <div class="col-xl-5 col-md-6 col-10">
-            <h3>True Market Value</h3>
-            <hr />
-            <p>
-              We want your home to be shown in the best possible light to prospective buyers to get you
-              top dollar in the shortest amount of time. We will work together to create a warm and
-              inviting environment focusing on the best architectural features and selling points of your
-              home.
-            </p>
-          </div>
-          <div class="col-md-2 col-0">
-          </div>
-        </div>
+<!-- ── CTA ── -->
+<section class="cta-section section">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="reveal">
+        <h2 class="cta__heading">
+          Ready to take the<br>first step toward<br><em>selling?</em>
+        </h2>
+        <p class="cta__sub">
+          Whether you're ready to list or just starting to explore your options, we're here to help you think it through — no pressure, no obligation.
+        </p>
       </div>
-      <div class="col-md-7 col-12 selling-mid-right-container">
-        <div class="selling-mid-right">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- mid end -->
-
-  <!-- bottom section start -->
-  <div class="bottom-symbols-container">
-
-    <h3>Learn More</h3>
-    
-    <div class="container">
-    
-      <div class="row">
-        
-        <div class="col-md-2 col-0"></div>
-  
-        <div class="col-md-4 col-12 pb-3">
-          <a href="https://get.homebot.ai/?agentId=5e71664fb5932300977a9982">
-
-            <div class="icon-text-container pl-4 pr-4">
-              <div class="icon-container">
-                <div class="symbols-top-left"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                  class="symbols-clickable" 
-                  height="48" 
-                  viewBox="0 96 960 960"
-                  width="48" 
-                  fill="white" 
-                  stroke="rgb(39, 72, 92)" 
-                  stroke-width="20">
-                  <path d="M132 899v-35h85V252h321v41h121v354h-35V328h-86v571H132Zm286.789-291q13.611 0 22.911-9.589 9.3-9.59 9.3-22.2 0-12.611-9.089-22.411-9.09-9.8-22.7-9.8-12.611 0-22.411 9.589-9.8 9.59-9.8 22.2 0 12.611 9.589 22.411 9.59 9.8 22.2 9.8Zm302.973 318L754 853l75-33-75-34-32.238-71-32.238 71L615 820l74.524 33 32.238 73Z" />
-                </svg>
-              </div>
-
-              <h5 class="header">Pricing Tool</h5>
-              <p class="description-text text-align-center">Click here to find out the value of your home</p>
-
-            </div>
-          </a>
-        </div>
-  
-        <div class="col-md-4 col-12 pb-3">
-          <a href="Contact.html">
-
-            <div class="icon-text-container pl-4 pr-4">
-              <div class="icon-container">
-                <div class="symbols-top-left"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                  height="48" 
-                  viewBox="0 96 960 960" 
-                  width="48" 
-                  fill="white"
-                  stroke="rgb(39, 72, 92)" 
-                  stroke-width="20" 
-                  class="symbols-clickable">
-                  <path d="M496 568V251q0-15 12-24.5t28-9.5h265q16 0 27.5 9.5T840 251v178q0 17-11 28.5T801 469H600l-104 99Zm299 368q-122 0-242.5-60T336 720q-96-96-156-216.5T120 261q0-19 13-32t32-13h140q14 0 24.5 9.5T343 251l27 126q2 14-.5 25.5T359 422L259 523q56 93 125.5 162T542 802l95-98q10-11 23-15.5t26-1.5l119 26q15 3 25 15t10 28v135q0 19-13 32t-32 13Z" />
-                </svg>
-              </div>
-
-              <h5 class="header">Contact Us</h5>
-              <p class="description-text text-align-center">Reach out today with any questions you have</p>
-
-            </div>
-          </a>
-        </div>
-  
-        <div class="col-md-2 col-0"></div>
-  
-      </div>
-  
-    </div>
-  </div>
-  <!-- bottom section end -->
-
-  <!-- footer start -->
-  <div id="footer" class="footer-container mt-5">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-1 col-0"></div> 
- 
-        <!-- footer left column start -->
-        <div class="col-md-4 pb-4">
-          <h3 class="pb-2">Contact</h3>
-          <a href="tel:+1-503-516-9400">
-            <p class="footer-link">503.516.9400</p>
-          </a>
-          <a href="mailto:homeswithnancyshannon@gmail.com">
-            <p class="footer-link">Our Email</p>
-          </a>
-          <p>
-            <a href="https://www.linkedin.com/in/nancy-shannon-38773a17b">
-              <i class="fa-brands fa-linkedin footer-fa-brands fa-2x"></i>
-            </a>
-            <a href="https://www.facebook.com/NancyShannonrealtor/">
-              <i class="fa-brands fa-facebook-square footer-fa-brands fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com/lifeinhomegirl/">
-              <i class="fa-brands fa-square-instagram footer-fa-brands fa-2x"></i>
-            </a>
-          </p>
-        </div>
-        <!-- footer left column end -->
-  
-        <!-- footer mid column start -->
-        <div class="col-md-3 pb-4">
-          <h3 class="pb-2">Company</h3>
-          <a href="About.html">
-            <p class="footer-link">About Us</p>
-          </a>
-          <a href="Listings.html">
-            <p class="footer-link">Our Listings</p>
-          </a>
-          <a href="Blog.html">
-            <p class="footer-link">Our Blog</p>
-          </a>
-        </div>
-        <!-- footer mid column end -->
-  
-        <!-- footer right column start -->
-        <div class="col-md-4 mt-auto pb-4 d-flex flex-column footer-logos">
-          <div class="footer-logo-container">
-            <img src="images/ppg-logo-white.webp" alt="Portland Oregon Realtor, PPG" />
+      <div class="cta__cards reveal">
+        <a href="https://get.homebot.ai/?agentId=5e71664fb5932300977a9982" target="_blank" class="cta__card">
+          <div class="cta__card-icon">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 9l7-7 7 7M4 7.5v8h3.5v-4.5h3V15.5H14v-8" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <div class="footer-logo-container">
-            <img src="images/fair-housing.png" alt="Portland Oregon Realtor Fair Housing" />
+          <div>
+            <div class="cta__card-title">Pricing Tool</div>
+            <div class="cta__card-desc">Find out the current value of your home</div>
           </div>
-        </div>
-        <!-- footer right column end -->
-  
+          <svg class="cta__card-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="Contact.html" class="cta__card">
+          <div class="cta__card-icon">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="1" stroke="white" stroke-width="1.3"/><path d="M2 6.5l7 4.5 7-4.5" stroke="white" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="cta__card-title">Contact Us</div>
+            <div class="cta__card-desc">Reach out with any questions you have</div>
+          </div>
+          <svg class="cta__card-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="tel:+15035169400" class="cta__card">
+          <div class="cta__card-icon">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 2h3L8 5.5 6 7a8 8 0 004 4l1.5-2L15 10.5v3A1.5 1.5 0 0113.5 15 12 12 0 012 3.5 1.5 1.5 0 013.5 2z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="cta__card-title">Call Us Directly</div>
+            <div class="cta__card-desc">503.516.9400 · we'd love to talk</div>
+          </div>
+          <svg class="cta__card-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </div>
   </div>
-  <!-- footer end -->
+</section>
 
-  <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/safari-smoothscroll.js"></script>
-  <script src="js/navbar-observer.js"></script>
-  <script src="js/up-observer.js"></script>
-  <script src="js/left-observer.js"></script>
-  <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
+<!-- ── FOOTER ── -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer__brand">Life in <em>Home</em> Team</div>
+        <p class="footer__tagline">Portland's trusted partner for buying, selling, and finding the home that fits your life.</p>
+        <div class="footer__contact">
+          <a href="tel:+15035169400">503.516.9400</a>
+          <a href="mailto:homeswithnancyshannon@gmail.com">homeswithnancyshannon@gmail.com</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigate</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Selling.html">Selling</a></li>
+          <li><a href="Buying.html">Buying</a></li>
+          <li><a href="Listings.html">Listings</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__links">
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="https://get.homebot.ai/?agentId=5e71664fb5932300977a9982">Home Value Tool</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="footer-bottom-inner">
+      <p>© 2026 Life in Home Team · Portland, OR · Licensed Oregon Realtors</p>
+      <p>PPG Member · Equal Housing Opportunity</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  /** Fade-in effect **/
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        const siblings = Array.from(e.target.parentElement?.children || []);
+        const idx = siblings.indexOf(e.target);
+        setTimeout(() => e.target.classList.add('in'), (idx % 4) * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /** Mobile nav toggle **/
+  const burger = document.getElementById('navBurger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      burger.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
+</script>
 </body>
-
 </html>

@@ -1,227 +1,242 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="Description" content="We're a locally owned Realtor brokerage based out of Portland, OR. With over 35 years of experience, we promise to make your transition as easy as possible.">
-  <title>Life In Home Team Realty</title>
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Life In Home Team Realty" />
-  <meta property="og:description" content="We're a locally owned Realtor brokerage based out of Portland, OR. With over 35 years of experience, we promise to make your transition as easy as possible" />
-  <meta property="og:url" content="https://www.lifeinhometeam.com/" />
-  <meta property="og:site_name" content="Life In Home Team Realty" />
-  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/site.css" />
-  <script> </script> <!-- chrome bug fix -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/mini-logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About · Life in Home Team · Portland, OR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/about.css">
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".main-nav">
-  <header class="h-25 vh-25" id="home">
-    <nav class="navbar navbar-expand-lg fixed-top main-nav nav-fade-in" id="main-nav">
-      <div class="nav-logo-container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/lih-logo-nav.svg" alt="Life in Home mini logo" />
-        </a>
-      </div>
-      <button class="navbar-toggler" 
-        type="button" 
-        data-toggle="collapse" 
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-        onclick="changeNavOpacity()">
-        <i class="fa-solid fa-bars"></i>
+<!-- ── NAV ── -->
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Life in <em>Home</em> Team</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Selling.html">Selling</a></li>
+      <li><a href="Buying.html">Buying</a></li>
+      <li><a href="Listings.html">Listings</a></li>
+      <li><a href="About.html" class="active">About</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="tel:+15035169400" class="nav-phone">503.516.9400</a>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link sub-header nav-active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Selling.html">Selling</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Buying.html">Buying</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Listings.html">Listings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="About.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Contact.html">Contact</a>
-          </li>
+    </div>
+  </div>
+</nav>
+
+<!-- ── PAGE TITLE BAR ── -->
+<div class="page-title">
+  <div class="container">
+    <div class="page-title-inner">
+      <div>
+        <div class="page-title__eyebrow">Life in Home Team</div>
+        <h1 class="page-title__h1">About <em>our team</em></h1>
+      </div>
+      <p class="page-title__sub">The people behind every transaction — and the values that guide them.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── NANCY BIO ── -->
+<section class="bio-nancy">
+  <div class="container">
+    <div class="bio-nancy__inner">
+
+      <!-- Photo + award badge -->
+      <div class="bio-nancy__photo-col reveal">
+        <div class="bio-nancy__photo-wrap">
+          <img
+            src="https://www.lifeinhometeam.com/images/main-picture.jpg"
+            alt="Nancy Shannon — Licensed Oregon Broker"
+          />
+        </div>
+        <div class="bio-nancy__award">
+          <div class="bio-nancy__award-num">10<sup style="font-size:15px;font-weight:300">yr</sup></div>
+          <div class="bio-nancy__award-text">Portland Magazine<br>5-Star Realtor · 2012–2022</div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="reveal">
+        <div class="bio-nancy__eyebrow">Licensed Oregon Broker</div>
+        <h2 class="bio-nancy__name">Nancy Shannon</h2>
+        <p class="bio-nancy__title">Life in Home Team · Portland, OR</p>
+
+        <p class="bio-nancy__body">
+          At this point in my business, I find that many of my clients are homeowners making a lifestyle move — young families growing into their next home, single women enjoying ownership adventures, couples transitioning to new phases in their lives. I enjoy the whole process of helping them sell their current home and then finding the next perfect one.
+        </p>
+        <p class="bio-nancy__body">
+          My past clients have voted for me as one of Portland Magazine's 5-Star Realtors every year from 2012 to 2022. I embrace my role as an advocate for my clients and work diligently to maintain an excellent reputation among my peers and industry affiliates.
+        </p>
+
+        <div class="bio-nancy__creds">
+          <div class="cred-row">
+            <div class="cred-row__icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 1.5l1.6 4.8H15l-4 2.9 1.5 4.6L8 11.3 4 13.8l1.5-4.6L1.5 6.3H7L8 1.5z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="cred-row__label">Portland 5-Star Realtor — Portland Magazine</div>
+              <div class="cred-row__sub">Voted by past clients, every year 2012–2022</div>
+            </div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-row__icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <circle cx="8" cy="5.5" r="3" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M2 14.5c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="cred-row__label">Seniors Real Estate Specialist (SRES)</div>
+              <div class="cred-row__sub">Specialized expertise for clients 55+</div>
+            </div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-row__icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 8l6-6 6 6M3.5 6.5V14h3v-4h3v4h3V6.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="cred-row__label">Accredited Buyer's Representative (ABR)</div>
+              <div class="cred-row__sub">Specialized training for the buying process</div>
+            </div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-row__icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="2" width="12" height="12" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M5.5 8.5l2 2L11 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="cred-row__label">National Association of Realtors Member</div>
+              <div class="cred-row__sub">PPG · Equal Housing Opportunity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ── HEATHER BIO ── -->
+<section class="bio-heather">
+  <div class="container">
+    <div class="bio-heather__inner">
+
+      <!-- Text (left) -->
+      <div class="reveal">
+        <div class="bio-heather__eyebrow">Escrow Partner</div>
+        <h2 class="bio-heather__name">Heather Bojanowski</h2>
+        <p class="bio-heather__title">Escrow Officer · Chicago Title Clackamas</p>
+
+        <p class="bio-heather__body">
+          Heather has been with the Chicago Title team for over 18 years and is practiced at all types of transactions. Colleagues and clients would describe her as friendly, professional, highly organized, and extremely hard-working. Her goal is to provide outstanding service to her clients, backed with years of experience and strong communication.
+        </p>
+        <p class="bio-heather__body">
+          Originally from the Bay Area, Heather moved to Oregon in 2016 because she loves the rain and greenery — it's the most beautiful place she's ever lived. In her free time, she loves baking, reading, and most importantly spending time with her family and friends. If you're looking for an Escrow partner who truly cares, Heather is excited to work with you.
+        </p>
+      </div>
+
+      <!-- Photo + company tag -->
+      <div class="bio-heather__photo-col reveal">
+        <div class="bio-heather__photo-wrap">
+          <img
+            src="https://www.lifeinhometeam.com/images/410 crop2.JPG"
+            alt="Heather Bojanowski — Escrow Officer, Chicago Title"
+          />
+        </div>
+        <div class="bio-heather__company">
+          <div class="bio-heather__company-label">Company</div>
+          <div class="bio-heather__company-name">Chicago Title Clackamas</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer__brand">Life in <em>Home</em> Team</div>
+        <p class="footer__tagline">Portland's trusted partner for buying, selling, and finding the home that fits your life.</p>
+        <div class="footer__contact">
+          <a href="tel:+15035169400">503.516.9400</a>
+          <a href="mailto:homeswithnancyshannon@gmail.com">homeswithnancyshannon@gmail.com</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigate</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Selling.html">Selling</a></li>
+          <li><a href="Buying.html">Buying</a></li>
+          <li><a href="Listings.html">Listings</a></li>
         </ul>
       </div>
-    </nav>
-
-    <!-- About Header Image start -->
-    <div class="page-about-header-img h-25 page-header-text-container">
-      <h3>About Our Team</h3>
-    </div>
-    <!-- About Header Image end -->
-  </header>
-
-  <!-- About Body start -->
-  <div>
-    <div id="about" class="about-container h-100">
-      <div class="buffer"></div>
-      <div class="about-header-container text-left pt-5">
-
-        <div class="container">
-
-          <!-- About Container One Start -->
-          <div class="row about-text pt-3">
-            <div class="col-lg-4 col-md-12 col-sm-12 col-12 bio-image-container d-flex justify-content-center pb-3">
-              <div class="about-img-container">
-                <img src="images/main-picture.jpg" class="img-fluid shaded" />
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-12 col-sm-12 col-12 bio-right-text">
-              <div class="bio-header">
-                <h3>Nancy Shannon</h3>
-                <h5>Licensed Oregon Broker</h5>
-              </div>
-              <p class="description-text pt-4">
-                At this point in my business, I find that many of my clients are homeowners making a
-                lifestyle move - young families growing into their next home, single women enjoying
-                ownership adventures, couples transitioning to new phases in their lives. I enjoy the
-                whole process of helping them sell their current home and then finding the next perfect
-                home.
-              </p>
-              <p class="description-text">
-                My past clients
-                have voted for me as one of Portland Magazine's 5 Star Realtors every year since 2012
-                to 2022. I embrace my role as an advocate for my clients and work diligently to maintain
-                an excellent reputation among my peers and industry affiliates.
-              </p>
-              <p class="description-text">
-                I chose real
-                estate because HOME is one of the most powerful words in any language - and helping
-                people find and enjoy the benefits of their own home builds a better community for all
-                of us.
-              </p>
-            </div>
-          </div>
-          <!-- About Container One End -->
-
-          <div class="symbols-title-container">
-            <hr class="symbols-title-line">
-            <h3 class="symbols-title">Who We Work With</h3>
-          </div>
-
-          <!-- About Container Two Start -->
-          <div class="row about-text pt-5">
-            <div class="col-lg-4 col-md-12 col-sm-12 col-12 bio-image-container d-flex justify-content-center pb-3">
-              <div class="about-img-container">
-                <img src="images/410 crop2.JPG" class="img-fluid shaded" />
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-12 col-sm-12 col-12 bio-right-text">
-              <div class="bio-header">
-                <h3>Heather Bojanowski</h3>
-                <h5>Escrow Officer, Chicago Title Clackamas</h5>
-              </div>
-              <p class="description-text pt-4">
-                Heather has been with the Chicago Title team for over 18 years and is practiced at all types of transactions.
-                Colleagues and clients would describe her as friendly, professional, highly organized, and extremely hard-working. Her
-                goal is to provide outstanding service to her clients, backed with years of experience and strong communication.
-                Originally from the Bay Area, Heather moved to Oregon in 2016 because she loves the rain and greenery (it’s the most
-                beautiful place she’s ever lived).
-              </p>
-              <p class="description-text">
-                In her free time, she loves baking, reading and most importantly, spending time
-                with her family and friends. If you’re looking for an Escrow partner who truly cares, Heather is excited to work with
-                you!
-              </p>
-            </div>
-          </div>
-          <!-- About Container Two End -->
-
-        </div>
+      <div>
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__links">
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="https://get.homebot.ai/?agentId=5e71664fb5932300977a9982">Home Value Tool</a></li>
+        </ul>
       </div>
     </div>
   </div>
-  <!-- About Body end-->
-
-  <!-- footer start -->
-  <div id="footer" class="footer-container mt-5">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-1 col-0"></div> 
- 
-        <!-- footer left column start -->
-        <div class="col-md-4 pb-4">
-          <h3 class="pb-2">Contact</h3>
-          <a href="tel:+1-503-516-9400">
-            <p class="footer-link">503.516.9400</p>
-          </a>
-          <a href="mailto:homeswithnancyshannon@gmail.com">
-            <p class="footer-link">Our Email</p>
-          </a>
-          <p>
-            <a href="https://www.linkedin.com/in/nancy-shannon-38773a17b">
-              <i class="fa-brands fa-linkedin footer-fa-brands fa-2x"></i>
-            </a>
-            <a href="https://www.facebook.com/NancyShannonrealtor/">
-              <i class="fa-brands fa-facebook-square footer-fa-brands fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com/lifeinhomegirl/">
-              <i class="fa-brands fa-square-instagram footer-fa-brands fa-2x"></i>
-            </a>
-          </p>
-        </div>
-        <!-- footer left column end -->
-  
-        <!-- footer mid column start -->
-        <div class="col-md-3 pb-4">
-          <h3 class="pb-2">Company</h3>
-          <a href="About.html">
-            <p class="footer-link">About Us</p>
-          </a>
-          <a href="Listings.html">
-            <p class="footer-link">Our Listings</p>
-          </a>
-          <a href="Blog.html">
-            <p class="footer-link">Our Blog</p>
-          </a>
-        </div>
-        <!-- footer mid column end -->
-  
-        <!-- footer right column start -->
-        <div class="col-md-4 mt-auto pb-4 d-flex flex-column footer-logos">
-          <div class="footer-logo-container">
-            <img src="images/ppg-logo-white.webp" alt="Portland Oregon Realtor, PPG" />
-          </div>
-          <div class="footer-logo-container">
-            <img src="images/fair-housing.png" alt="Portland Oregon Realtor Fair Housing" />
-          </div>
-        </div>
-        <!-- footer right column end -->
-  
-      </div>
+</footer>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="footer-bottom-inner">
+      <p>© 2025 Life in Home Team · Portland, OR · Licensed Oregon Realtors</p>
+      <p>PPG Member · Equal Housing Opportunity</p>
     </div>
   </div>
-  <!-- footer end -->
+</div>
 
-  <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/navbar-observer.js"></script>
-  <script src="js/up-observer.js"></script>
-  <script src="js/left-observer.js"></script>
-  <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        const siblings = Array.from(e.target.parentElement?.children || []);
+        const idx = siblings.indexOf(e.target);
+        setTimeout(() => e.target.classList.add('in'), (idx % 4) * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
+  const burger = document.getElementById('navBurger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  // Close when a link is tapped
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      burger.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
+</script>
 </body>
 </html>

@@ -227,8 +227,6 @@
   align-items: center;
 }
 
-.intro__left {}
-
 .intro__eyebrow {
   font-size: 10px;
   letter-spacing: 0.28em;
@@ -1062,6 +1060,10 @@
 }
 
 @media (max-width: 1024px) {
+  .main--hero__stats {
+    display: none;
+  }
+
   :root {
     --container-px: 28px;
   }

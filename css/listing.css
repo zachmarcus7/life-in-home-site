@@ -714,6 +714,10 @@
   .nav-links {
     display: none;
   }
+
+  .gallery__thumb--more::after {
+    font-size: 13px !important;
+  }
 }
 
 @media (max-width: 640px) {

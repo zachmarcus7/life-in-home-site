@@ -387,3 +387,72 @@
   color: rgba(255, 255, 255, 0.38);
   margin-top: 10px;
 }
+
+@media (max-width: 1024px) {
+  :root {
+    --container-px: 28px;
+  }
+
+  .bio-nancy__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .bio-heather__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .bio-heather__photo-col {
+    order: -1;
+  }
+
+  .bio-heather__photo-wrap img {
+    aspect-ratio: 4/3;
+  }
+
+  .bio-nancy__photo-wrap img {
+    aspect-ratio: 4/3;
+  }
+
+  .trust-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .page-title-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .page-title__sub {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --container-px: 20px;
+  }
+
+  .bio-nancy,
+  .bio-heather {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}

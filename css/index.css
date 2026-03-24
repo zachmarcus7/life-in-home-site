@@ -1131,6 +1131,83 @@
   }
 }
 
+@media (max-width: 768px) {
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: 100svh;
+  }
+
+  .hero__photo {
+    height: 45vh;
+  }
+
+  .hero__card {
+    bottom: 16px;
+    left: 16px;
+    padding: 14px 18px;
+    max-width: 210px;
+  }
+
+  .hero__card-addr {
+    font-size: 15px;
+  }
+
+  .hero__card-price {
+    font-size: 12px;
+  }
+
+  .hero__content {
+    padding: 40px 24px 48px;
+    justify-content: flex-start;
+  }
+
+  .hero__content::before,
+  .hero__content::after {
+    display: none;
+  }
+
+  .hero__eyebrow {
+    margin-bottom: 16px;
+  }
+
+  .hero__h1 {
+    font-size: clamp(34px, 9vw, 46px);
+    margin-bottom: 16px;
+  }
+
+  .hero__sub {
+    font-size: 14px;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+
+  .hero__btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-gold,
+  .btn-ghost-light {
+    text-align: center;
+    width: 100%;
+    padding: 16px;
+  }
+
+  .hero__stats {
+    margin-top: 32px;
+    padding-top: 24px;
+  }
+
+  .hero__stat-num {
+    font-size: 28px;
+  }
+
+  .hero__stat+.hero__stat {
+    padding-left: 16px;
+  }
+}
+
 @media (max-width: 600px) {
   :root {
     --container-px: 20px;

@@ -1,14 +1,3 @@
-/* ------------------------------------------------------------------------------------------------ */
-/* Sections:
-/* 
-/* 1. Landing Page Hero Section
-/*
-/* ------------------------------------------------------------------------------------------------ */
-
-/* ------------------------------------------------------------------ */
-/* 1. Landing Page Hero Section
-/* ------------------------------------------------------------------ */
-
 .hero {
   min-height: 100vh;
   display: grid;
@@ -227,7 +216,6 @@
   margin-top: 6px;
 }
 
-/* ── INTRO — completely redesigned ────── */
 .intro {
   background: var(--cream);
 }
@@ -380,8 +368,6 @@
   color: white;
 }
 
-.intro__feature-text {}
-
 .intro__feature-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 19px;
@@ -396,7 +382,6 @@
   font-weight: 300;
 }
 
-/* Credential badges */
 .intro__badges {
   display: flex;
   gap: 8px;
@@ -414,7 +399,6 @@
   font-weight: 400;
 }
 
-/* ── SERVICES ────────────────────────── */
 .services {
   background: var(--white);
 }
@@ -559,7 +543,6 @@
   color: var(--gold-lt);
 }
 
-/* ── LISTINGS ────────────────────────── */
 .listings {
   background: var(--parch);
 }
@@ -696,8 +679,6 @@
   font-weight: 500;
 }
 
-/* ── TRUST STRIP ─────────────────────── */
-/* Trust is full-bleed dark bg, content contained */
 .trust-section {
   background: var(--forest);
 }
@@ -739,7 +720,6 @@
   margin-top: 10px;
 }
 
-/* ── TESTIMONIALS ────────────────────── */
 .testimonials {
   background: var(--white);
 }
@@ -859,7 +839,6 @@
   font-weight: 300;
 }
 
-/* ── ABOUT / CONTACT ─────────────────── */
 .about-section {
   background: var(--parch);
 }
@@ -979,7 +958,6 @@
   margin-top: 2px;
 }
 
-/* ── FOOTER ──────────────────────────── */
 .footer-section {
   background: var(--ink);
 }
@@ -1072,7 +1050,6 @@
   font-weight: 300;
 }
 
-/* ── SCROLL REVEAL ───────────────────── */
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -1084,7 +1061,6 @@
   transform: translateY(0);
 }
 
-/* ── RESPONSIVE ──────────────────────── */
 @media (max-width: 1024px) {
   :root {
     --container-px: 28px;
@@ -1095,7 +1071,7 @@
   }
 
   .hero__photo {
-    min-height: 52vh;
+    min-height: 45vh;
   }
 
   .hero__content {

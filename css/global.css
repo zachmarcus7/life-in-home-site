@@ -1669,6 +1669,11 @@ nav {
   .process__subtitle {
     text-align: left;
   }
+
+  .listing-card-main {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
 }
 
 @media (max-width: 600px) {

@@ -1,0 +1,389 @@
+.page-title {
+  padding-top: 72px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+
+.page-title-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 52px;
+  padding-bottom: 36px;
+}
+
+.page-title__eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-title__eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.page-title__h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.page-title__h1 em {
+  font-style: italic;
+  color: var(--moss);
+}
+
+.page-title__sub {
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 300;
+  max-width: 280px;
+  text-align: right;
+  line-height: 1.65;
+  align-self: flex-end;
+}
+
+.bio-nancy {
+  background: var(--cream);
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.bio-nancy__inner {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.bio-nancy__photo-wrap {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.bio-nancy__photo-wrap img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  aspect-ratio: 3 / 4;
+  transition: transform 7s ease;
+}
+
+.bio-nancy__photo-wrap:hover img {
+  transform: scale(1.03);
+}
+
+.bio-nancy__award {
+  background: var(--forest);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bio-nancy__award-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  font-weight: 300;
+  color: white;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.bio-nancy__award-text {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+  line-height: 1.5;
+}
+
+.bio-nancy__eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bio-nancy__eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.bio-nancy__name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(38px, 3.5vw, 54px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.bio-nancy__title {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 400;
+  margin-bottom: 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.bio-nancy__body {
+  font-size: 15.5px;
+  line-height: 1.85;
+  color: var(--muted);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.bio-nancy__quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(19px, 1.8vw, 25px);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--forest);
+  line-height: 1.55;
+  border-left: 2px solid var(--gold);
+  padding-left: 28px;
+  margin: 36px 0;
+}
+
+.bio-nancy__creds {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 40px;
+}
+
+.cred-row {
+  background: white;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.cred-row:hover {
+  transform: translateX(4px);
+}
+
+.cred-row::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gold);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.cred-row:hover::before {
+  transform: scaleY(1);
+}
+
+.cred-row__icon {
+  width: 34px;
+  height: 34px;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--moss);
+  transition: background 0.2s, color 0.2s;
+}
+
+.cred-row:hover .cred-row__icon {
+  background: var(--forest);
+  color: white;
+}
+
+.cred-row__label {
+  font-size: 13.5px;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.cred-row__sub {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 300;
+  margin-top: 1px;
+}
+
+.section-divider {
+  height: 1px;
+  background: var(--border);
+}
+
+.bio-heather {
+  background: var(--white);
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.bio-heather__inner {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 72px;
+  align-items: start;
+}
+
+.bio-heather__eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bio-heather__eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.bio-heather__name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(38px, 3.5vw, 54px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.bio-heather__title {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--moss);
+  font-weight: 400;
+  margin-bottom: 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.bio-heather__body {
+  font-size: 15.5px;
+  line-height: 1.85;
+  color: var(--muted);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.bio-heather__body:last-child {
+  margin-bottom: 0;
+}
+
+.bio-heather__photo-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.bio-heather__photo-wrap img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  aspect-ratio: 3 / 4;
+  transition: transform 7s ease;
+}
+
+.bio-heather__photo-wrap:hover img {
+  transform: scale(1.03);
+}
+
+.bio-heather__company {
+  background: var(--parch);
+  padding: 18px 22px;
+  border-left: 2px solid var(--gold);
+}
+
+.bio-heather__company-label {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.bio-heather__company-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--forest);
+}
+
+.trust-section {
+  background: var(--ink);
+}
+
+.trust-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.trust__cell {
+  padding: 52px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.trust__cell:last-child {
+  border-right: none;
+}
+
+.trust__num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: white;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.trust__num sup {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.trust__label {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.38);
+  margin-top: 10px;
+}

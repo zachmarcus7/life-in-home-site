@@ -1,220 +1,211 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="Description"
-    content="We're a locally owned Realtor brokerage based out of Portland, OR. With over 35 years of experience, we promise to make your transition as easy as possible.">
-  <title>Life In Home Team Realty</title>
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Life In Home Team Realty" />
-  <meta property="og:description"
-    content="We're a locally owned Realtor brokerage based out of Portland, OR. With over 35 years of experience, we promise to make your transition as easy as possible" />
-  <meta property="og:url" content="https://www.lifeinhometeam.com/" />
-  <meta property="og:site_name" content="Life In Home Team Realty" />
-  <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/site.css" />
-  <script> </script> <!-- chrome bug fix -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/mini-logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact · Life in Home Team · Portland, OR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/contact.css">
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".main-nav">
-
-  <header class="h-25 vh-25" id="home">
-    <nav class="navbar navbar-expand-lg fixed-top main-nav nav-fade-in" id="main-nav">
-      <div class="nav-logo-container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/lih-logo-nav.svg" alt="Life in Home mini logo" />
-        </a>
-      </div>
-      <button class="navbar-toggler" 
-        type="button" 
-        data-toggle="collapse" 
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-        onclick="changeNavOpacity()">
-        <i class="fa-solid fa-bars"></i>
+<!-- NAV -->
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Life in <em>Home</em> Team</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Selling.html">Selling</a></li>
+      <li><a href="Buying.html">Buying</a></li>
+      <li><a href="Listings.html">Listings</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact.html" class="active">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="tel:+15035169400" class="nav-phone">503.516.9400</a>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link sub-header nav-active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Selling.html">Selling</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Buying.html">Buying</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Listings.html">Listings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="About.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sub-header" href="Contact.html">Contact</a>
-          </li>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE TITLE BAR -->
+<div class="page-title">
+  <div class="container">
+    <div class="page-title-inner">
+      <div>
+        <div class="page-title__eyebrow">Life in Home Team</div>
+        <h1 class="page-title__h1">Get in <em>touch</em></h1>
+      </div>
+      <p class="page-title__sub">We'd love to hear from you — whether you're buying, selling, or just exploring.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-inner">
+
+      <!-- Left — intro + methods -->
+      <div class="contact-left reveal">
+        <p class="contact-intro">
+          If you're interested in buying a new home or selling your current one, please feel free to reach out. We'd love to hear from you and help figure out the right next step — no pressure, no obligation.
+        </p>
+
+        <div class="contact-methods">
+          <a href="tel:+15035169400" class="contact-method">
+            <div class="contact-method__icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M3.5 2h3L8 5.5 6 7a8 8 0 004 4l1.5-2L15 10.5v3A1.5 1.5 0 0113.5 15 12 12 0 012 3.5 1.5 1.5 0 013.5 2z" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method__label">Phone</div>
+              <div class="contact-method__value">503.516.9400</div>
+            </div>
+            <svg class="contact-method__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <a href="mailto:homeswithnancyshannon@gmail.com" class="contact-method">
+            <div class="contact-method__icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <rect x="2" y="4" width="14" height="10" rx="1" stroke="white" stroke-width="1.3"/>
+                <path d="M2 6.5l7 4.5 7-4.5" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method__label">Email</div>
+              <div class="contact-method__value">homeswithnancyshannon@gmail.com</div>
+            </div>
+            <svg class="contact-method__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <div class="contact-method contact-method--static">
+            <div class="contact-method__icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M9 2C6.239 2 4 4.239 4 7c0 4.418 5 9 5 9s5-4.582 5-9c0-2.761-2.239-5-5-5z" stroke="white" stroke-width="1.3"/>
+                <circle cx="9" cy="7" r="2" stroke="white" stroke-width="1.3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-method__label">Office</div>
+              <div class="contact-method__value">10135 SE Sunnyside Rd, Ste. 150</div>
+              <div class="contact-method__value--sub">Clackamas, OR 97015</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right — photo + agent card -->
+      <div class="contact-right reveal">
+        <div class="contact-photo-wrap">
+          <img
+            src="https://www.lifeinhometeam.com/images/selling-page-image.jpg"
+            alt="Portland home"
+          />
+        </div>
+        <div class="contact-agent">
+          <div class="contact-agent__left">
+            <div class="contact-agent__name">Nancy Shannon</div>
+            <div class="contact-agent__title">Licensed Oregon Broker</div>
+          </div>
+          <div class="contact-agent__right">
+            <a href="tel:+15035169400" class="contact-agent__link">
+              <div class="contact-agent__link-icon">
+                <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                  <path d="M2.5 1.5h2.8L6.5 4l-1.6 1a7 7 0 003.6 3.6L10 7l2.5 1.2v2.4a1.2 1.2 0 01-1.2 1.2A10.8 10.8 0 011.3 2.7 1.2 1.2 0 012.5 1.5z" stroke="white" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              503.516.9400
+            </a>
+            <a href="mailto:homeswithnancyshannon@gmail.com" class="contact-agent__link">
+              <div class="contact-agent__link-icon">
+                <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                  <rect x="1.5" y="3" width="11" height="8" rx="1" stroke="white" stroke-width="1.1"/>
+                  <path d="M1.5 5l5 3.5L11.5 5" stroke="white" stroke-width="1.1" stroke-linecap="round"/>
+                </svg>
+              </div>
+              Send an Email
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-section contact-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer__brand">Life in <em>Home</em> Team</div>
+        <p class="footer__tagline">Portland's trusted partner for buying, selling, and finding the home that fits your life.</p>
+        <div class="footer__contact">
+          <a href="tel:+15035169400">503.516.9400</a>
+          <a href="mailto:homeswithnancyshannon@gmail.com">homeswithnancyshannon@gmail.com</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigate</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Selling.html">Selling</a></li>
+          <li><a href="Buying.html">Buying</a></li>
+          <li><a href="Listings.html">Listings</a></li>
         </ul>
       </div>
-    </nav>
-
-    <div class="page-contact-header-img h-25"></div>
-
-  </header>
-
-  <!-- intro section start  -->
+      <div>
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__links">
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="https://get.homebot.ai/?agentId=5e71664fb5932300977a9982">Home Value Tool</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-bottom">
   <div class="container">
-    <div class="symbols-title-container">
-      <hr class="symbols-title-line">
-      <h3 class="symbols-title">Give Us A Call Today!</h3>
-    </div>
-
-    <div class="contact-intro-text">
-      <p class="description-text">
-        If you're interested in either buying a new home or
-        selling your current one, please feel free to give us a call. We'd love to hear from
-        you.
-      </p>
+    <div class="footer-bottom-inner">
+      <p>© 2025 Life in Home Team · Portland, OR · Licensed Oregon Realtors</p>
+      <p>PPG Member · Equal Housing Opportunity</p>
     </div>
   </div>
-  <!-- intro section end -->
+</div>
 
-  <!-- contact details start -->
-  <div class="container">
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        const siblings = Array.from(e.target.parentElement?.children || []);
+        const idx = siblings.indexOf(e.target);
+        setTimeout(() => e.target.classList.add('in'), (idx % 4) * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-    <div class="contact-container">
-
-      <div class="contact-left">
-
-        <div class="contact-item">
-          <div class="contact-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-              <path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/>
-            </svg>
-          </div>
-          <div>
-            <h5>Phone</h5>
-            <p class="contact-phone">503.516.9400</p>
-          </div>
-        </div>
-
-        <hr class="contact-hr">
-
-        <div class="contact-item mt-5">
-          <div class="contact-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-              <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
-            </svg>
-          </div>
-          <div>
-            <h5>Email</h5>
-            <p>homeswithnancyshannon@gmail.com</p>
-          </div>
-        </div>
-
-        <hr class="contact-hr">
-
-        <div class="contact-item mt-5">
-          <div class="contact-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-              <path d="M480-301q99-80 149.5-154T680-594q0-90-56-148t-144-58q-88 0-144 58t-56 148q0 65 50.5 139T480-301Zm0 101Q339-304 269.5-402T200-594q0-125 78-205.5T480-880q124 0 202 80.5T760-594q0 94-69.5 192T480-200Zm0-320q33 0 56.5-23.5T560-600q0-33-23.5-56.5T480-680q-33 0-56.5 23.5T400-600q0 33 23.5 56.5T480-520ZM200-80v-80h560v80H200Zm280-520Z"/>
-            </svg>
-          </div>
-          <div>
-            <h5>Location</h5>
-            <p>10135 Se Sunnyside Rd, St. 150</p>
-            <p>Clackamas, OR 97015</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="contact-right">
-        <img src="images/selling-page-image.jpg" alt="">
-      </div>
-        
-    </div>
-
-  </div>
-  <!-- contact details end -->
-
-  <!-- footer start -->
-  <div id="footer" class="footer-container mt-5">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-1 col-0"></div> 
- 
-        <!-- footer left column start -->
-        <div class="col-md-4 pb-4">
-          <h3 class="pb-2">Contact</h3>
-          <a href="tel:+1-503-516-9400">
-            <p class="footer-link">503.516.9400</p>
-          </a>
-          <a href="mailto:homeswithnancyshannon@gmail.com">
-            <p class="footer-link">Our Email</p>
-          </a>
-          <p>
-            <a href="https://www.linkedin.com/in/nancy-shannon-38773a17b">
-              <i class="fa-brands fa-linkedin footer-fa-brands fa-2x"></i>
-            </a>
-            <a href="https://www.facebook.com/NancyShannonrealtor/">
-              <i class="fa-brands fa-facebook-square footer-fa-brands fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com/lifeinhomegirl/">
-              <i class="fa-brands fa-square-instagram footer-fa-brands fa-2x"></i>
-            </a>
-          </p>
-        </div>
-        <!-- footer left column end -->
-  
-        <!-- footer mid column start -->
-        <div class="col-md-3 pb-4">
-          <h3 class="pb-2">Company</h3>
-          <a href="About.html">
-            <p class="footer-link">About Us</p>
-          </a>
-          <a href="Listings.html">
-            <p class="footer-link">Our Listings</p>
-          </a>
-          <a href="Blog.html">
-            <p class="footer-link">Our Blog</p>
-          </a>
-        </div>
-        <!-- footer mid column end -->
-  
-        <!-- footer right column start -->
-        <div class="col-md-4 mt-auto pb-4 d-flex flex-column footer-logos">
-          <div class="footer-logo-container">
-            <img src="images/ppg-logo-white.webp" alt="Portland Oregon Realtor, PPG" />
-          </div>
-          <div class="footer-logo-container">
-            <img src="images/fair-housing.png" alt="Portland Oregon Realtor Fair Housing" />
-          </div>
-        </div>
-        <!-- footer right column end -->
-  
-      </div>
-    </div>
-  </div>
-  <!-- footer end -->
-
-  <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/navbar-observer.js"></script>
-  <script src="https://kit.fontawesome.com/3f9173342a.js" crossorigin="anonymous"></script>
-
+  const burger = document.getElementById('navBurger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  // Close when a link is tapped
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      burger.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
+</script>
 </body>
 </html>

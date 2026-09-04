@@ -407,14 +407,6 @@
     order: -1;
   }
 
-  .bio-heather__photo-wrap img {
-    aspect-ratio: 4/3;
-  }
-
-  .bio-nancy__photo-wrap img {
-    aspect-ratio: 4/3;
-  }
-
   .trust-inner {
     grid-template-columns: repeat(2, 1fr);
   }
